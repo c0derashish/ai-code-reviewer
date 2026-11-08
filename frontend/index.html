@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0a08" />
+    <title>VEDIX — An AI Code Reviewer</title>
+    <script>
+      // set saved theme before first paint, so no dark/light flash
+      try {
+        var saved = localStorage.getItem("vedix-theme");
+        document.documentElement.dataset.theme = saved === "light" ? "light" : "dark";
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

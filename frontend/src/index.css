@@ -1,0 +1,325 @@
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+@import "tailwindcss";
+
+/* ---------- Colors: dark mode (default) ---------- */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg-base: #0c0a08;
+  --bg-panel: #16120f;
+  --bg-raised: #211b16;
+  --line: #3a2f26;
+  --text-main: #f5ead8;
+  --text-muted: #a8977f;
+
+  --saffron: #ff9933;
+  --saffron-deep: #e2711d;
+  --gold: #d9a441;
+
+  /* issue severity colors (used in review panel later) */
+  --danger: #ef5350;
+  --warn: #f5a623;
+  --info: #4ea1ff;
+  --ok: #4cc38a;
+}
+
+/* ---------- Colors: light mode ---------- */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-base: #faf3e6;
+  --bg-panel: #f2e7d1;
+  --bg-raised: #ffffff;
+  --line: #dccaa8;
+  --text-main: #2a1d12;
+  --text-muted: #6f5d47;
+
+  --saffron: #d9660a;
+  --saffron-deep: #b84f00;
+  --gold: #9a6b00;
+
+  --danger: #c62828;
+  --warn: #b26a00;
+  --info: #1565c0;
+  --ok: #1b7f4f;
+}
+
+/* ---------- Tell Tailwind about our tokens ---------- */
+@theme inline {
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+
+  --color-base: var(--bg-base);
+  --color-panel: var(--bg-panel);
+  --color-raised: var(--bg-raised);
+  --color-line: var(--line);
+  --color-main: var(--text-main);
+  --color-muted: var(--text-muted);
+
+  --color-saffron: var(--saffron);
+  --color-saffron-deep: var(--saffron-deep);
+  --color-gold: var(--gold);
+
+  --color-danger: var(--danger);
+  --color-warn: var(--warn);
+  --color-info: var(--info);
+  --color-ok: var(--ok);
+}
+
+/* ---------- Base styles ---------- */
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg-base);
+    color: var(--text-main);
+    font-family: "Inter Variable", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--saffron);
+    color: #1a0f05;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--saffron);
+    outline-offset: 2px;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+  }
+}
+
+/* ---------- Landing page background layers ---------- */
+
+/* centre of glow and rays: middle of page, moves right on large screens */
+.hero-gradient,
+.hero-rays {
+  --hero-x: 50%;
+}
+
+@media (min-width: 1024px) {
+  .hero-gradient,
+  .hero-rays {
+    --hero-x: 72%; /* same value as lg:left-[72%] on the chakra */
+  }
+}
+
+/* saffron glow in the middle, fading into black */
+.hero-gradient {
+  background:
+    radial-gradient(
+      ellipse 70% 55% at var(--hero-x) 50%,
+      rgba(255, 153, 51, 0.38) 0%,
+      rgba(190, 80, 20, 0.22) 38%,
+      transparent 70%
+    ),
+    linear-gradient(to bottom, #0c0a08 0%, #140e09 60%, #0c0a08 100%);
+}
+
+/* thin saffron light rays from the centre, faded out toward the edges */
+.hero-rays {
+  background: repeating-conic-gradient(
+    from 0deg at var(--hero-x) 50%,
+    rgba(255, 153, 51, 0.1) 0deg 2deg,
+    transparent 2deg 12deg
+  );
+  -webkit-mask-image: radial-gradient(
+    circle 700px at var(--hero-x) 50%,
+    black 0%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    circle 700px at var(--hero-x) 50%,
+    black 0%,
+    transparent 100%
+  );
+}
+
+/* palm-leaf manuscript lines + soft paper grain */
+.manuscript-texture {
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 200, 120, 0.06) 0px,
+      rgba(255, 200, 120, 0.06) 1px,
+      transparent 1px,
+      transparent 7px
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}
+
+/* ---------- Chakra slow rotation ---------- */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chakra-spin {
+  animation: spin-slow 240s linear infinite;
+  transform-box: view-box;
+  transform-origin: 0 0;
+}
+
+.chakra-spin-reverse {
+  animation: spin-slow 180s linear infinite reverse;
+  transform-box: view-box;
+  transform-origin: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chakra-spin,
+  .chakra-spin-reverse {
+    animation: none;
+  }
+}
+
+/* ---------- Glass + grain ---------- */
+
+:root {
+  /* white frost flecks, for title */
+  --frost: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='s' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  9 0 0 0 -5.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+
+  /* softer frost flecks, for thin subtitle */
+  --frost-soft: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='s' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='9' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  5 0 0 0 -2.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+
+  /* grey noise, for button grain */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  /* grey noise with 50% alpha, blends into text like the button grain */
+  --grain-text: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='t' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 0 0.55'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E");
+}
+
+/* ----- glass title ----- */
+.title-glass {
+  background-image:
+    var(--grain-text),
+    linear-gradient(
+      105deg,
+      transparent 32%,
+      rgba(255, 255, 255, 0.5) 46%,
+      transparent 58%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 246, 225, 0.98) 0%,
+      rgba(255, 196, 110, 0.92) 48%,
+      rgba(255, 150, 50, 0.78) 100%
+    );
+  background-size: 160px 160px, 100% 100%, 100% 100%;
+  background-blend-mode: overlay, normal, normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35))
+    drop-shadow(0 0 28px rgba(255, 153, 51, 0.2));
+}
+
+/* ----- glass subtitle ----- */
+.text-glass {
+  background-image:
+    var(--grain-text),
+    linear-gradient(
+      to bottom,
+      rgba(255, 246, 225, 0.98),
+      rgba(255, 205, 140, 0.88)
+    );
+  background-size: 160px 160px, 100% 100%;
+  background-blend-mode: overlay, normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* ----- glass button base: blur, bright edge, sheen, grain ----- */
+.glass {
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+}
+
+/* diagonal light sheen */
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.22), transparent 45%);
+}
+
+/* fine grain on top */
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--grain);
+  background-size: 140px 140px;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+}
+
+.glass:hover:not(:disabled) {
+  filter: brightness(1.15);
+}
+
+/* saffron glass */
+.glass-primary {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--saffron) 62%, transparent),
+    color-mix(in srgb, var(--saffron-deep) 38%, transparent)
+  );
+  border-color: color-mix(in srgb, var(--gold) 70%, transparent);
+  color: var(--text-main);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* clear glass with saffron edge */
+.glass-outline {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.02)
+  );
+  border-color: color-mix(in srgb, var(--saffron) 15%, transparent);
+  color: var(--text-main);
+}
+
+
+/* ---------- Modal open animation ---------- */
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.modal-in {
+  animation: modal-in 160ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-in {
+    animation: none;
+  }
+}
