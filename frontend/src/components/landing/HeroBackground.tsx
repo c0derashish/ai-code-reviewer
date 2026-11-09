@@ -1,10 +1,16 @@
 import ChakraArt from "./ChakraArt";
 
-export default function HeroBackground() {
+type HeroBackgroundProps = {
+  still?: boolean; // true = chakra does not rotate (use behind glass panels)
+};
+
+export default function HeroBackground({ still = false }: HeroBackgroundProps) {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden opacity-30"
+      className={`pointer-events-none fixed inset-x-0 top-0 h-svh overflow-hidden opacity-30 ${
+        still ? "static-art" : ""
+      }`}
     >
       {/* 1. saffron to black gradient */}
       <div className="hero-gradient absolute inset-0" />

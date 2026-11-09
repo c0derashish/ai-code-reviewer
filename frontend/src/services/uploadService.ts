@@ -1,16 +1,20 @@
-import type { PickedFile, Submission } from "../types";
+import type { PickedFile, Project, ProjectFile, Submission } from "../types";
 import { formatFileSize } from "../utils/format";
 import {
+  LANGUAGES,
   SUPPORTED_EXTENSIONS,
   getExtension,
   getLanguageFromFileName,
   getLanguageLabel,
 } from "../utils/language";
 
+import { unzipSync } from "fflate";
+
 // ---------- limits ----------
 export const MAX_FILE_SIZE = 2 * 1024 * 1024; // per source file
 export const MAX_ZIP_SIZE = 25 * 1024 * 1024; // per ZIP
 export const MAX_FILES = 500;
+const MAX_UNZIPPED_SIZE = 50 * 1024 * 1024; // all files together, after unpacking
 
 // folders we never read
 const IGNORED_FOLDERS = [
@@ -19,6 +23,7 @@ const IGNORED_FOLDERS = [
   "dist",
   "build",
   "__pycache__",
+  "__MACOSX",
   "venv",
   ".venv",
   ".idea",
@@ -224,4 +229,112 @@ export function describeSubmission(s: Submission): { title: string; lines: strin
     title: `${s.files.length} files`,
     lines: [`Total size: ${formatFileSize(total)}`, "Type: project"],
   };
+}
+
+// ---------- turn a submission into a workspace project ----------
+
+async function readFiles(files: PickedFile[]): Promise<ProjectFile[]> {
+  return Promise.all(
+    files.map(async ({ file, path }) => ({
+      path,
+      name: file.name,
+      language: getLanguageFromFileName(file.name) ?? "plaintext",
+      content: await file.text(),
+    }))
+  );
+}
+
+// unpack a ZIP in the browser. Checks every file BEFORE it is unpacked.
+async function readZip(file: File): Promise<ProjectFile[]> {
+  const data = new Uint8Array(await file.arrayBuffer());
+
+  const state = { count: 0, total: 0, exceeded: false, bigFile: "" };
+
+  let entries: Record<string, Uint8Array>;
+  try {
+    entries = unzipSync(data, {
+      filter(info) {
+        const path = info.name.replace(/\\/g, "/");
+        const parts = path.split("/");
+        const name = parts[parts.length - 1];
+
+        if (name === "") return false; // folder entry
+        if (path.startsWith("/") || parts.includes("..")) return false; // unsafe path
+        if (parts.slice(0, -1).some((p) => IGNORED_FOLDERS.includes(p))) return false;
+        if (!SUPPORTED_EXTENSIONS.includes(getExtension(name))) return false;
+        if (info.originalSize === 0) return false;
+
+        if (info.originalSize > MAX_FILE_SIZE) {
+          state.bigFile = `${path} is ${formatFileSize(info.originalSize)}. Limit is ${formatFileSize(MAX_FILE_SIZE)} per file.`;
+          return false;
+        }
+
+        state.count += 1;
+        state.total += info.originalSize;
+        if (state.count > MAX_FILES || state.total > MAX_UNZIPPED_SIZE) {
+          state.exceeded = true;
+          return false;
+        }
+        return true;
+      },
+    });
+  } catch {
+    throw new Error("Could not read this ZIP. It may be damaged or password protected.");
+  }
+
+  if (state.bigFile) throw new Error(state.bigFile);
+  if (state.exceeded) {
+    throw new Error(
+      `This ZIP is too large when unpacked. Limits: ${MAX_FILES} files, ${formatFileSize(MAX_UNZIPPED_SIZE)} total.`
+    );
+  }
+
+  const decoder = new TextDecoder("utf-8");
+  const files: ProjectFile[] = [];
+
+  for (const [rawPath, bytes] of Object.entries(entries)) {
+    if (bytes.includes(0)) continue; // binary file with a source extension: skip
+    const path = rawPath.replace(/\\/g, "/");
+    const name = path.split("/").pop() ?? path;
+    files.push({
+      path,
+      name,
+      language: getLanguageFromFileName(name) ?? "plaintext",
+      content: decoder.decode(bytes),
+    });
+  }
+
+  if (files.length === 0) {
+    throw new Error("No supported source files found in this ZIP.");
+  }
+  return files;
+}
+
+export async function buildProject(submission: Submission): Promise<Project> {
+  if (submission.kind === "paste") {
+    const ext = LANGUAGES.find((l) => l.id === submission.language)?.extensions[0] ?? "txt";
+    const name = `pasted-code.${ext}`;
+    return {
+      name: "Pasted code",
+      files: [{ path: name, name, language: submission.language, content: submission.code }],
+    };
+  }
+
+  if (submission.kind === "zip") {
+    const files = await readZip(submission.file);
+    files.sort((a, b) => a.path.localeCompare(b.path));
+    return { name: submission.file.name.replace(/\.zip$/i, ""), files };
+  }
+
+  const files = await readFiles(submission.files);
+  files.sort((a, b) => a.path.localeCompare(b.path));
+
+  let name = "Project";
+  if (files.length === 1) {
+    name = files[0].name;
+  } else if (files[0].path.includes("/")) {
+    name = files[0].path.split("/")[0]; // folder name
+  }
+
+  return { name, files };
 }

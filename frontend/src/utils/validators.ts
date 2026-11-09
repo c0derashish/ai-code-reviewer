@@ -50,3 +50,28 @@ export function checkGithubUrl(input: string): RepoCheck {
 
   return { ok: true, owner, repo };
 }
+
+// ---------- account form checks. Each returns an error message, or null if fine ----------
+
+export function checkEmail(input: string): string | null {
+  const text = input.trim();
+  if (text === "") return "Enter your email.";
+  if (text.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(text)) {
+    return "Enter a valid email, like name@example.com.";
+  }
+  return null;
+}
+
+export function checkPassword(input: string): string | null {
+  if (input === "") return "Enter a password.";
+  if (input.length < 8) return "Use at least 8 characters.";
+  if (input.length > 128) return "Use 128 characters or fewer.";
+  return null;
+}
+
+export function checkName(input: string): string | null {
+  const text = input.trim();
+  if (text === "") return "Enter your name.";
+  if (text.length > 60) return "Use 60 characters or fewer.";
+  return null;
+}
