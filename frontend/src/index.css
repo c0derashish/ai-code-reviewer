@@ -2,43 +2,48 @@
 @import "@fontsource-variable/jetbrains-mono";
 @import "tailwindcss";
 
-/* ---------- Colors: dark mode (default) ---------- */
+/* ---------- Colors: dark mode (default). Black base ---------- */
 :root,
 [data-theme="dark"] {
   color-scheme: dark;
 
-  --bg-base: #0c0a08;
-  --bg-panel: #16120f;
-  --bg-raised: #211b16;
-  --line: #3a2f26;
-  --text-main: #f5ead8;
-  --text-muted: #a8977f;
+  --bg-base: #000000;
+  --bg-panel: #0b0b0b;
+  --bg-raised: #161616;
+  --line: #2a2a2a;
+  --text-main: #f2f2f2;
+  --text-muted: #9a9a9a;
 
   --saffron: #ff9933;
   --saffron-deep: #e2711d;
   --gold: #d9a441;
 
-  /* issue severity colors (used in review panel later) */
+  --glass-alpha: 55%;
+  --glass-hi: rgba(255, 255, 255, 0.08);
+
   --danger: #ef5350;
   --warn: #f5a623;
   --info: #4ea1ff;
   --ok: #4cc38a;
 }
 
-/* ---------- Colors: light mode ---------- */
+/* ---------- Colors: light mode. White base ---------- */
 [data-theme="light"] {
   color-scheme: light;
 
-  --bg-base: #faf3e6;
-  --bg-panel: #f2e7d1;
+  --bg-base: #ffffff;
+  --bg-panel: #f4f4f4;
   --bg-raised: #ffffff;
-  --line: #dccaa8;
-  --text-main: #2a1d12;
-  --text-muted: #6f5d47;
+  --line: #dcdcdc;
+  --text-main: #111111;
+  --text-muted: #5c5c5c;
 
   --saffron: #d9660a;
   --saffron-deep: #b84f00;
   --gold: #9a6b00;
+
+  --glass-alpha: 60%;
+  --glass-hi: rgba(255, 255, 255, 0.9);
 
   --danger: #c62828;
   --warn: #b26a00;
@@ -96,7 +101,7 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: var(--line) transparent;
+    scrollbar-color: color-mix(in srgb, var(--saffron) 50%, transparent) transparent;
   }
 }
 
@@ -322,4 +327,245 @@
   .modal-in {
     animation: none;
   }
+}
+
+/* ---------- Glass panels (workspace) ---------- */
+
+:root {
+  /* very faint grey grain, for glass panels */
+  --grain-faint: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='t' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 0 0.1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E");
+}
+
+.glass-panel {
+  background-color: color-mix(in srgb, var(--bg-panel) var(--glass-alpha), transparent);
+  background-image: var(--grain-faint);
+  background-size: 160px 160px;
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-color: color-mix(in srgb, var(--saffron) 20%, var(--line));
+  box-shadow: inset 0 1px 0 var(--glass-hi);
+}
+
+/* ---------- Workspace backdrop: glow + tech grid ---------- */
+
+.workspace-glow {
+  background:
+    radial-gradient(
+      ellipse 50% 40% at 85% 8%,
+      color-mix(in srgb, var(--saffron) 24%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 40% at 8% 95%,
+      color-mix(in srgb, var(--saffron) 14%, transparent),
+      transparent 70%
+    );
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--saffron) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--saffron) 8%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 40%, black 20%, transparent 85%);
+  mask-image: radial-gradient(ellipse at 50% 40%, black 20%, transparent 85%);
+}
+
+/* chakra stands still in the workspace: blur behind moving art is slow */
+.static-art .chakra-spin,
+.static-art .chakra-spin-reverse {
+  animation: none;
+}
+
+
+/* ---------- Glass inset: for boxes inside a glass popup (no blur, already blurred) ---------- */
+.glass-inset {
+  background-color: color-mix(in srgb, var(--bg-base) 45%, transparent);
+  background-image: var(--grain-faint);
+  background-size: 160px 160px;
+  border-color: color-mix(in srgb, var(--saffron) 20%, var(--line));
+  box-shadow: inset 0 1px 0 var(--glass-hi);
+}
+
+/* ---------- Landing: theme colors for title + subtitle ---------- */
+
+:root,
+[data-theme="dark"] {
+  --title-a: rgba(255, 246, 225, 0.98);
+  --title-b: rgba(255, 196, 110, 0.92);
+  --title-c: rgba(255, 150, 50, 0.78);
+  --title-shadow: rgba(0, 0, 0, 0.35);
+  --sub-a: rgba(255, 246, 225, 0.98);
+  --sub-b: rgba(255, 205, 140, 0.88);
+  --sub-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* light mode block must come AFTER the dark one */
+[data-theme="light"] {
+  --title-a: #ff9a2e;
+  --title-b: #e2711d;
+  --title-c: #a8470a;
+  --title-shadow: rgba(140, 70, 0, 0.28);
+  --sub-a: #b84f00;
+  --sub-b: #8a3b00;
+  --sub-shadow: rgba(255, 255, 255, 0.6);
+}
+
+/* ----- glass title ----- */
+.title-glass {
+  background-image:
+    var(--grain-text),
+    linear-gradient(
+      105deg,
+      transparent 32%,
+      rgba(255, 255, 255, 0.5) 46%,
+      transparent 58%
+    ),
+    linear-gradient(to bottom, var(--title-a) 0%, var(--title-b) 48%, var(--title-c) 100%);
+  background-size: 160px 160px, 100% 100%, 100% 100%;
+  background-blend-mode: overlay, normal, normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0;
+  filter: drop-shadow(0 6px 10px var(--title-shadow))
+    drop-shadow(0 0 28px color-mix(in srgb, var(--saffron) 25%, transparent));
+}
+
+/* ----- glass subtitle ----- */
+.text-glass {
+  background-image:
+    var(--grain-text),
+    linear-gradient(to bottom, var(--sub-a), var(--sub-b));
+  background-size: 160px 160px, 100% 100%;
+  background-blend-mode: overlay, normal;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 4px var(--sub-shadow));
+}
+
+/* ---------- Landing: light mode background ---------- */
+
+[data-theme="light"] .hero-gradient {
+  background: radial-gradient(
+    ellipse 70% 55% at var(--hero-x, 50%) 50%,
+    color-mix(in srgb, var(--saffron) 70%, transparent) 0%,
+    color-mix(in srgb, var(--saffron-deep) 28%, transparent) 40%,
+    transparent 72%
+  );
+}
+
+[data-theme="light"] .hero-rays {
+  background: repeating-conic-gradient(
+    from 0deg at var(--hero-x, 50%) 50%,
+    color-mix(in srgb, var(--saffron) 26%, transparent) 0deg 2deg,
+    transparent 2deg 12deg
+  );
+}
+
+[data-theme="light"] .manuscript-texture {
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(150, 90, 20, 0.08) 0px,
+      rgba(150, 90, 20, 0.08) 1px,
+      transparent 1px,
+      transparent 7px
+    ),
+    var(--grain-faint);
+  background-size: auto, 160px 160px;
+}
+
+/* ---------- Glass buttons: light mode ---------- */
+
+[data-theme="light"] .glass {
+  border-color: color-mix(in srgb, var(--saffron) 50%, transparent);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+    0 8px 24px -10px color-mix(in srgb, var(--saffron) 55%, transparent);
+}
+
+[data-theme="light"] .glass-primary {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+[data-theme="light"] .glass-outline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+/* ---------- Editor issue highlights (Monaco) ---------- */
+
+/* tinted line */
+.vedix-line.vedix-sev-critical,
+.vedix-line.vedix-sev-high {
+  background: color-mix(in srgb, var(--danger) 14%, transparent);
+}
+.vedix-line.vedix-sev-medium {
+  background: color-mix(in srgb, var(--warn) 14%, transparent);
+}
+.vedix-line.vedix-sev-low {
+  background: color-mix(in srgb, var(--info) 14%, transparent);
+}
+.vedix-line.vedix-sev-info {
+  background: color-mix(in srgb, var(--text-muted) 12%, transparent);
+}
+
+/* the clicked issue gets a saffron outline */
+.vedix-line.vedix-line-selected {
+  box-shadow: inset 0 0 0 1px var(--saffron);
+}
+
+/* dot in the gutter */
+.vedix-glyph {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.vedix-glyph.vedix-sev-critical,
+.vedix-glyph.vedix-sev-high {
+  background-image: radial-gradient(circle at center, var(--danger) 0 4px, transparent 5px);
+}
+.vedix-glyph.vedix-sev-medium {
+  background-image: radial-gradient(circle at center, var(--warn) 0 4px, transparent 5px);
+}
+.vedix-glyph.vedix-sev-low {
+  background-image: radial-gradient(circle at center, var(--info) 0 4px, transparent 5px);
+}
+.vedix-glyph.vedix-sev-info {
+  background-image: radial-gradient(circle at center, var(--text-muted) 0 4px, transparent 5px);
+}
+
+
+/* ---------- Monaco sticky scroll: almost solid background ---------- */
+
+.monaco-editor .sticky-widget,
+.monaco-editor .sticky-widget-line-numbers,
+.monaco-editor .sticky-widget-lines-scrollable,
+.monaco-editor .sticky-widget .sticky-line-number,
+.monaco-editor .sticky-widget .sticky-line-number-inner,
+.monaco-editor .sticky-widget .sticky-line-content {
+  background-color: color-mix(in srgb, var(--bg-panel) 96%, transparent) !important;
+}
+
+.monaco-editor .sticky-widget .sticky-line-number:hover,
+.monaco-editor .sticky-widget .sticky-line-content:hover {
+  background-color: color-mix(in srgb, var(--saffron) 12%, var(--bg-panel)) !important;
+}
+
+
+/* ---------- Chart colors ---------- */
+:root,
+[data-theme="dark"] {
+  --chart-high: #f2703d;
+}
+
+[data-theme="light"] {
+  --chart-high: #d84a1b;
 }

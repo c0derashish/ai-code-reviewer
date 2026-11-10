@@ -22,18 +22,18 @@ export default function Modal({ title, onClose, children, narrow = false }: Moda
   }, [onClose]);
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-md"
-      onMouseDown={(e) => {
-        // only when the click lands on the dark area itself
-        if (e.target === e.currentTarget) onClose();
-      }}
-    >
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      {/* dim + blur layer. Separate from the dialog, so the dialog can blur it too */}
+      <div
+        className="absolute inset-0 bg-black/55 backdrop-blur-md"
+        onMouseDown={onClose}
+      />
+
       <div
         role="dialog"
         aria-modal="true"
         aria-label={title}
-        className={`modal-in max-h-full w-full overflow-y-auto rounded-xl border border-line bg-panel/90 shadow-2xl backdrop-blur-xl ${
+        className={`modal-in glass-panel relative max-h-full w-full overflow-y-auto rounded-xl border shadow-2xl [--glass-alpha:65%] ${
           narrow ? "max-w-lg" : "max-w-2xl"
         }`}
       >

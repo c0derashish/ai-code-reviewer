@@ -1,11 +1,12 @@
-import { useEffect, useRef, useState } from "react";
-import { Columns3, Moon, PanelTop, Settings, Sun, X } from "lucide-react";
+import { Columns3, LogOut, Moon, PanelTop, Settings, Sun, X } from "lucide-react";
 import Button from "../common/Button";
 import OptionGroup from "./OptionGroup";
+import { useAuth } from "../../context/AuthContext";
 import { useTheme } from "../../context/ThemeContext";
 import type { Theme } from "../../context/ThemeContext";
 import { useWorkspace } from "../../context/WorkspaceContext";
 import type { WorkspaceLayout } from "../../context/WorkspaceContext";
+import { usePopover } from "../../hooks/usePopover";
 
 const LAYOUT_HELP: Record<WorkspaceLayout, string> = {
   single: "Explorer, editor, and review side by side.",
@@ -13,34 +14,13 @@ const LAYOUT_HELP: Record<WorkspaceLayout, string> = {
 };
 
 export default function SettingsMenu() {
-  const [open, setOpen] = useState(false);
-  const wrapper = useRef<HTMLDivElement>(null);
+  const { open, setOpen, ref } = usePopover();
+  const { user, logout } = useAuth();
   const { theme, setTheme } = useTheme();
   const { layout, setLayout } = useWorkspace();
 
-  // while open: close on outside click or Escape
-  useEffect(() => {
-    if (!open) return;
-
-    function handleClick(e: MouseEvent) {
-      if (wrapper.current && !wrapper.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    }
-    function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
-    }
-
-    document.addEventListener("mousedown", handleClick);
-    document.addEventListener("keydown", handleKey);
-    return () => {
-      document.removeEventListener("mousedown", handleClick);
-      document.removeEventListener("keydown", handleKey);
-    };
-  }, [open]);
-
   return (
-    <div ref={wrapper} className="relative">
+    <div ref={ref} className="relative">
       <Button
         variant="ghost"
         size="icon"
@@ -55,7 +35,7 @@ export default function SettingsMenu() {
         <div
           role="dialog"
           aria-label="Settings"
-          className="modal-in absolute right-0 top-full z-30 mt-2 w-80 max-w-[calc(100vw-2rem)] rounded-xl border border-line bg-raised/95 p-4 shadow-2xl backdrop-blur-xl"
+          className="modal-in glass-panel absolute right-0 top-full z-30 mt-2 w-80 max-w-[calc(100vw-2rem)] rounded-xl border p-4 shadow-2xl [--glass-alpha:70%]"
         >
           <div className="mb-4 flex items-center justify-between">
             <h2 className="font-semibold">Settings</h2>
@@ -81,9 +61,7 @@ export default function SettingsMenu() {
                   { value: "light", label: "Light", icon: <Sun size={16} /> },
                 ]}
               />
-              <p className="mt-2 text-xs text-muted">
-                Applies to workspace and account pages. The landing page always stays dark.
-              </p>
+              <p className="mt-2 text-xs text-muted">Applies to every page.</p>
             </div>
 
             <div>
@@ -99,6 +77,22 @@ export default function SettingsMenu() {
               />
               <p className="mt-2 text-xs text-muted">{LAYOUT_HELP[layout]}</p>
             </div>
+
+            {user && (
+              <div className="border-t border-line pt-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setOpen(false);
+                    logout();
+                  }}
+                  className="flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition hover:bg-saffron/10 hover:text-saffron"
+                >
+                  <LogOut size={16} />
+                  Logout
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}

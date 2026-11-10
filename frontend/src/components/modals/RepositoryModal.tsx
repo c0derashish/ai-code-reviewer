@@ -7,6 +7,7 @@ import Notice from "../common/Notice";
 import GitHubIcon from "../common/GitHubIcon";
 import { submitRepository } from "../../services/repositoryService";
 import { checkGithubUrl } from "../../utils/validators";
+import { ApiError } from "../../services/api";
 
 type RepositoryModalProps = {
   onClose: () => void;
@@ -32,9 +33,9 @@ export default function RepositoryModal({ onClose }: RepositoryModalProps) {
     setLoading(true);
     try {
       const result = await submitRepository(check.owner, check.repo);
-      if (!result.connected) setNotice(result.message);
-    } catch {
-      setError("Something went wrong. Try again.");
+      setNotice(result.message);
+    } catch (err) {
+      setError(err instanceof ApiError ? err.message : "Something went wrong. Try again.");
     } finally {
       setLoading(false);
     }
