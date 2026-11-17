@@ -1,0 +1,240 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 5,
+  "pairs": [
+    {
+      "name": "dump",
+      "line": 120,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "dumps",
+      "line": 183,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "detect_encoding",
+      "line": 244,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "load",
+      "line": 274,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "loads",
+      "line": 299,
+      "ours": 17,
+      "radon": 17,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "JSONDecodeError.__init__",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "JSONDecodeError.__reduce__",
+      "line": 42,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "_decode_uXXXX",
+      "line": 60,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "py_scanstring",
+      "line": 70,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "JSONObject",
+      "line": 137,
+      "ours": 22,
+      "radon": 22,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "JSONArray",
+      "line": 218,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "JSONDecoder.__init__",
+      "line": 285,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "JSONDecoder.decode",
+      "line": 333,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "JSONDecoder.raw_decode",
+      "line": 344,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "decoder.py"
+    },
+    {
+      "name": "py_encode_basestring",
+      "line": 37,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "py_encode_basestring.replace",
+      "line": 41,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "py_encode_basestring_ascii",
+      "line": 49,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "py_encode_basestring_ascii.replace",
+      "line": 53,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "JSONEncoder.__init__",
+      "line": 105,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "JSONEncoder.default",
+      "line": 161,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "JSONEncoder.encode",
+      "line": 183,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "JSONEncoder.iterencode",
+      "line": 205,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "JSONEncoder.iterencode.floatstr",
+      "line": 224,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "_make_iterencode",
+      "line": 260,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "_make_iterencode._iterencode_list",
+      "line": 278,
+      "ours": 17,
+      "radon": 17,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "_make_iterencode._iterencode_dict",
+      "line": 334,
+      "ours": 25,
+      "radon": 25,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "_make_iterencode._iterencode",
+      "line": 414,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "encoder.py"
+    },
+    {
+      "name": "py_make_scanner",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "scanner.py"
+    },
+    {
+      "name": "py_make_scanner._scan_once",
+      "line": 28,
+      "ours": 22,
+      "radon": 22,
+      "file_path": "scanner.py"
+    },
+    {
+      "name": "py_make_scanner.scan_once",
+      "line": 65,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "scanner.py"
+    },
+    {
+      "name": "main",
+      "line": 19,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "tool.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 31,
+    "exact_match": 31,
+    "exact_match_percent": 100.0,
+    "within_one": 31,
+    "within_one_percent": 100.0,
+    "mean_absolute_difference": 0.0,
+    "mean_difference": 0.0,
+    "max_absolute_difference": 0,
+    "ours_higher": 0,
+    "ours_lower": 0
+  }
+}

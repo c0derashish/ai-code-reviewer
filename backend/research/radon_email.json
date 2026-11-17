@@ -1,0 +1,3733 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 28,
+  "pairs": [
+    {
+      "name": "message_from_string",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "message_from_bytes",
+      "line": 39,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "message_from_file",
+      "line": 47,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "message_from_binary_file",
+      "line": 55,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "decode_q",
+      "line": 67,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "_QByteMap.__missing__",
+      "line": 77,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "encode_q",
+      "line": 89,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "len_q",
+      "line": 92,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "decode_b",
+      "line": 100,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "encode_b",
+      "line": 138,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "len_b",
+      "line": 141,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "decode",
+      "line": 152,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "encode",
+      "line": 204,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_encoded_words.py"
+    },
+    {
+      "name": "make_quoted_pairs",
+      "line": 99,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "quote_string",
+      "line": 104,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.__init__",
+      "line": 131,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.__str__",
+      "line": 135,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.__repr__",
+      "line": 138,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.value",
+      "line": 143,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.all_defects",
+      "line": 147,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.startswith_fws",
+      "line": 150,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.as_ew_allowed",
+      "line": 154,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.comments",
+      "line": 159,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.fold",
+      "line": 165,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.pprint",
+      "line": 168,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList.ppstr",
+      "line": 171,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "TokenList._pp",
+      "line": 174,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "WhiteSpaceTokenList.value",
+      "line": 195,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "WhiteSpaceTokenList.comments",
+      "line": 199,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "QuotedString.content",
+      "line": 239,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "QuotedString.quoted_value",
+      "line": 245,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "QuotedString.stripped_value",
+      "line": 255,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "BareQuotedString.__str__",
+      "line": 265,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "BareQuotedString.value",
+      "line": 269,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Comment.__str__",
+      "line": 277,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Comment.quote",
+      "line": 284,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Comment.content",
+      "line": 292,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Comment.comments",
+      "line": 296,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AddressList.addresses",
+      "line": 304,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AddressList.mailboxes",
+      "line": 308,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AddressList.all_mailboxes",
+      "line": 313,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Address.display_name",
+      "line": 323,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Address.mailboxes",
+      "line": 328,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Address.all_mailboxes",
+      "line": 336,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "MailboxList.mailboxes",
+      "line": 348,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "MailboxList.all_mailboxes",
+      "line": 352,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "GroupList.mailboxes",
+      "line": 362,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "GroupList.all_mailboxes",
+      "line": 368,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Group.mailboxes",
+      "line": 379,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Group.all_mailboxes",
+      "line": 385,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Group.display_name",
+      "line": 391,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "NameAddr.display_name",
+      "line": 400,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "NameAddr.local_part",
+      "line": 406,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "NameAddr.domain",
+      "line": 410,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "NameAddr.route",
+      "line": 414,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "NameAddr.addr_spec",
+      "line": 418,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AngleAddr.local_part",
+      "line": 427,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AngleAddr.domain",
+      "line": 433,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AngleAddr.route",
+      "line": 439,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AngleAddr.addr_spec",
+      "line": 445,
+      "ours": 4,
+      "radon": 5,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "ObsRoute.domains",
+      "line": 461,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Mailbox.display_name",
+      "line": 470,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Mailbox.local_part",
+      "line": 475,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Mailbox.domain",
+      "line": 479,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Mailbox.route",
+      "line": 483,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Mailbox.addr_spec",
+      "line": 488,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "InvalidMailbox.display_name",
+      "line": 497,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Domain.domain",
+      "line": 509,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AddrSpec.local_part",
+      "line": 533,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AddrSpec.domain",
+      "line": 537,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AddrSpec.value",
+      "line": 543,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "AddrSpec.addr_spec",
+      "line": 549,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "DisplayName.display_name",
+      "line": 572,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "DisplayName.value",
+      "line": 591,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "LocalPart.value",
+      "line": 620,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "LocalPart.local_part",
+      "line": 627,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "DomainLiteral.domain",
+      "line": 656,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "DomainLiteral.ip",
+      "line": 660,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Parameter.section_number",
+      "line": 681,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Parameter.param_value",
+      "line": 687,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Attribute.stripped_value",
+      "line": 711,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Value.stripped_value",
+      "line": 727,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "MimeParameters.params",
+      "line": 743,
+      "ours": 16,
+      "radon": 17,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "MimeParameters.__str__",
+      "line": 812,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "ParameterizedHeaderValue.params",
+      "line": 830,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "MsgID.fold",
+      "line": 865,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal.__new__",
+      "line": 892,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal.__repr__",
+      "line": 898,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal.pprint",
+      "line": 901,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal.all_defects",
+      "line": 905,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal._pp",
+      "line": 908,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal.pop_trailing_ws",
+      "line": 917,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal.comments",
+      "line": 922,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "Terminal.__getnewargs__",
+      "line": 925,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "WhiteSpaceTerminal.value",
+      "line": 932,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "WhiteSpaceTerminal.startswith_fws",
+      "line": 935,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "ValueTerminal.value",
+      "line": 942,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "ValueTerminal.startswith_fws",
+      "line": 945,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "EWWhiteSpaceTerminal.value",
+      "line": 952,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "EWWhiteSpaceTerminal.__str__",
+      "line": 955,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_validate_xtext",
+      "line": 1004,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_get_ptext_to_endchars",
+      "line": 1014,
+      "ours": 6,
+      "radon": 7,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_fws",
+      "line": 1044,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_encoded_word",
+      "line": 1056,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_unstructured",
+      "line": 1105,
+      "ours": 13,
+      "radon": 14,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_qp_ctext",
+      "line": 1172,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_qcontent",
+      "line": 1189,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_atext",
+      "line": 1204,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_bare_quoted_string",
+      "line": 1220,
+      "ours": 15,
+      "radon": 15,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_comment",
+      "line": 1263,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_cfws",
+      "line": 1288,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_quoted_string",
+      "line": 1301,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_atom",
+      "line": 1319,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_dot_atom_text",
+      "line": 1346,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_dot_atom",
+      "line": 1365,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_word",
+      "line": 1390,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_phrase",
+      "line": 1424,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_local_part",
+      "line": 1462,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_obs_local_part",
+      "line": 1501,
+      "ours": 21,
+      "radon": 21,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_dtext",
+      "line": 1553,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_check_for_early_dl_end",
+      "line": 1573,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_domain_literal",
+      "line": 1581,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_domain",
+      "line": 1620,
+      "ours": 15,
+      "radon": 15,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_addr_spec",
+      "line": 1658,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_obs_route",
+      "line": 1674,
+      "ours": 16,
+      "radon": 16,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_angle_addr",
+      "line": 1717,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_display_name",
+      "line": 1763,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_name_addr",
+      "line": 1778,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_mailbox",
+      "line": 1814,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_invalid_mailbox",
+      "line": 1835,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_mailbox_list",
+      "line": 1853,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_group_list",
+      "line": 1910,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_group",
+      "line": 1947,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_address",
+      "line": 1977,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_address_list",
+      "line": 2006,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_no_fold_literal",
+      "line": 2061,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_msg_id",
+      "line": 2083,
+      "ours": 18,
+      "radon": 18,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "parse_message_id",
+      "line": 2152,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "parse_mime_version",
+      "line": 2180,
+      "ours": 24,
+      "radon": 24,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_invalid_parameter",
+      "line": 2248,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_ttext",
+      "line": 2266,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_token",
+      "line": 2285,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_attrtext",
+      "line": 2308,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_attribute",
+      "line": 2327,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_extended_attrtext",
+      "line": 2350,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_extended_attribute",
+      "line": 2368,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_section",
+      "line": 2390,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_value",
+      "line": 2420,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "get_parameter",
+      "line": 2442,
+      "ours": 45,
+      "radon": 48,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "parse_mime_parameters",
+      "line": 2583,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_find_mime_parameters",
+      "line": 2635,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "parse_content_type_header",
+      "line": 2651,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "parse_content_disposition_header",
+      "line": 2707,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "parse_content_transfer_encoding_header",
+      "line": 2737,
+      "ours": 6,
+      "radon": 7,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_steal_trailing_WSP_if_exists",
+      "line": 2784,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_refold_parse_tree",
+      "line": 2791,
+      "ours": 39,
+      "radon": 39,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_fold_as_ew",
+      "line": 2946,
+      "ours": 17,
+      "radon": 17,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "_fold_mime_parameters",
+      "line": 3022,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "_header_value_parser.py"
+    },
+    {
+      "name": "parsedate_tz",
+      "line": 45,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "_parsedate_tz",
+      "line": 57,
+      "ours": 39,
+      "radon": 39,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "parsedate",
+      "line": 182,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "mktime_tz",
+      "line": 191,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "quote",
+      "line": 201,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.__init__",
+      "line": 221,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.gotonext",
+      "line": 240,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getaddrlist",
+      "line": 254,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getaddress",
+      "line": 268,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getrouteaddr",
+      "line": 327,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getaddrspec",
+      "line": 359,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getdomain",
+      "line": 397,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getdelimited",
+      "line": 420,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getquote",
+      "line": 457,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getcomment",
+      "line": 461,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getdomainliteral",
+      "line": 465,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getatom",
+      "line": 469,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddrlistClass.getphraselist",
+      "line": 489,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddressList.__init__",
+      "line": 514,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddressList.__len__",
+      "line": 521,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddressList.__add__",
+      "line": 524,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddressList.__iadd__",
+      "line": 533,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddressList.__sub__",
+      "line": 540,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddressList.__isub__",
+      "line": 548,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "AddressList.__getitem__",
+      "line": 555,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_parseaddr.py"
+    },
+    {
+      "name": "_PolicyBase.__init__",
+      "line": 41,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "_PolicyBase.__repr__",
+      "line": 55,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "_PolicyBase.clone",
+      "line": 60,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "_PolicyBase.__setattr__",
+      "line": 78,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "_PolicyBase.__add__",
+      "line": 85,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "_append_doc",
+      "line": 94,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "_extend_docstrings",
+      "line": 99,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.handle_defect",
+      "line": 177,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.register_defect",
+      "line": 196,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.header_max_count",
+      "line": 209,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.header_source_parse",
+      "line": 229,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.header_store_parse",
+      "line": 239,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.header_fetch_parse",
+      "line": 246,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.fold",
+      "line": 257,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Policy.fold_binary",
+      "line": 269,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Compat32._sanitize_header",
+      "line": 289,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Compat32.header_source_parse",
+      "line": 301,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Compat32.header_store_parse",
+      "line": 313,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Compat32.header_fetch_parse",
+      "line": 319,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Compat32.fold",
+      "line": 326,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Compat32.fold_binary",
+      "line": 336,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "Compat32._fold",
+      "line": 348,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "_policybase.py"
+    },
+    {
+      "name": "header_length",
+      "line": 49,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "base64mime.py"
+    },
+    {
+      "name": "header_encode",
+      "line": 59,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "base64mime.py"
+    },
+    {
+      "name": "body_encode",
+      "line": 73,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "base64mime.py"
+    },
+    {
+      "name": "decode",
+      "line": 98,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "base64mime.py"
+    },
+    {
+      "name": "add_charset",
+      "line": 106,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "add_alias",
+      "line": 134,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "add_codec",
+      "line": 143,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "_encode",
+      "line": 155,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.__init__",
+      "line": 206,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.__repr__",
+      "line": 239,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.__eq__",
+      "line": 242,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.get_body_encoding",
+      "line": 245,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.get_output_charset",
+      "line": 266,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.header_encode",
+      "line": 274,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.header_encode_lines",
+      "line": 293,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset._get_encoder",
+      "line": 354,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "Charset.body_encode",
+      "line": 369,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "charset.py"
+    },
+    {
+      "name": "ContentManager.__init__",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "ContentManager.add_get_handler",
+      "line": 13,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "ContentManager.get_content",
+      "line": 16,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "ContentManager.add_set_handler",
+      "line": 27,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "ContentManager.set_content",
+      "line": 30,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "ContentManager._find_set_handler",
+      "line": 39,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "get_text_content",
+      "line": 64,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "get_non_text_content",
+      "line": 71,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "get_message_content",
+      "line": 78,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "get_and_fixup_unknown_message_content",
+      "line": 85,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "_prepare_set",
+      "line": 97,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "_finalize_set",
+      "line": 114,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "_encode_base64",
+      "line": 135,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "_encode_text",
+      "line": 144,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "_encode_text.embedded_body",
+      "line": 147,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "_encode_text.normal_body",
+      "line": 148,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "set_text_content",
+      "line": 183,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "set_message_content",
+      "line": 197,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "set_bytes_content",
+      "line": 230,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "contentmanager.py"
+    },
+    {
+      "name": "_qencode",
+      "line": 19,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoders.py"
+    },
+    {
+      "name": "encode_base64",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoders.py"
+    },
+    {
+      "name": "encode_quopri",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoders.py"
+    },
+    {
+      "name": "encode_7or8bit",
+      "line": 47,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "encoders.py"
+    },
+    {
+      "name": "encode_noop",
+      "line": 64,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "encoders.py"
+    },
+    {
+      "name": "MessageDefect.__init__",
+      "line": 40,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "errors.py"
+    },
+    {
+      "name": "HeaderDefect.__init__",
+      "line": 88,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "errors.py"
+    },
+    {
+      "name": "NonPrintableDefect.__init__",
+      "line": 100,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "errors.py"
+    },
+    {
+      "name": "NonPrintableDefect.__str__",
+      "line": 104,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "errors.py"
+    },
+    {
+      "name": "BufferedSubFile.__init__",
+      "line": 52,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.push_eof_matcher",
+      "line": 63,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.pop_eof_matcher",
+      "line": 66,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.close",
+      "line": 69,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.readline",
+      "line": 77,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.unreadline",
+      "line": 95,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.push",
+      "line": 100,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.pushlines",
+      "line": 121,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.__iter__",
+      "line": 124,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BufferedSubFile.__next__",
+      "line": 127,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser.__init__",
+      "line": 137,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser._set_headersonly",
+      "line": 168,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser.feed",
+      "line": 171,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser._call_parse",
+      "line": 176,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser.close",
+      "line": 182,
+      "ours": 4,
+      "radon": 5,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser._new_message",
+      "line": 195,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser._pop_message",
+      "line": 208,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser._parsegen",
+      "line": 216,
+      "ours": 56,
+      "radon": 57,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "FeedParser._parse_headers",
+      "line": 469,
+      "ours": 11,
+      "radon": 12,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "BytesFeedParser.feed",
+      "line": 533,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "feedparser.py"
+    },
+    {
+      "name": "Generator.__init__",
+      "line": 37,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator.write",
+      "line": 69,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator.flatten",
+      "line": 73,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator.clone",
+      "line": 122,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._new_buffer",
+      "line": 142,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._encode",
+      "line": 146,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._write_lines",
+      "line": 150,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._write",
+      "line": 166,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._dispatch",
+      "line": 205,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._write_headers",
+      "line": 225,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._handle_text",
+      "line": 244,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._handle_multipart",
+      "line": 268,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._handle_multipart_signed",
+      "line": 326,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._handle_message_delivery_status",
+      "line": 337,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._handle_message",
+      "line": 358,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._make_boundary",
+      "line": 384,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "Generator._compile_re",
+      "line": 402,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "BytesGenerator.write",
+      "line": 419,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "BytesGenerator._new_buffer",
+      "line": 422,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "BytesGenerator._encode",
+      "line": 425,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "BytesGenerator._write_headers",
+      "line": 428,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "BytesGenerator._handle_text",
+      "line": 436,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "BytesGenerator._compile_re",
+      "line": 452,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "DecodedGenerator.__init__",
+      "line": 464,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "DecodedGenerator._dispatch",
+      "line": 494,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "generator.py"
+    },
+    {
+      "name": "decode_header",
+      "line": 59,
+      "ours": 26,
+      "radon": 27,
+      "file_path": "header.py"
+    },
+    {
+      "name": "make_header",
+      "line": 153,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Header.__init__",
+      "line": 176,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Header.__str__",
+      "line": 223,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Header.__eq__",
+      "line": 255,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Header.append",
+      "line": 261,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Header._nonctext",
+      "line": 304,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Header.encode",
+      "line": 309,
+      "ours": 18,
+      "radon": 18,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Header._normalize",
+      "line": 389,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter.__init__",
+      "line": 409,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter._str",
+      "line": 417,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter.__str__",
+      "line": 421,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter.newline",
+      "line": 424,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter.add_transition",
+      "line": 435,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter.feed",
+      "line": 438,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter._maxlengths",
+      "line": 475,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter._ascii_split",
+      "line": 481,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_ValueFormatter._append_chunk",
+      "line": 503,
+      "ours": 11,
+      "radon": 13,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.__init__",
+      "line": 538,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.push",
+      "line": 542,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.pop_from",
+      "line": 545,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.pop",
+      "line": 550,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.__len__",
+      "line": 555,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.__str__",
+      "line": 559,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.reset",
+      "line": 563,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.is_onlyws",
+      "line": 569,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "header.py"
+    },
+    {
+      "name": "_Accumulator.part_count",
+      "line": 572,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "header.py"
+    },
+    {
+      "name": "Address.__init__",
+      "line": 14,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Address.display_name",
+      "line": 57,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Address.username",
+      "line": 61,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Address.domain",
+      "line": 65,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Address.addr_spec",
+      "line": 69,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Address.__repr__",
+      "line": 82,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Address.__str__",
+      "line": 87,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Address.__eq__",
+      "line": 96,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Group.__init__",
+      "line": 106,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Group.display_name",
+      "line": 125,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Group.addresses",
+      "line": 129,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Group.__repr__",
+      "line": 132,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Group.__str__",
+      "line": 137,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "Group.__eq__",
+      "line": 147,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "BaseHeader.__new__",
+      "line": 190,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "BaseHeader.init",
+      "line": 200,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "BaseHeader.name",
+      "line": 206,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "BaseHeader.defects",
+      "line": 210,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "BaseHeader.__reduce__",
+      "line": 213,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "BaseHeader._reconstruct",
+      "line": 224,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "BaseHeader.fold",
+      "line": 227,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "_reconstruct_header",
+      "line": 256,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "UnstructuredHeader.parse",
+      "line": 266,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "DateHeader.parse",
+      "line": 293,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "DateHeader.init",
+      "line": 313,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "DateHeader.datetime",
+      "line": 318,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "AddressHeader.value_parser",
+      "line": 332,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "AddressHeader.parse",
+      "line": 338,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "AddressHeader.init",
+      "line": 365,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "AddressHeader.groups",
+      "line": 371,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "AddressHeader.addresses",
+      "line": 375,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "SingleAddressHeader.address",
+      "line": 390,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "MIMEVersionHeader.parse",
+      "line": 409,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "MIMEVersionHeader.init",
+      "line": 420,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "MIMEVersionHeader.major",
+      "line": 427,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "MIMEVersionHeader.minor",
+      "line": 431,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "MIMEVersionHeader.version",
+      "line": 435,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ParameterizedMIMEHeader.parse",
+      "line": 447,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ParameterizedMIMEHeader.init",
+      "line": 459,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ParameterizedMIMEHeader.params",
+      "line": 464,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentTypeHeader.init",
+      "line": 472,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentTypeHeader.maintype",
+      "line": 478,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentTypeHeader.subtype",
+      "line": 482,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentTypeHeader.content_type",
+      "line": 486,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentDispositionHeader.init",
+      "line": 494,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentDispositionHeader.content_disposition",
+      "line": 500,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentTransferEncodingHeader.parse",
+      "line": 511,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentTransferEncodingHeader.init",
+      "line": 516,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "ContentTransferEncodingHeader.cte",
+      "line": 521,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "MessageIDHeader.parse",
+      "line": 531,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "HeaderRegistry.__init__",
+      "line": 566,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "HeaderRegistry.map_to_type",
+      "line": 584,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "HeaderRegistry.__getitem__",
+      "line": 590,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "HeaderRegistry.__call__",
+      "line": 594,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "headerregistry.py"
+    },
+    {
+      "name": "walk",
+      "line": 19,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "iterators.py"
+    },
+    {
+      "name": "body_line_iterator",
+      "line": 32,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "iterators.py"
+    },
+    {
+      "name": "typed_subpart_iterator",
+      "line": 43,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "iterators.py"
+    },
+    {
+      "name": "_structure",
+      "line": 56,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "iterators.py"
+    },
+    {
+      "name": "_splitparam",
+      "line": 29,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "_formatparam",
+      "line": 39,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "message.py"
+    },
+    {
+      "name": "_parseparam",
+      "line": 73,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "message.py"
+    },
+    {
+      "name": "_unquotevalue",
+      "line": 93,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "_decode_uu",
+      "line": 104,
+      "ours": 8,
+      "radon": 10,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__init__",
+      "line": 150,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__str__",
+      "line": 162,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.as_string",
+      "line": 167,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__bytes__",
+      "line": 191,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.as_bytes",
+      "line": 196,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.is_multipart",
+      "line": 211,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_unixfrom",
+      "line": 218,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_unixfrom",
+      "line": 221,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.attach",
+      "line": 227,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_payload",
+      "line": 243,
+      "ours": 20,
+      "radon": 20,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_payload",
+      "line": 335,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_charset",
+      "line": 355,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_charset",
+      "line": 402,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__len__",
+      "line": 410,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__getitem__",
+      "line": 414,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__setitem__",
+      "line": 425,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__delitem__",
+      "line": 443,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__contains__",
+      "line": 455,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.__iter__",
+      "line": 462,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.keys",
+      "line": 466,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.values",
+      "line": 476,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.items",
+      "line": 487,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get",
+      "line": 498,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_raw",
+      "line": 515,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.raw_items",
+      "line": 522,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_all",
+      "line": 533,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.add_header",
+      "line": 551,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.replace_header",
+      "line": 581,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_content_type",
+      "line": 600,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_content_maintype",
+      "line": 624,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_content_subtype",
+      "line": 633,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_default_type",
+      "line": 642,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_default_type",
+      "line": 651,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message._get_params_preserve",
+      "line": 660,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_params",
+      "line": 681,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_param",
+      "line": 703,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_param",
+      "line": 737,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.del_param",
+      "line": 788,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_type",
+      "line": 810,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_filename",
+      "line": 842,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_boundary",
+      "line": 858,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.set_boundary",
+      "line": 871,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_content_charset",
+      "line": 917,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_charsets",
+      "line": 947,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "Message.get_content_disposition",
+      "line": 965,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.__init__",
+      "line": 983,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.as_string",
+      "line": 990,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.__str__",
+      "line": 1006,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.is_attachment",
+      "line": 1009,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart._find_body",
+      "line": 1013,
+      "ours": 15,
+      "radon": 15,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.get_body",
+      "line": 1042,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.iter_attachments",
+      "line": 1066,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.iter_parts",
+      "line": 1121,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.get_content",
+      "line": 1129,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.set_content",
+      "line": 1134,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart._make_multipart",
+      "line": 1139,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.make_related",
+      "line": 1166,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.make_alternative",
+      "line": 1169,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.make_mixed",
+      "line": 1172,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart._add_multipart",
+      "line": 1175,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.add_related",
+      "line": 1185,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.add_alternative",
+      "line": 1188,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.add_attachment",
+      "line": 1191,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.clear",
+      "line": 1194,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEPart.clear_content",
+      "line": 1198,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "message.py"
+    },
+    {
+      "name": "EmailMessage.set_content",
+      "line": 1206,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "message.py"
+    },
+    {
+      "name": "MIMEApplication.__init__",
+      "line": 16,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/application.py"
+    },
+    {
+      "name": "MIMEAudio.__init__",
+      "line": 17,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mime/audio.py"
+    },
+    {
+      "name": "_what",
+      "line": 56,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "mime/audio.py"
+    },
+    {
+      "name": "rule",
+      "line": 71,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mime/audio.py"
+    },
+    {
+      "name": "_aiff",
+      "line": 77,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mime/audio.py"
+    },
+    {
+      "name": "_au",
+      "line": 87,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/audio.py"
+    },
+    {
+      "name": "_wav",
+      "line": 95,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mime/audio.py"
+    },
+    {
+      "name": "MIMEBase.__init__",
+      "line": 17,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/base.py"
+    },
+    {
+      "name": "MIMEImage.__init__",
+      "line": 16,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_what",
+      "line": 50,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "rule",
+      "line": 58,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_jpeg",
+      "line": 64,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_png",
+      "line": 73,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_gif",
+      "line": 79,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_tiff",
+      "line": 86,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_rgb",
+      "line": 93,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_pbm",
+      "line": 100,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_pgm",
+      "line": 108,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_ppm",
+      "line": 116,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_rast",
+      "line": 124,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_xbm",
+      "line": 131,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_bmp",
+      "line": 138,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_webp",
+      "line": 144,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "_exr",
+      "line": 150,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/image.py"
+    },
+    {
+      "name": "MIMEMessage.__init__",
+      "line": 16,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mime/message.py"
+    },
+    {
+      "name": "MIMEMultipart.__init__",
+      "line": 15,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mime/multipart.py"
+    },
+    {
+      "name": "MIMENonMultipart.attach",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mime/nonmultipart.py"
+    },
+    {
+      "name": "MIMEText.__init__",
+      "line": 15,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mime/text.py"
+    },
+    {
+      "name": "Parser.__init__",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "Parser.parse",
+      "line": 41,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "Parser.parsestr",
+      "line": 56,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "HeaderParser.parse",
+      "line": 68,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "HeaderParser.parsestr",
+      "line": 71,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "BytesParser.__init__",
+      "line": 77,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "BytesParser.parse",
+      "line": 95,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "BytesParser.parsebytes",
+      "line": 110,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "BytesHeaderParser.parse",
+      "line": 123,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "BytesHeaderParser.parsebytes",
+      "line": 126,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "parser.py"
+    },
+    {
+      "name": "EmailPolicy.__init__",
+      "line": 93,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "EmailPolicy.header_max_count",
+      "line": 100,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "EmailPolicy.header_source_parse",
+      "line": 118,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "EmailPolicy.header_store_parse",
+      "line": 131,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "EmailPolicy.header_fetch_parse",
+      "line": 150,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "EmailPolicy.fold",
+      "line": 165,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "EmailPolicy.fold_binary",
+      "line": 186,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "EmailPolicy._fold",
+      "line": 204,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "policy.py"
+    },
+    {
+      "name": "header_check",
+      "line": 74,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "body_check",
+      "line": 79,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "header_length",
+      "line": 84,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "body_length",
+      "line": 97,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "_max_append",
+      "line": 107,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "unquote",
+      "line": 118,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "quote",
+      "line": 123,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "header_encode",
+      "line": 127,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "body_encode",
+      "line": 153,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "decode",
+      "line": 232,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "_unquote_match",
+      "line": 285,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "header_decode",
+      "line": 292,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "quoprimime.py"
+    },
+    {
+      "name": "_has_surrogates",
+      "line": 52,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "_sanitize",
+      "line": 65,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "formataddr",
+      "line": 77,
+      "ours": 5,
+      "radon": 6,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "_iter_escaped_chars",
+      "line": 110,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "_strip_quoted_realnames",
+      "line": 125,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "getaddresses",
+      "line": 152,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "_check_parenthesis",
+      "line": 196,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "_pre_parse_validation",
+      "line": 211,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "_post_parse_validation",
+      "line": 221,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "_format_timetuple_and_zone",
+      "line": 233,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "formatdate",
+      "line": 242,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "format_datetime",
+      "line": 271,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "make_msgid",
+      "line": 290,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "parsedate_to_datetime",
+      "line": 313,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "parseaddr",
+      "line": 324,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "unquote",
+      "line": 355,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "decode_rfc2231",
+      "line": 367,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "encode_rfc2231",
+      "line": 375,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "decode_params",
+      "line": 393,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "collapse_rfc2231_value",
+      "line": 441,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "utils.py"
+    },
+    {
+      "name": "localtime",
+      "line": 467,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "utils.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 530,
+    "exact_match": 509,
+    "exact_match_percent": 96.0,
+    "within_one": 527,
+    "within_one_percent": 99.4,
+    "mean_absolute_difference": 0.05,
+    "mean_difference": -0.05,
+    "max_absolute_difference": 3,
+    "ours_higher": 0,
+    "ours_lower": 21
+  }
+}
