@@ -101,3 +101,16 @@ Next, not wired in the frontend yet:
   `Secure`, `SameSite=Lax` or `Strict`. Add CSRF protection for state-changing calls.
 - Never log uploaded code or passwords.
 - Treat uploaded code as data. Never execute it. Run any tooling in a sandbox.
+
+
+## Added in Phase 1b (implemented by the backend)
+
+- POST /analyses: optional form field `ai_review` ("true" or "false"). If missing, the server's
+  default applies (VEDIX_API_AI_DEFAULT). The AI runs only if a provider is set on the server.
+- Result and issues carry extra fields the frontend ignores: `summary` (counts, tool and AI
+  status), and `source` / `rule` on each issue.
+- `score` is always null. No quality score exists.
+- Error answers: 413 upload too large (limit 30 MB), 422 with a text `detail`, 429 when the
+  server is busy, 404 for an unknown or expired id. Results are kept for 1 hour.
+- POST /repositories: always 400 "not available yet". Fetching GitHub code needs its own safety design.
+- No login yet. Do not expose the server on the internet.

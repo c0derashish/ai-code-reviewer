@@ -1,0 +1,3145 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 13,
+  "pairs": [
+    {
+      "name": "__dir__",
+      "line": 77,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "__getattr__",
+      "line": 80,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "__init__.py"
+    },
+    {
+      "name": "_CapturingHandler.__init__",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_log.py"
+    },
+    {
+      "name": "_CapturingHandler.flush",
+      "line": 19,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_log.py"
+    },
+    {
+      "name": "_CapturingHandler.emit",
+      "line": 22,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "_log.py"
+    },
+    {
+      "name": "_AssertLogsContext.__init__",
+      "line": 33,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "_log.py"
+    },
+    {
+      "name": "_AssertLogsContext.__enter__",
+      "line": 43,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "_log.py"
+    },
+    {
+      "name": "_AssertLogsContext.__exit__",
+      "line": 63,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "_log.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.__init__",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.asyncSetUp",
+      "line": 41,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.asyncTearDown",
+      "line": 44,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.addAsyncCleanup",
+      "line": 47,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.enterAsyncContext",
+      "line": 62,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._callSetUp",
+      "line": 82,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._callTestMethod",
+      "line": 90,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._callTearDown",
+      "line": 95,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._callCleanup",
+      "line": 99,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._callAsync",
+      "line": 102,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._callMaybeAsync",
+      "line": 110,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._setupAsyncioRunner",
+      "line": 120,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase._tearDownAsyncioRunner",
+      "line": 125,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.run",
+      "line": 129,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.debug",
+      "line": 136,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "IsolatedAsyncioTestCase.__del__",
+      "line": 141,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "async_case.py"
+    },
+    {
+      "name": "_Outcome.__init__",
+      "line": 46,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_Outcome.testPartExecutor",
+      "line": 54,
+      "ours": 10,
+      "radon": 11,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_addSkip",
+      "line": 86,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_addError",
+      "line": 95,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_id",
+      "line": 102,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_enter_context",
+      "line": 106,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "addModuleCleanup",
+      "line": 122,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "enterModuleContext",
+      "line": 127,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "doModuleCleanups",
+      "line": 132,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "skip",
+      "line": 148,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "skip.decorator",
+      "line": 152,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "skip.decorator.skip_wrapper",
+      "line": 155,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "skipIf",
+      "line": 168,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "skipUnless",
+      "line": 176,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "expectedFailure",
+      "line": 184,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_is_subtype",
+      "line": 188,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_BaseTestCaseContext.__init__",
+      "line": 195,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_BaseTestCaseContext._raiseFailure",
+      "line": 198,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_AssertRaisesBaseContext.__init__",
+      "line": 204,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_AssertRaisesBaseContext.handle",
+      "line": 214,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_AssertRaisesContext.__enter__",
+      "line": 250,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_AssertRaisesContext.__exit__",
+      "line": 253,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_AssertWarnsContext.__enter__",
+      "line": 289,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_AssertWarnsContext.__exit__",
+      "line": 300,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_OrderedChainMap.__iter__",
+      "line": 336,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.__init_subclass__",
+      "line": 388,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.__init__",
+      "line": 394,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.addTypeEqualityFunc",
+      "line": 426,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.addCleanup",
+      "line": 441,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.enterContext",
+      "line": 449,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.addClassCleanup",
+      "line": 458,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.enterClassContext",
+      "line": 464,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.setUp",
+      "line": 468,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.tearDown",
+      "line": 472,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.setUpClass",
+      "line": 477,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.tearDownClass",
+      "line": 481,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.countTestCases",
+      "line": 484,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.defaultTestResult",
+      "line": 487,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.shortDescription",
+      "line": 490,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.id",
+      "line": 501,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.__eq__",
+      "line": 504,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.__hash__",
+      "line": 510,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.__str__",
+      "line": 513,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.__repr__",
+      "line": 516,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.subTest",
+      "line": 521,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._addExpectedFailure",
+      "line": 551,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._addUnexpectedSuccess",
+      "line": 561,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._addDuration",
+      "line": 576,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._callSetUp",
+      "line": 585,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._callTestMethod",
+      "line": 588,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._callTearDown",
+      "line": 593,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._callCleanup",
+      "line": 596,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.run",
+      "line": 599,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.doCleanups",
+      "line": 664,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.doClassCleanups",
+      "line": 678,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.__call__",
+      "line": 689,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.debug",
+      "line": 692,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.skipTest",
+      "line": 709,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.fail",
+      "line": 713,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertFalse",
+      "line": 717,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertTrue",
+      "line": 723,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._formatMessage",
+      "line": 729,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertRaises",
+      "line": 750,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertWarns",
+      "line": 783,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertLogs",
+      "line": 814,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertNoLogs",
+      "line": 838,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._getAssertEqualityFunc",
+      "line": 847,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._baseAssertEqual",
+      "line": 873,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertEqual",
+      "line": 880,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertNotEqual",
+      "line": 887,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertAlmostEqual",
+      "line": 896,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertNotAlmostEqual",
+      "line": 941,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertSequenceEqual",
+      "line": 976,
+      "ours": 20,
+      "radon": 21,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase._truncateMessage",
+      "line": 1075,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertListEqual",
+      "line": 1081,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertTupleEqual",
+      "line": 1093,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertSetEqual",
+      "line": 1104,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertIn",
+      "line": 1147,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertNotIn",
+      "line": 1154,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertIs",
+      "line": 1161,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertIsNot",
+      "line": 1168,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertDictEqual",
+      "line": 1174,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertCountEqual",
+      "line": 1186,
+      "ours": 5,
+      "radon": 6,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertMultiLineEqual",
+      "line": 1218,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertLess",
+      "line": 1253,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertLessEqual",
+      "line": 1259,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertGreater",
+      "line": 1265,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertGreaterEqual",
+      "line": 1271,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertIsNone",
+      "line": 1277,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertIsNotNone",
+      "line": 1283,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertIsInstance",
+      "line": 1289,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertNotIsInstance",
+      "line": 1296,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertRaisesRegex",
+      "line": 1302,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertWarnsRegex",
+      "line": 1318,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertRegex",
+      "line": 1337,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "TestCase.assertNotRegex",
+      "line": 1349,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.__init__",
+      "line": 1374,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.setUp",
+      "line": 1381,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.tearDown",
+      "line": 1385,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.runTest",
+      "line": 1389,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.id",
+      "line": 1392,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.__eq__",
+      "line": 1395,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.__hash__",
+      "line": 1404,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.__str__",
+      "line": 1408,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.__repr__",
+      "line": 1412,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "FunctionTestCase.shortDescription",
+      "line": 1416,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_SubTest.__init__",
+      "line": 1425,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_SubTest.runTest",
+      "line": 1432,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_SubTest._subDescription",
+      "line": 1435,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_SubTest.id",
+      "line": 1446,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_SubTest.shortDescription",
+      "line": 1449,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_SubTest.__str__",
+      "line": 1455,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "case.py"
+    },
+    {
+      "name": "_FailedTest.__init__",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_FailedTest.__getattr__",
+      "line": 29,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_FailedTest.__getattr__.testFailure",
+      "line": 32,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_make_failed_import_test",
+      "line": 37,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_make_failed_load_tests",
+      "line": 42,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_make_failed_test",
+      "line": 47,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_make_skipped_test",
+      "line": 51,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_make_skipped_test.testSkipped",
+      "line": 53,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_splitext",
+      "line": 59,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.__init__",
+      "line": 74,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.loadTestsFromTestCase",
+      "line": 81,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.loadTestsFromModule",
+      "line": 97,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.loadTestsFromName",
+      "line": 121,
+      "ours": 21,
+      "radon": 21,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.loadTestsFromNames",
+      "line": 203,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.getTestCaseNames",
+      "line": 210,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.getTestCaseNames.shouldIncludeMethod",
+      "line": 213,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader.discover",
+      "line": 229,
+      "ours": 12,
+      "radon": 13,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader._get_directory_containing_module",
+      "line": 314,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader._get_name_from_path",
+      "line": 326,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader._get_module_from_name",
+      "line": 338,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader._match_path",
+      "line": 342,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader._find_tests",
+      "line": 346,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "TestLoader._find_test_path",
+      "line": 378,
+      "ours": 12,
+      "radon": 14,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_makeLoader",
+      "line": 459,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "getTestCaseNames",
+      "line": 468,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "makeSuite",
+      "line": 477,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "findTestCases",
+      "line": 488,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "loader.py"
+    },
+    {
+      "name": "_convert_name",
+      "line": 31,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "main.py"
+    },
+    {
+      "name": "_convert_names",
+      "line": 47,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "main.py"
+    },
+    {
+      "name": "_convert_select_pattern",
+      "line": 51,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram.__init__",
+      "line": 67,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram.usageExit",
+      "line": 107,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram._print_help",
+      "line": 117,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram.parseArgs",
+      "line": 126,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram.createTests",
+      "line": 155,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram._initArgParsers",
+      "line": 167,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram._getParentArgParser",
+      "line": 172,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram._getMainArgParser",
+      "line": 210,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram._getDiscoveryArgParser",
+      "line": 221,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram._do_discovery",
+      "line": 242,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "main.py"
+    },
+    {
+      "name": "TestProgram.runTests",
+      "line": 255,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "main.py"
+    },
+    {
+      "name": "_is_async_obj",
+      "line": 53,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_is_async_func",
+      "line": 61,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_is_instance_mock",
+      "line": 68,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_is_exception",
+      "line": 74,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_extract_mock",
+      "line": 81,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_signature_object",
+      "line": 90,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_check_signature",
+      "line": 125,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_check_signature.checksig",
+      "line": 130,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_copy_func_details",
+      "line": 137,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_callable",
+      "line": 150,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_is_list",
+      "line": 160,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_instance_callable",
+      "line": 166,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_set_signature",
+      "line": 181,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_set_signature.checksig",
+      "line": 191,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func",
+      "line": 208,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.assert_called_with",
+      "line": 211,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.assert_called",
+      "line": 213,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.assert_not_called",
+      "line": 215,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.assert_called_once",
+      "line": 217,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.assert_called_once_with",
+      "line": 219,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.assert_has_calls",
+      "line": 221,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.assert_any_call",
+      "line": 223,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_func.reset_mock",
+      "line": 225,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_async_mock",
+      "line": 257,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_setup_async_mock.wrapper",
+      "line": 266,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_is_magic",
+      "line": 284,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_SentinelObject.__init__",
+      "line": 290,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_SentinelObject.__repr__",
+      "line": 293,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_SentinelObject.__reduce__",
+      "line": 296,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Sentinel.__init__",
+      "line": 302,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Sentinel.__getattr__",
+      "line": 305,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Sentinel.__reduce__",
+      "line": 311,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_delegating_property",
+      "line": 329,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_delegating_property._get",
+      "line": 332,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_delegating_property._set",
+      "line": 337,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_CallList.__contains__",
+      "line": 350,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_CallList.__repr__",
+      "line": 364,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_check_and_set_parent",
+      "line": 368,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_MockIter.__init__",
+      "line": 396,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_MockIter.__next__",
+      "line": 398,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "Base.__init__",
+      "line": 404,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__new__",
+      "line": 420,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__init__",
+      "line": 439,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.attach_mock",
+      "line": 484,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.mock_add_spec",
+      "line": 499,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._mock_add_spec",
+      "line": 508,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__get_return_value",
+      "line": 541,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__set_return_value",
+      "line": 554,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__class__",
+      "line": 567,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__get_side_effect",
+      "line": 579,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__set_side_effect",
+      "line": 590,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.reset_mock",
+      "line": 601,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.configure_mock",
+      "line": 633,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__getattr__",
+      "line": 655,
+      "ours": 17,
+      "radon": 17,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._extract_mock_name",
+      "line": 703,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__repr__",
+      "line": 730,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__dir__",
+      "line": 751,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__setattr__",
+      "line": 769,
+      "ours": 16,
+      "radon": 16,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.__delattr__",
+      "line": 811,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._format_mock_call_signature",
+      "line": 829,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._format_mock_failure_message",
+      "line": 834,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._get_call_signature_from_name",
+      "line": 842,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._call_matcher",
+      "line": 875,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_not_called",
+      "line": 902,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_called",
+      "line": 912,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_called_once",
+      "line": 920,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_called_with",
+      "line": 930,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_called_with._error_message",
+      "line": 942,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_called_once_with",
+      "line": 952,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_has_calls",
+      "line": 964,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock.assert_any_call",
+      "line": 1009,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._get_child_mock",
+      "line": 1025,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMock._calls_repr",
+      "line": 1063,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_AnyComparer.__contains__",
+      "line": 1089,
+      "ours": 4,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_try_iter",
+      "line": 1100,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "CallableMixin.__init__",
+      "line": 1117,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "CallableMixin._mock_check_sig",
+      "line": 1129,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "CallableMixin.__call__",
+      "line": 1134,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "CallableMixin._mock_call",
+      "line": 1142,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "CallableMixin._increment_mock_call",
+      "line": 1145,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "CallableMixin._execute_mock_call",
+      "line": 1191,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_check_spec_arg_typos",
+      "line": 1283,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.__init__",
+      "line": 1297,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.copy",
+      "line": 1335,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.__call__",
+      "line": 1348,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.decorate_class",
+      "line": 1356,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.decoration_helper",
+      "line": 1371,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.decorate_callable",
+      "line": 1385,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.decorate_callable.patched",
+      "line": 1392,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.decorate_async_callable",
+      "line": 1402,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.decorate_async_callable.patched",
+      "line": 1409,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.get_original",
+      "line": 1419,
+      "ours": 6,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.__enter__",
+      "line": 1443,
+      "ours": 53,
+      "radon": 53,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.__exit__",
+      "line": 1597,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.start",
+      "line": 1622,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch.stop",
+      "line": 1629,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_target",
+      "line": 1641,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_object",
+      "line": 1650,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_multiple",
+      "line": 1679,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "patch",
+      "line": 1728,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.__init__",
+      "line": 1839,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.__call__",
+      "line": 1848,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.decorate_callable",
+      "line": 1856,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.decorate_callable._inner",
+      "line": 1858,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.decorate_async_callable",
+      "line": 1868,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.decorate_async_callable._inner",
+      "line": 1870,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.decorate_class",
+      "line": 1880,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.__enter__",
+      "line": 1891,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict._patch_dict",
+      "line": 1897,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict._unpatch_dict",
+      "line": 1925,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.__exit__",
+      "line": 1938,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.start",
+      "line": 1945,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_dict.stop",
+      "line": 1952,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_clear_dict",
+      "line": 1963,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_patch_stopall",
+      "line": 1972,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_method",
+      "line": 2019,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_method.method",
+      "line": 2021,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_eq",
+      "line": 2072,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_eq.__eq__",
+      "line": 2073,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_ne",
+      "line": 2082,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_ne.__ne__",
+      "line": 2083,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_iter",
+      "line": 2091,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_iter.__iter__",
+      "line": 2092,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_async_iter",
+      "line": 2101,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_get_async_iter.__aiter__",
+      "line": 2102,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_set_return_value",
+      "line": 2118,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "MagicMixin.__init__",
+      "line": 2137,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "MagicMixin._mock_set_magics",
+      "line": 2143,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "NonCallableMagicMock.mock_add_spec",
+      "line": 2169,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "MagicMock.mock_add_spec",
+      "line": 2194,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "MagicMock.reset_mock",
+      "line": 2203,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "MagicProxy.__init__",
+      "line": 2217,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "MagicProxy.create_mock",
+      "line": 2221,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "MagicProxy.__get__",
+      "line": 2230,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.__init__",
+      "line": 2246,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin._execute_mock_call",
+      "line": 2279,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_awaited",
+      "line": 2319,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_awaited_once",
+      "line": 2327,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_awaited_with",
+      "line": 2336,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_awaited_with._error_message",
+      "line": 2344,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_awaited_once_with",
+      "line": 2354,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_any_await",
+      "line": 2365,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_has_awaits",
+      "line": 2378,
+      "ours": 13,
+      "radon": 13,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.assert_not_awaited",
+      "line": 2422,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "AsyncMockMixin.reset_mock",
+      "line": 2431,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_ANY.__eq__",
+      "line": 2487,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_ANY.__ne__",
+      "line": 2490,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_ANY.__repr__",
+      "line": 2493,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_format_call_signature",
+      "line": 2500,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.__new__",
+      "line": 2537,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.__init__",
+      "line": 2569,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.__eq__",
+      "line": 2576,
+      "ours": 16,
+      "radon": 16,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.__call__",
+      "line": 2632,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.__getattr__",
+      "line": 2640,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.__getattribute__",
+      "line": 2647,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call._get_call_arguments",
+      "line": 2653,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.args",
+      "line": 2662,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.kwargs",
+      "line": 2666,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.__repr__",
+      "line": 2669,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_Call.call_list",
+      "line": 2690,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "create_autospec",
+      "line": 2706,
+      "ours": 35,
+      "radon": 35,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_must_skip",
+      "line": 2856,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_SpecState.__init__",
+      "line": 2886,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_to_stream",
+      "line": 2908,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "mock_open",
+      "line": 2915,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "mock_open._readlines_side_effect",
+      "line": 2930,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "mock_open._read_side_effect",
+      "line": 2935,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "mock_open._readline_side_effect",
+      "line": 2940,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "mock_open._iter_side_effect",
+      "line": 2945,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "mock_open._next_side_effect",
+      "line": 2952,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "mock_open.reset_data",
+      "line": 2984,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "PropertyMock._get_child_mock",
+      "line": 3006,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "PropertyMock.__get__",
+      "line": 3009,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "PropertyMock.__set__",
+      "line": 3011,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "seal",
+      "line": 3015,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_AsyncIterator.__init__",
+      "line": 3043,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "_AsyncIterator.__anext__",
+      "line": 3049,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "mock.py"
+    },
+    {
+      "name": "failfast",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "failfast.inner",
+      "line": 14,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.__init__",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.printErrors",
+      "line": 56,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.startTest",
+      "line": 59,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult._setupStdout",
+      "line": 65,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.startTestRun",
+      "line": 73,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.stopTest",
+      "line": 79,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult._restoreStdout",
+      "line": 84,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.stopTestRun",
+      "line": 105,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addError",
+      "line": 112,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addFailure",
+      "line": 120,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addSubTest",
+      "line": 126,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addSuccess",
+      "line": 143,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addSkip",
+      "line": 147,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addExpectedFailure",
+      "line": 151,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addUnexpectedSuccess",
+      "line": 157,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.addDuration",
+      "line": 161,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.wasSuccessful",
+      "line": 172,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.stop",
+      "line": 181,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult._exc_info_to_string",
+      "line": 185,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult._clean_tracebacks",
+      "line": 207,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult._is_relevant_tb_level",
+      "line": 235,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult._remove_unittest_tb_frames",
+      "line": 238,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "result.py"
+    },
+    {
+      "name": "TestResult.__repr__",
+      "line": 253,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "result.py"
+    },
+    {
+      "name": "_WritelnDecorator.__init__",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "_WritelnDecorator.__getattr__",
+      "line": 19,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "_WritelnDecorator.writeln",
+      "line": 24,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.__init__",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.getDescription",
+      "line": 49,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.startTest",
+      "line": 56,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult._write_status",
+      "line": 64,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.addSubTest",
+      "line": 77,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.addSuccess",
+      "line": 92,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.addError",
+      "line": 100,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.addFailure",
+      "line": 108,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.addSkip",
+      "line": 116,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.addExpectedFailure",
+      "line": 124,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.addUnexpectedSuccess",
+      "line": 133,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.printErrors",
+      "line": 142,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestResult.printErrorList",
+      "line": 155,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestRunner.__init__",
+      "line": 172,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestRunner._makeResult",
+      "line": 193,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestRunner._printDurations",
+      "line": 202,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "TextTestRunner.run",
+      "line": 224,
+      "ours": 18,
+      "radon": 19,
+      "file_path": "runner.py"
+    },
+    {
+      "name": "_InterruptHandler.__init__",
+      "line": 10,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "_InterruptHandler.__init__.default_handler",
+      "line": 20,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "_InterruptHandler.__call__",
+      "line": 28,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "registerResult",
+      "line": 42,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "removeResult",
+      "line": 45,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "installHandler",
+      "line": 49,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "removeHandler",
+      "line": 57,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "removeHandler.inner",
+      "line": 60,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "signals.py"
+    },
+    {
+      "name": "_call_if_exists",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.__init__",
+      "line": 21,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.__repr__",
+      "line": 26,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.__eq__",
+      "line": 29,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.__iter__",
+      "line": 34,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.countTestCases",
+      "line": 37,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.addTest",
+      "line": 44,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.addTests",
+      "line": 54,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.run",
+      "line": 60,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite._removeTestAtIndex",
+      "line": 69,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.__call__",
+      "line": 83,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "BaseTestSuite.debug",
+      "line": 86,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite.run",
+      "line": 102,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite.debug",
+      "line": 135,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite._handleClassSetUp",
+      "line": 142,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite._get_previous_module",
+      "line": 188,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite._handleModuleFixture",
+      "line": 196,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite._createClassOrModuleLevelException",
+      "line": 233,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite._addClassOrModuleLevelException",
+      "line": 238,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite._handleModuleTearDown",
+      "line": 250,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "TestSuite._tearDownPreviousClass",
+      "line": 285,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.__init__",
+      "line": 340,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.id",
+      "line": 343,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.shortDescription",
+      "line": 346,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.__repr__",
+      "line": 349,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.__str__",
+      "line": 352,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.run",
+      "line": 355,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.__call__",
+      "line": 360,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_ErrorHolder.countTestCases",
+      "line": 363,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_isnotsuite",
+      "line": 366,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "suite.py"
+    },
+    {
+      "name": "_shorten",
+      "line": 18,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "util.py"
+    },
+    {
+      "name": "_common_shorten_repr",
+      "line": 24,
+      "ours": 5,
+      "radon": 6,
+      "file_path": "util.py"
+    },
+    {
+      "name": "safe_repr",
+      "line": 45,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "util.py"
+    },
+    {
+      "name": "strclass",
+      "line": 54,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "util.py"
+    },
+    {
+      "name": "sorted_list_difference",
+      "line": 57,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "util.py"
+    },
+    {
+      "name": "unorderable_list_difference",
+      "line": 98,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "util.py"
+    },
+    {
+      "name": "three_way_cmp",
+      "line": 115,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "util.py"
+    },
+    {
+      "name": "_count_diff_all_purpose",
+      "line": 121,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "util.py"
+    },
+    {
+      "name": "_count_diff_hashable",
+      "line": 156,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "util.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 446,
+    "exact_match": 427,
+    "exact_match_percent": 95.7,
+    "within_one": 443,
+    "within_one_percent": 99.3,
+    "mean_absolute_difference": 0.05,
+    "mean_difference": -0.05,
+    "max_absolute_difference": 2,
+    "ours_higher": 0,
+    "ours_lower": 19
+  }
+}
