@@ -384,3 +384,81 @@ Other languages can be uploaded, but only Python is analysed by our own checks.
 
 Not done: sign-in, per-user limits, HTTPS, fetching code from GitHub. The API is meant for use on
 one computer. It must not be put on the internet before these exist.
+
+
+
+
+## 14. Human judging of findings (Experiment B)
+
+Question: how often are the findings of each source correct and useful?
+
+Sources: our own rule checks (validator, smells, duplicates), Ruff, Bandit, and the AI review.
+
+Sampling: all findings of the chosen projects are collected. For each source, up to 30 findings
+are drawn at random with a fixed seed. The order is shuffled so it does not show the source.
+
+Blinding: judges get a sheet with the code around each finding, title, explanation, suggestion,
+severity and category. The source, rule and model are hidden (they are in a key file kept by the
+researcher). Blinding is imperfect: AI text reads differently.
+
+Questions per finding (see research/judging_guide.md):
+- correct: yes / no / unsure. Is the described problem really there? (facts only)
+- useful: yes / no. Would a developer act on it?
+- severity_fit: right / too_high / too_low.
+Two judges work alone. Rows with a changed file or line, unknown ids, duplicate ids, or invalid
+answers are counted and left out.
+
+Statistics, per source and per judge:
+- correct rate = yes / judged. "Unsure" counts as not correct. Also given: yes / (yes + no).
+- 95% Wilson interval for correct rate and useful rate. It assumes independent items, which is
+  not true for findings in one file, so it is too narrow.
+- Agreement of two judges on "correct": Cohen's kappa on the items both judged.
+
+Results are written only from the output of the scoring command. Names of judges, number of
+items, and number of projects are reported with them.
+
+Limits: small samples (wide intervals); items not independent; imperfect blinding; "correct"
+depends on the judge; no measure of missed problems; one model and prompt version; only own
+projects, which are not a random sample of code.
+
+
+
+## 15. History and recommendations (Step 7d)
+
+Question (RQ4): can repeated reviews of the same projects show recurring problems and weak areas,
+and support advice?
+
+Project identity: the folder name. The same folder collected again counts as the same project.
+
+Project-level numbers per run (analysed files only): code lines; smells per 100 code lines;
+Ruff findings per 100 code lines; Bandit findings; share of non-blank lines that are duplicated
+(weighted by file size); mean documentation coverage; highest function complexity. A number is
+missing (not 0) when any analysed file lacks it, for example when a tool did not run.
+
+Comparing runs: a metric is compared between two runs only if both measured it the same way:
+same metric rules; same smell thresholds (smells); same tool, status "ok" and version (Ruff, Bandit);
+same duplicate-check version and settings (duplication). Otherwise it is marked "not comparable"
+and no change is given.
+
+Change between two runs: files are unchanged, changed (same path, different content hash), added or
+removed. For files that changed and were analysed in both runs, before and after values of smells,
+code lines, complexity and nesting are listed. Findings are counted per file and rule (not per line)
+and only for files present in both runs: persistent = smaller of the two counts, resolved = fewer now,
+new = more now. Findings in added or removed files are counted separately. AI findings are never used
+because they differ from run to run. Trends compare the first and last run of a project.
+
+Recommendations: the latest run of each project is checked for patterns: five code smell rules,
+duplication of 10% or more, documentation coverage under 30%, unused imports (F401), likely mistakes
+found by Ruff (F821, F811, F632), Bandit findings, and files Python cannot read. A pattern gives advice
+only if the profile has at least 3 projects, the pattern appears in at least 2 of them, and in at least
+40% of the projects where it could be measured. A project where the check could not run does not
+count for that pattern. These limits are our choices.
+
+What this does NOT show: that a change in a number means better skill; that the advice helps; or
+anything about a person, because the data has no developer identity.
+
+Planned test of the advice (Experiment D, not done): review a project, give the advice, review again
+after the developer worked on it, and compare with developers who got no advice.
+
+Limits: folder-name identity; added or removed code changes densities; counts per file and rule can
+hide a swap of one finding for another; thresholds are not standards; documentation mean is not weighted.
