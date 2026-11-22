@@ -54,6 +54,37 @@ Checked: 15 Nov 2026, by web search. I read abstracts and catalogue records only
     https://doi.org/10.1016/j.rineng.2025.106578
     Check: volume 27.
 
+11. Liu, R., Frade, A., Vaidya, A., Labonne, M., Kaiser, M., Chakrabarti, B., Budd, J., & Moran, S.
+    (2025). On iterative evaluation and enhancement of code quality using GPT-4o.
+    arXiv:2502.07399. https://doi.org/10.48550/arXiv.2502.07399
+    Type: preprint (v1, 11 Feb 2025). Checked: abstract only.
+
+12. Souza, S., Santana, A., Figueiredo, E., Muzetti, I., Montandon, J. E., & Briand, L. (2026).
+    Beyond strict rules: Assessing the effectiveness of large language models for code smell detection.
+    arXiv:2601.09873. https://doi.org/10.48550/arXiv.2601.09873
+    Type: preprint (v1, 14 Jan 2026). Check: the paper may be under review. Cite it as a preprint.
+
+13. Du, X., Feng, J., Zou, Y., Xu, W., Ma, J., Zhang, W., Liu, S., Peng, X., & Lou, Y. (2026).
+    Reducing false positives in static bug detection with LLMs: An empirical study in industry.
+    arXiv:2601.18844. https://doi.org/10.48550/arXiv.2601.18844
+    Type: preprint (26 Jan 2026). Check: the DOI follows arXiv's pattern. Confirm on the page.
+
+14. Horváth, M., Pietriková, E., & Gurbáľ, F. (2025). Personalized learning analytics through static
+    code analysis in computer science education. Acta Informatica Pragensia.
+    https://doi.org/10.18267/j.aip.283
+    Check: volume, issue and pages (the record I saw was marked "preprint").
+
+15. McCabe, T. J. (1976). A complexity measure. IEEE Transactions on Software Engineering, SE-2(4),
+    308-320. https://doi.org/10.1109/TSE.1976.233837
+    Checked: venue, pages and DOI. The "limit of 10" is stated by secondary sources. Read section on
+    complexity limits in the paper before citing it.
+
+16. Sandouka, R., & Aljamaan, H. (2023). Python code smells detection using conventional machine
+    learning models. PeerJ Computer Science, 9, Article e1370. https://doi.org/10.7717/peerj-cs.1370
+    Dataset: https://doi.org/10.5281/zenodo.7512516 (CC BY 4.0).
+    Checked: full text on the PeerJ site, the Zenodo record, the Long Method CSV (not the Large Class CSV).
+    Check: the abstract says best MCC 0.89 for Long Method, the results table says 0.90.
+
 ## Leads (NOT verified, NOT read, do not cite)
 
 - Sandouka, R., & Aljamaan, H. Python Code Smells Dataset (listed on an author's web page).
@@ -63,3 +94,11 @@ Checked: 15 Nov 2026, by web search. I read abstracts and catalogue records only
   (arXiv 2601.09873).
 - McCabe, T. J. (1976). A complexity measure. IEEE Transactions on Software Engineering.
   (To confirm the origin of the "10" limit.)
+- OASIcs ICPEC 2026, paper 9: repository-based personalised programming practice with LLM assessment.
+  Title and authors not seen. Open https://drops.dagstuhl.de/storage/01oasics/oasics-vol145-icpec2026/OASIcs.ICPEC.2026.9/OASIcs.ICPEC.2026.9.pdf
+- arXiv:2403.04449, "Feedback-Generation for Programming Exercises With GPT-4". Authors not seen.
+- arXiv:2403.14986, a real-time code style feedback tool for CS1 that combines an LLM with static analysis.
+  Title and authors not seen.
+- CEUR-WS Vol-4223, short paper 2: LLM combined with SAST tools for vulnerability detection. Title/authors partly seen
+  (first author Yarema). Workshop paper.
+- SmellyCode++ authors' page mentions a "Python Code Smells Dataset" (Sandouka & Aljamaan). Not verified.

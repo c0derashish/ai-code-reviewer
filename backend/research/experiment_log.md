@@ -247,3 +247,49 @@ The command created another set of five collection runs for the supported subfol
   the VEDIX frontend on: ___ (project name, number of files).
 - Result: passed ___ of 19. Manual run, what VEDIX showed: ___ (write what you saw, not what you expected).
 - What this does NOT show: behaviour under many users, or on slow networks.
+
+
+## Experiment tools (date: ___)
+
+- Objective: check that sampling, sheets, scoring and agreement are computed as defined.
+- Method: 12 test cases in tests/test_judging.py. Expected values worked out by hand (Wilson
+  intervals, kappa 0.6, counts).
+- Result: passed ___ of 12. Fill in after running. Do not guess.
+- What this does NOT show: anything about the quality of real findings.
+
+## Experiment A run (date: ___)
+
+- Folders: ___ . Radon version: ___ . Metrics version: ___ .
+- Printed result: (paste, do not rewrite)
+- Biggest differences, after reading the code of those functions: ___
+- Limits: stdlib code is not student code.
+
+## Experiment B run (date: ___)
+
+- Projects (name, where from, permission): ___ . Files: ___ .
+- Settings: per-source ___, seed ___, AI provider and model ___, prompt version ___ .
+- Judges (initials, experience): ___ . Time spent: ___ .
+- Printed result: (paste, do not rewrite)
+- Kappa: ___ on ___ items. Raw agreement: ___ .
+- Things judges said in "notes" that matter: ___
+- Limits for this run: ___
+
+
+## Step 7d: history and recommendation tools (date: ___)
+
+- Objective: check that run metrics, comparability rules, run comparison, trends and
+  recommendations are computed as defined.
+- Method: 11 test cases (tests/test_history.py, test_recommendations.py, test_profile_report.py).
+  Expected values worked out by hand (weighted duplication 12.0, smells per 100 lines 10.0 and 50.0,
+  finding counts 3 persistent / 1 resolved / 1 new).
+- Result: passed ___ of 11. Fill in after running. Do not guess.
+- What this does NOT show: anything about real projects or about the advice.
+
+## History run 1 (NOT done yet)
+
+- Projects (name, where from, permission) and how many runs each: ___
+- Settings kept the same between runs? (thresholds, Ruff / Bandit / Radon versions): ___
+- What changed in the code between runs (from your own notes, not from the numbers): ___
+- Printed result: (paste, do not rewrite)
+- Metrics marked "not comparable" and why: ___
+- Limits for this run: ___
