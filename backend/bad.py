@@ -1,1 +1,2 @@
-def broken(:
+def broken():
+    ...

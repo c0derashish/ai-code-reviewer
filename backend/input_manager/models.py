@@ -31,7 +31,8 @@ class CodeProject:
     skipped: list = field(default_factory=list)  # first few skipped files only
     skipped_count: int = 0                       # how many were skipped in total
     detected_languages: dict = field(default_factory=dict)  # Phase 2
-    primary_language: Optional[str] = None                  # Phase 2
+    primary_language: Optional[str] = None    
+    source_ref: str = ""  # what the source was called, for example the top folder of a GitHub archive              # Phase 2
 
     @property
     def file_count(self) -> int:

@@ -1,0 +1,1038 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 60,
+  "pairs": [
+    {
+      "name": "main",
+      "line": 4,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_1/pseudonyms_main.py"
+    },
+    {
+      "name": "main",
+      "line": 5,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_1/pseudonyms_main_fixed.py"
+    },
+    {
+      "name": "polar_coordinates",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_10/empire_practice.py"
+    },
+    {
+      "name": "spirals",
+      "line": 44,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_10/empire_practice.py"
+    },
+    {
+      "name": "star_haze",
+      "line": 71,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_10/empire_practice.py"
+    },
+    {
+      "name": "model_expansion",
+      "line": 81,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_10/empire_practice.py"
+    },
+    {
+      "name": "main",
+      "line": 105,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_10/empire_practice.py"
+    },
+    {
+      "name": "scale_galaxy",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_10/galaxy_simuator.py"
+    },
+    {
+      "name": "detect_prob",
+      "line": 39,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_10/galaxy_simuator.py"
+    },
+    {
+      "name": "random_polar_coordinates",
+      "line": 52,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_10/galaxy_simuator.py"
+    },
+    {
+      "name": "spirals",
+      "line": 61,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_10/galaxy_simuator.py"
+    },
+    {
+      "name": "star_haze",
+      "line": 89,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_10/galaxy_simuator.py"
+    },
+    {
+      "name": "main",
+      "line": 100,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_10/galaxy_simuator.py"
+    },
+    {
+      "name": "random_polar_coordinates_xyz",
+      "line": 14,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_10/rounded_detection_practice.py"
+    },
+    {
+      "name": "rounded",
+      "line": 24,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_10/rounded_detection_practice.py"
+    },
+    {
+      "name": "distribute_civs",
+      "line": 29,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_10/rounded_detection_practice.py"
+    },
+    {
+      "name": "round_civ_locs",
+      "line": 38,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_10/rounded_detection_practice.py"
+    },
+    {
+      "name": "calc_prob_of_detection",
+      "line": 57,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_10/rounded_detection_practice.py"
+    },
+    {
+      "name": "main",
+      "line": 67,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_10/rounded_detection_practice.py"
+    },
+    {
+      "name": "Game.__init__",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_11/monty_hall_gui.py"
+    },
+    {
+      "name": "Game.create_widgets",
+      "line": 23,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_11/monty_hall_gui.py"
+    },
+    {
+      "name": "Game.update_image",
+      "line": 86,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_11/monty_hall_gui.py"
+    },
+    {
+      "name": "Game.win_reveal",
+      "line": 92,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_11/monty_hall_gui.py"
+    },
+    {
+      "name": "Game.show_final",
+      "line": 118,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_11/monty_hall_gui.py"
+    },
+    {
+      "name": "user_prompt",
+      "line": 4,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_11/monty_hall_mcs.py"
+    },
+    {
+      "name": "read_to_list",
+      "line": 6,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_12/nest_egg_mcs.py"
+    },
+    {
+      "name": "default_input",
+      "line": 13,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_12/nest_egg_mcs.py"
+    },
+    {
+      "name": "montecarlo",
+      "line": 87,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_12/nest_egg_mcs.py"
+    },
+    {
+      "name": "bankrupt_prob",
+      "line": 137,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_12/nest_egg_mcs.py"
+    },
+    {
+      "name": "main",
+      "line": 155,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_12/nest_egg_mcs.py"
+    },
+    {
+      "name": "read_to_list",
+      "line": 6,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_12/nest_egg_mcs_1st_5yrs.py"
+    },
+    {
+      "name": "default_input",
+      "line": 13,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_12/nest_egg_mcs_1st_5yrs.py"
+    },
+    {
+      "name": "montecarlo",
+      "line": 92,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "Chapter_12/nest_egg_mcs_1st_5yrs.py"
+    },
+    {
+      "name": "bankrupt_prob",
+      "line": 148,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_12/nest_egg_mcs_1st_5yrs.py"
+    },
+    {
+      "name": "main",
+      "line": 167,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_12/nest_egg_mcs_1st_5yrs.py"
+    },
+    {
+      "name": "Particle.__init__",
+      "line": 28,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_13/practice_45.py"
+    },
+    {
+      "name": "Particle.vector",
+      "line": 40,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_13/practice_45.py"
+    },
+    {
+      "name": "Particle.update",
+      "line": 52,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_13/practice_45.py"
+    },
+    {
+      "name": "main",
+      "line": 64,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_13/practice_45.py"
+    },
+    {
+      "name": "Particle.__init__",
+      "line": 29,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_13/tvashtar.py"
+    },
+    {
+      "name": "Particle.vector",
+      "line": 41,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_13/tvashtar.py"
+    },
+    {
+      "name": "Particle.update",
+      "line": 48,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_13/tvashtar.py"
+    },
+    {
+      "name": "main",
+      "line": 60,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_13/tvashtar.py"
+    },
+    {
+      "name": "Satellite.__init__",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Satellite.thruster",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Satellite.check_keys",
+      "line": 42,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Satellite.locate",
+      "line": 55,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Satellite.rotate",
+      "line": 66,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Satellite.path",
+      "line": 71,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Satellite.update",
+      "line": 78,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Planet.__init__",
+      "line": 92,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Planet.rotate",
+      "line": 107,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Planet.gravity",
+      "line": 115,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "Planet.update",
+      "line": 129,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "calc_eccentricity",
+      "line": 133,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "instruct_label",
+      "line": 140,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "box_label",
+      "line": 148,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "mapping_on",
+      "line": 157,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "mapping_off",
+      "line": 165,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "cast_shadow",
+      "line": 170,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "main",
+      "line": 176,
+      "ours": 19,
+      "radon": 19,
+      "file_path": "Chapter_14/mars_orbiter.py"
+    },
+    {
+      "name": "main",
+      "line": 7,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_15/crop_n_scale_images.py"
+    },
+    {
+      "name": "del_folders",
+      "line": 24,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_15/crop_n_scale_images.py"
+    },
+    {
+      "name": "clean_folder",
+      "line": 31,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_15/crop_n_scale_images.py"
+    },
+    {
+      "name": "crop_images",
+      "line": 38,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_15/crop_n_scale_images.py"
+    },
+    {
+      "name": "main",
+      "line": 4,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_15/enhance_image.py"
+    },
+    {
+      "name": "enhance_image",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_15/enhance_image.py"
+    },
+    {
+      "name": "load_data",
+      "line": 5,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_16/beat_benford_practice.py"
+    },
+    {
+      "name": "steal_votes",
+      "line": 11,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_16/beat_benford_practice.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_16/beat_benford_practice.py"
+    },
+    {
+      "name": "load_data",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_16/benford.py"
+    },
+    {
+      "name": "count_first_digits",
+      "line": 15,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "Chapter_16/benford.py"
+    },
+    {
+      "name": "get_expected_counts",
+      "line": 40,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_16/benford.py"
+    },
+    {
+      "name": "chi_square_test",
+      "line": 44,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_16/benford.py"
+    },
+    {
+      "name": "bar_chart",
+      "line": 54,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_16/benford.py"
+    },
+    {
+      "name": "main",
+      "line": 87,
+      "ours": 5,
+      "radon": 6,
+      "file_path": "Chapter_16/benford.py"
+    },
+    {
+      "name": "load",
+      "line": 17,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_2/load_dictionary.py"
+    },
+    {
+      "name": "find_palingrams",
+      "line": 7,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_2/palingrams.py"
+    },
+    {
+      "name": "find_palingrams",
+      "line": 7,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_2/palingrams_optimized.py"
+    },
+    {
+      "name": "find_palingrams",
+      "line": 9,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_2/palingrams_timed.py"
+    },
+    {
+      "name": "load",
+      "line": 17,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_3/load_dictionary.py"
+    },
+    {
+      "name": "find_anagrams",
+      "line": 21,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_3/phrase_anagrams.py"
+    },
+    {
+      "name": "process_choice",
+      "line": 39,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Chapter_3/phrase_anagrams.py"
+    },
+    {
+      "name": "main",
+      "line": 60,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_3/phrase_anagrams.py"
+    },
+    {
+      "name": "main",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_3/voldemort_british.py"
+    },
+    {
+      "name": "prep_words",
+      "line": 28,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_3/voldemort_british.py"
+    },
+    {
+      "name": "cv_map_words",
+      "line": 37,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_3/voldemort_british.py"
+    },
+    {
+      "name": "cv_map_filter",
+      "line": 62,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "Chapter_3/voldemort_british.py"
+    },
+    {
+      "name": "trigram_filter",
+      "line": 80,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_3/voldemort_british.py"
+    },
+    {
+      "name": "letter_pair_filter",
+      "line": 92,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Chapter_3/voldemort_british.py"
+    },
+    {
+      "name": "view_by_letter",
+      "line": 112,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_3/voldemort_british.py"
+    },
+    {
+      "name": "load",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/identify_cipher_type_practice.py"
+    },
+    {
+      "name": "perms",
+      "line": 18,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_4/perms.py"
+    },
+    {
+      "name": "perms",
+      "line": 34,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_4/permutations_practice.py"
+    },
+    {
+      "name": "main",
+      "line": 32,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/rail_fence_cipher_decrypt.py"
+    },
+    {
+      "name": "prep_ciphertext",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/rail_fence_cipher_decrypt.py"
+    },
+    {
+      "name": "split_rails",
+      "line": 44,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/rail_fence_cipher_decrypt.py"
+    },
+    {
+      "name": "decrypt",
+      "line": 51,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_4/rail_fence_cipher_decrypt.py"
+    },
+    {
+      "name": "main",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/rail_fence_cipher_encrypt.py"
+    },
+    {
+      "name": "prep_plaintext",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/rail_fence_cipher_encrypt.py"
+    },
+    {
+      "name": "build_rails",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/rail_fence_cipher_encrypt.py"
+    },
+    {
+      "name": "encrypt",
+      "line": 45,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_4/rail_fence_cipher_encrypt.py"
+    },
+    {
+      "name": "main",
+      "line": 54,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/route_cipher_decrypt.py"
+    },
+    {
+      "name": "validate_col_row",
+      "line": 72,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_4/route_cipher_decrypt.py"
+    },
+    {
+      "name": "key_to_int",
+      "line": 87,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "Chapter_4/route_cipher_decrypt.py"
+    },
+    {
+      "name": "build_matrix",
+      "line": 99,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_4/route_cipher_decrypt.py"
+    },
+    {
+      "name": "decrypt",
+      "line": 114,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_4/route_cipher_decrypt.py"
+    },
+    {
+      "name": "main",
+      "line": 55,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_4/route_cipher_hacker.py"
+    },
+    {
+      "name": "validate_col_row",
+      "line": 61,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_4/route_cipher_hacker.py"
+    },
+    {
+      "name": "decrypt",
+      "line": 76,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Chapter_4/route_cipher_hacker.py"
+    },
+    {
+      "name": "load_text",
+      "line": 4,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_5/colchester_practice.py"
+    },
+    {
+      "name": "load",
+      "line": 15,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_5/load_dictionary.py"
+    },
+    {
+      "name": "load_text",
+      "line": 5,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_5/null_cipher_finder.py"
+    },
+    {
+      "name": "solve_null_cipher",
+      "line": 10,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "Chapter_5/null_cipher_finder.py"
+    },
+    {
+      "name": "main",
+      "line": 31,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_5/null_cipher_finder.py"
+    },
+    {
+      "name": "set_spacing",
+      "line": 29,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_6/elementary_ink.py"
+    },
+    {
+      "name": "line_limit",
+      "line": 21,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_6/elementary_ink_practice.py"
+    },
+    {
+      "name": "set_spacing",
+      "line": 55,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_6/elementary_ink_practice.py"
+    },
+    {
+      "name": "fitness",
+      "line": 5,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_7/safe_cracker.py"
+    },
+    {
+      "name": "main",
+      "line": 13,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_7/safe_cracker.py"
+    },
+    {
+      "name": "populate",
+      "line": 24,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_7/super_rats.py"
+    },
+    {
+      "name": "fitness",
+      "line": 29,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_7/super_rats.py"
+    },
+    {
+      "name": "select",
+      "line": 34,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_7/super_rats.py"
+    },
+    {
+      "name": "breed",
+      "line": 45,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_7/super_rats.py"
+    },
+    {
+      "name": "mutate",
+      "line": 56,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_7/super_rats.py"
+    },
+    {
+      "name": "main",
+      "line": 64,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_7/super_rats.py"
+    },
+    {
+      "name": "count_syllables",
+      "line": 13,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_8/count_syllables.py"
+    },
+    {
+      "name": "main",
+      "line": 32,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_8/count_syllables.py"
+    },
+    {
+      "name": "main",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_8/missing_words_finder.py"
+    },
+    {
+      "name": "load_haiku",
+      "line": 20,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_8/missing_words_finder.py"
+    },
+    {
+      "name": "cmudict_missing",
+      "line": 26,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Chapter_8/missing_words_finder.py"
+    },
+    {
+      "name": "make_exceptions_dict",
+      "line": 44,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_8/missing_words_finder.py"
+    },
+    {
+      "name": "save_exceptions",
+      "line": 83,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_8/missing_words_finder.py"
+    },
+    {
+      "name": "load",
+      "line": 6,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_8/test_count_syllables_w_dict.py"
+    },
+    {
+      "name": "count_syllables",
+      "line": 13,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_9/count_syllables.py"
+    },
+    {
+      "name": "main",
+      "line": 32,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_9/count_syllables.py"
+    },
+    {
+      "name": "load_training_file",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "prep_training",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "map_word_to_word",
+      "line": 22,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "map_2_words_to_word",
+      "line": 34,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "random_word",
+      "line": 47,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "word_after_single",
+      "line": 57,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "word_after_double",
+      "line": 71,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "haiku_line",
+      "line": 84,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "Chapter_9/markov_haiku.py"
+    },
+    {
+      "name": "main",
+      "line": 149,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Chapter_9/markov_haiku.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 145,
+    "exact_match": 144,
+    "exact_match_percent": 99.3,
+    "within_one": 145,
+    "within_one_percent": 100.0,
+    "mean_absolute_difference": 0.01,
+    "mean_difference": -0.01,
+    "max_absolute_difference": 1,
+    "ours_higher": 0,
+    "ours_lower": 1
+  }
+}

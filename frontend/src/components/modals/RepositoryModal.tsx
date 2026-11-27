@@ -1,23 +1,38 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { FormEvent } from "react";
+import { useNavigate } from "react-router-dom";
 import { LoaderCircle, Lock } from "lucide-react";
 import Modal from "./Modal";
 import Button from "../common/Button";
 import Notice from "../common/Notice";
 import GitHubIcon from "../common/GitHubIcon";
-import { submitRepository } from "../../services/repositoryService";
-import { checkGithubUrl } from "../../utils/validators";
+import { useWorkspace } from "../../context/WorkspaceContext";
 import { ApiError } from "../../services/api";
+import { fetchRepository } from "../../services/repositoryService";
+import { checkGithubUrl } from "../../utils/validators";
 
 type RepositoryModalProps = {
   onClose: () => void;
 };
 
 export default function RepositoryModal({ onClose }: RepositoryModalProps) {
+  const navigate = useNavigate();
+  const { openProject } = useWorkspace();
+
   const [url, setUrl] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [progress, setProgress] = useState("Connecting");
+
+  // true once the modal is closed, so a running fetch stops quietly
+  const closed = useRef(false);
+  useEffect(() => {
+    closed.current = false;
+    return () => {
+      closed.current = true;
+    };
+  }, []);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -30,14 +45,29 @@ export default function RepositoryModal({ onClose }: RepositoryModalProps) {
     }
 
     setError(null);
+    setProgress("Connecting");
     setLoading(true);
     try {
-      const result = await submitRepository(check.owner, check.repo);
-      setNotice(result.message);
+      const result = await fetchRepository(
+        check.owner,
+        check.repo,
+        () => closed.current,
+        setProgress
+      );
+      if (closed.current || result.state === "stopped") return;
+
+      if (result.state === "not_connected") {
+        setNotice(result.message);
+        return;
+      }
+
+      openProject(result.project, { repoId: result.repoId });
+      navigate("/workspace");
     } catch (err) {
+      if (closed.current) return;
       setError(err instanceof ApiError ? err.message : "Something went wrong. Try again.");
     } finally {
-      setLoading(false);
+      if (!closed.current) setLoading(false);
     }
   }
 
@@ -62,6 +92,7 @@ export default function RepositoryModal({ onClose }: RepositoryModalProps) {
             autoFocus
             autoComplete="off"
             spellCheck={false}
+            disabled={loading}
             value={url}
             onChange={(e) => {
               setUrl(e.target.value);
@@ -69,7 +100,7 @@ export default function RepositoryModal({ onClose }: RepositoryModalProps) {
             }}
             placeholder="https://github.com/username/repository"
             aria-invalid={error !== null}
-            className="w-full rounded-md border border-line bg-base px-4 py-3 font-mono text-sm text-main placeholder:text-muted focus:border-saffron focus:outline-none"
+            className="w-full rounded-md border border-line bg-base px-4 py-3 font-mono text-sm text-main placeholder:text-muted focus:border-saffron focus:outline-none disabled:opacity-60"
           />
         </div>
 
@@ -107,7 +138,7 @@ export default function RepositoryModal({ onClose }: RepositoryModalProps) {
             disabled={loading}
             icon={loading ? <LoaderCircle size={16} className="animate-spin" /> : undefined}
           >
-            {loading ? "Connecting" : "Connect repository"}
+            {loading ? progress : "Connect repository"}
           </Button>
         </div>
       </form>

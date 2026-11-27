@@ -146,7 +146,7 @@ Fill in the values according to your configured AI provider and database.
 From the backend directory, run:
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn api.main:app --reload
 ```
 
 If your FastAPI entry point is located elsewhere, update the module path accordingly.
@@ -206,7 +206,7 @@ Start both servers in separate terminals.
 ```bash
 cd backend
 venv\Scripts\activate
-uvicorn app.main:app --reload
+uvicorn api.main:app --reload
 ```
 
 **Terminal 2 – Frontend**

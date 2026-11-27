@@ -1,84 +1,77 @@
 import type { User } from "../types";
+import { API_CONFIGURED, ApiError, apiRequest } from "./api";
 
-// MOCK AUTH. There is no backend yet.
-// - Dev mode (npm run dev): demo sign-in, local only. No password is stored or sent.
-// - Production build: sign-in is refused, so no fake login ships.
-// Phase 10: replace login() and register() with real FastAPI calls.
-// A real backend should keep the session in an httpOnly cookie, not in localStorage.
-
-export const AUTH_IS_DEMO = import.meta.env.DEV;
-
-const SESSION_KEY = "vedix-session";
+// Accounts live on the server. The browser holds only an HttpOnly cookie that scripts cannot read.
 
 export type AuthResult = { ok: true; user: User } | { ok: false; message: string };
+export type SimpleResult = { ok: true } | { ok: false; message: string };
 
-const NO_BACKEND = "Sign-in needs the backend, which is not connected yet.";
+const NOT_CONNECTED = "Accounts need the backend, which is not connected yet.";
+const UNEXPECTED = "The server sent an unexpected answer.";
 
-function wait(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-function saveSession(user: User) {
-  try {
-    localStorage.setItem(SESSION_KEY, JSON.stringify(user));
-  } catch {
-    // storage blocked: session lasts until refresh
-  }
-}
-
-// read the saved session, and check its shape before trusting it
-export function getStoredSession(): User | null {
-  try {
-    const raw = localStorage.getItem(SESSION_KEY);
-    if (!raw) return null;
-    const data = JSON.parse(raw);
-    if (
-      typeof data?.id === "string" &&
-      typeof data?.name === "string" &&
-      typeof data?.email === "string"
-    ) {
-      return { id: data.id, name: data.name, email: data.email, demo: true };
-    }
-  } catch {
-    // bad data: ignore it
+// Server answers are not trusted: fields are checked and cut to size.
+function toUser(data: unknown): User | null {
+  const item = data as Partial<User> | null;
+  if (
+    item &&
+    typeof item.id === "string" &&
+    typeof item.name === "string" &&
+    typeof item.email === "string"
+  ) {
+    return { id: item.id.slice(0, 40), name: item.name.slice(0, 60), email: item.email.slice(0, 254) };
   }
   return null;
 }
 
-// "ashish.chandra@x.com" -> "Ashish.chandra"
-function nameFromEmail(email: string) {
-  const local = email.split("@")[0];
-  return local.charAt(0).toUpperCase() + local.slice(1);
+function messageOf(err: unknown): string {
+  return err instanceof ApiError ? err.message : "Something went wrong. Try again.";
 }
 
-export async function login(email: string, _password: string): Promise<AuthResult> {
-  if (!AUTH_IS_DEMO) return { ok: false, message: NO_BACKEND };
+async function sendCredentials(path: string, body: unknown): Promise<AuthResult> {
+  if (!API_CONFIGURED) return { ok: false, message: NOT_CONNECTED };
 
-  await wait(600); // MOCK delay so the loading state is visible
-  const clean = email.trim().toLowerCase();
-  const user: User = { id: `demo-${clean}`, name: nameFromEmail(clean), email: clean, demo: true };
-  saveSession(user);
-  return { ok: true, user };
-}
-
-export async function register(
-  name: string,
-  email: string,
-  _password: string
-): Promise<AuthResult> {
-  if (!AUTH_IS_DEMO) return { ok: false, message: NO_BACKEND };
-
-  await wait(600); // MOCK delay
-  const clean = email.trim().toLowerCase();
-  const user: User = { id: `demo-${clean}`, name: name.trim(), email: clean, demo: true };
-  saveSession(user);
-  return { ok: true, user };
-}
-
-export function logout() {
   try {
-    localStorage.removeItem(SESSION_KEY);
+    const user = toUser(await apiRequest<unknown>(path, { method: "POST", json: body }));
+    return user ? { ok: true, user } : { ok: false, message: UNEXPECTED };
+  } catch (err) {
+    return { ok: false, message: messageOf(err) };
+  }
+}
+
+export function login(email: string, password: string): Promise<AuthResult> {
+  return sendCredentials("/auth/login", { email, password });
+}
+
+export function register(name: string, email: string, password: string): Promise<AuthResult> {
+  return sendCredentials("/auth/register", { name, email, password });
+}
+
+// Who is signed in? The server knows from the cookie. null = nobody (or the server is not reachable).
+export async function getCurrentUser(): Promise<User | null> {
+  if (!API_CONFIGURED) return null;
+  try {
+    return toUser(await apiRequest<unknown>("/auth/me"));
   } catch {
-    // ignore
+    return null;
+  }
+}
+
+export async function logout(): Promise<void> {
+  if (!API_CONFIGURED) return;
+  try {
+    await apiRequest<void>("/auth/logout", { method: "POST" });
+  } catch {
+    // the cookie may already be gone. Nothing to do
+  }
+}
+
+export async function deleteAccount(password: string): Promise<SimpleResult> {
+  if (!API_CONFIGURED) return { ok: false, message: NOT_CONNECTED };
+
+  try {
+    await apiRequest<void>("/auth/account", { method: "DELETE", json: { password } });
+    return { ok: true };
+  } catch (err) {
+    return { ok: false, message: messageOf(err) };
   }
 }

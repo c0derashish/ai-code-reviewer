@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 20,
+  "pairs": [
+    {
+      "name": "empty",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Basics/ColorPicker.py"
+    },
+    {
+      "name": "stackImages",
+      "line": 13,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "Basics/ColorPicker.py"
+    },
+    {
+      "name": "mousePoints",
+      "line": 22,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Basics/Detecting_Clicks_On_Images.py"
+    },
+    {
+      "name": "stackImages",
+      "line": 12,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "Basics/Joining_Multiple_Images_To_Display.py"
+    },
+    {
+      "name": "captureScreen",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Basics/screenCap.py"
+    },
+    {
+      "name": "saveDataFunc",
+      "line": 31,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Intermediate/Custom Object Detection/createData.py"
+    },
+    {
+      "name": "empty",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Intermediate/Custom Object Detection/objectDetectoin.py"
+    },
+    {
+      "name": "getContours",
+      "line": 4,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Intermediate/Object Measurement/utlis.py"
+    },
+    {
+      "name": "reorder",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Intermediate/Object Measurement/utlis.py"
+    },
+    {
+      "name": "warpImg",
+      "line": 43,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Intermediate/Object Measurement/utlis.py"
+    },
+    {
+      "name": "findDis",
+      "line": 53,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Intermediate/Object Measurement/utlis.py"
+    },
+    {
+      "name": "empty",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Intermediate/RealTime_Color_Detection.py"
+    },
+    {
+      "name": "empty",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Intermediate/RealTime_Shape_Detection_Contours.py"
+    },
+    {
+      "name": "stackImages",
+      "line": 19,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "Intermediate/RealTime_Shape_Detection_Contours.py"
+    },
+    {
+      "name": "getContours",
+      "line": 50,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Intermediate/RealTime_Shape_Detection_Contours.py"
+    },
+    {
+      "name": "drawBox",
+      "line": 23,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Intermediate/objectTracking.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 16,
+    "exact_match": 16,
+    "exact_match_percent": 100.0,
+    "within_one": 16,
+    "within_one_percent": 100.0,
+    "mean_absolute_difference": 0.0,
+    "mean_difference": 0.0,
+    "max_absolute_difference": 0,
+    "ours_higher": 0,
+    "ours_lower": 0
+  }
+}

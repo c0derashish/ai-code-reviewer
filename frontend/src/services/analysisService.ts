@@ -22,7 +22,8 @@ function isJobStatus(value: unknown): value is JobStatus {
 export async function startAnalysis(
   project: Project,
   scope: AnalysisScope,
-  activePath: string
+  activePath: string,
+  options: { save: boolean; repoId: string | null }
 ): Promise<StartAnalysisResponse> {
   const files =
     scope === "file" ? project.files.filter((f) => f.path === activePath) : project.files;
@@ -30,6 +31,9 @@ export async function startAnalysis(
   const form = new FormData();
   form.append("project_name", project.name);
   form.append("scope", scope);
+  // only has an effect for a signed-in user. The server decides what is stored
+  form.append("save", options.save ? "true" : "false");
+  if (options.repoId) form.append("repo_id", options.repoId);
   for (const file of files) {
     // "paths" and "files" are in the same order. The server pairs them by index
     form.append("paths", file.path);

@@ -1,12 +1,14 @@
 import logging
 
-from analyzer.findings import STAGE_TEXT
+from analyzer.findings import SEVERITIES, STAGE_TEXT
+from app_db import analyses as history_db
 from services.pipeline import run_pipeline
 
 log = logging.getLogger("vedix.api")
 
 MAX_ISSUES = 2000
 FAILED_MESSAGE = "The analysis failed because of a server problem."
+SAVE_FAILED_MESSAGE = "The analysis could not be saved to your history."
 
 # The title of the warning "this import points inside the project but finds nothing".
 DEPENDENCY_TITLE = STAGE_TEXT["dependency"][2]
@@ -54,6 +56,28 @@ def build_summary(project, result, issue_count, truncated) -> dict:
     }
 
 
+def build_stats(result, issues) -> dict:
+    """The numbers saved with an analysis. loc counts code lines of the analysed files only."""
+    extraction = result["extraction"]
+    counts = dict.fromkeys(SEVERITIES, 0)
+    for issue in issues:
+        if issue["severity"] in counts:
+            counts[issue["severity"]] += 1
+
+    return {
+        "files": extraction["summary"]["files"],
+        "files_analyzed": extraction["summary"]["analyzed"],
+        "loc": sum(row["loc"] or 0 for row in extraction["rows"]),
+        "primary_language": result["languages"]["primary_language"],
+        "language_lines": {
+            language: info["lines"] for language, info in result["languages"]["languages"].items()
+        },
+        "severity_counts": counts,
+        "issue_count": len(issues),
+        "rule_issue_count": sum(1 for issue in issues if issue["source"] != "ai"),
+    }
+
+
 def analyze(project, scope, ai_provider, ai_max_files, ai_time_budget) -> dict:
     result = run_pipeline(
         project,
@@ -68,16 +92,20 @@ def analyze(project, scope, ai_provider, ai_max_files, ai_time_budget) -> dict:
         issues = [issue for issue in issues if issue["title"] != DEPENDENCY_TITLE]
 
     truncated = len(issues) > MAX_ISSUES
-    issues = issues[:MAX_ISSUES]
+    issues = [issue_to_api(issue) for issue in issues[:MAX_ISSUES]]
 
     return {
-        "issues": [issue_to_api(issue) for issue in issues],
+        "issues": issues,
         "summary": build_summary(project, result, len(issues), truncated),
+        "stats": build_stats(result, issues),
     }
 
 
-def run_job(store, job_id, project, scope, ai_provider, ai_max_files, ai_time_budget):
-    """Runs in a background thread. Never raises."""
+def run_job(store, job_id, project, scope, ai_provider, ai_max_files, ai_time_budget, save=None):
+    """Runs in a background thread. Never raises.
+
+    save: None, or {"database", "user_id", "source", "repo"} to save the result for a signed-in user.
+    """
     store.mark_running(job_id)
     try:
         outcome = analyze(project, scope, ai_provider, ai_max_files, ai_time_budget)
@@ -85,4 +113,17 @@ def run_job(store, job_id, project, scope, ai_provider, ai_max_files, ai_time_bu
         log.exception("Analysis %s crashed.", job_id[:8])
         store.fail(job_id, FAILED_MESSAGE)
         return
-    store.finish(job_id, outcome["issues"], outcome["summary"])
+
+    summary = outcome["summary"]
+    if save is not None:
+        try:
+            summary["saved_analysis_id"] = history_db.save_analysis(
+                save["database"], save["user_id"], project, outcome, scope, save["source"], save["repo"]
+            )
+            summary["saved"] = True
+        except Exception:  # a failed save must not lose the result the user is waiting for
+            log.exception("Saving analysis %s failed.", job_id[:8])
+            summary["saved"] = False
+            summary["save_error"] = SAVE_FAILED_MESSAGE
+
+    store.finish(job_id, outcome["issues"], summary)

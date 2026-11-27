@@ -1,0 +1,3245 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 88,
+  "pairs": [
+    {
+      "name": "version_msg",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/cli.py"
+    },
+    {
+      "name": "validate_extra_context",
+      "line": 45,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/cli.py"
+    },
+    {
+      "name": "list_installed_templates",
+      "line": 62,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/cli.py"
+    },
+    {
+      "name": "main",
+      "line": 171,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "cookiecutter/cli.py"
+    },
+    {
+      "name": "_expand_path",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/config.py"
+    },
+    {
+      "name": "merge_configs",
+      "line": 42,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/config.py"
+    },
+    {
+      "name": "get_config",
+      "line": 61,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/config.py"
+    },
+    {
+      "name": "get_user_config",
+      "line": 89,
+      "ours": 8,
+      "radon": 9,
+      "file_path": "cookiecutter/config.py"
+    },
+    {
+      "name": "ExtensionLoaderMixin.__init__",
+      "line": 19,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/environment.py"
+    },
+    {
+      "name": "ExtensionLoaderMixin._read_extensions",
+      "line": 45,
+      "ours": 3,
+      "radon": 4,
+      "file_path": "cookiecutter/environment.py"
+    },
+    {
+      "name": "StrictEnvironment.__init__",
+      "line": 66,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/environment.py"
+    },
+    {
+      "name": "UndefinedVariableInTemplate.__init__",
+      "line": 133,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/exceptions.py"
+    },
+    {
+      "name": "UndefinedVariableInTemplate.__str__",
+      "line": 141,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/exceptions.py"
+    },
+    {
+      "name": "JsonifyExtension.__init__",
+      "line": 27,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "JsonifyExtension.__init__.jsonify",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "RandomStringExtension.__init__",
+      "line": 40,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "RandomStringExtension.__init__.random_ascii_string",
+      "line": 44,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "SlugifyExtension.__init__",
+      "line": 57,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "SlugifyExtension.__init__.slugify",
+      "line": 61,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "UUIDExtension.__init__",
+      "line": 99,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "UUIDExtension.__init__.uuid4",
+      "line": 103,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "TimeExtension.__init__",
+      "line": 115,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "TimeExtension._datetime",
+      "line": 121,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "TimeExtension._now",
+      "line": 141,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "TimeExtension.parse",
+      "line": 146,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "cookiecutter/extensions.py"
+    },
+    {
+      "name": "find_template",
+      "line": 18,
+      "ours": 5,
+      "radon": 6,
+      "file_path": "cookiecutter/find.py"
+    },
+    {
+      "name": "is_copy_only_path",
+      "line": 39,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "cookiecutter/generate.py"
+    },
+    {
+      "name": "apply_overwrites_to_context",
+      "line": 59,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "cookiecutter/generate.py"
+    },
+    {
+      "name": "generate_context",
+      "line": 126,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/generate.py"
+    },
+    {
+      "name": "generate_file",
+      "line": 175,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "cookiecutter/generate.py"
+    },
+    {
+      "name": "render_and_create_dir",
+      "line": 263,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/generate.py"
+    },
+    {
+      "name": "_run_hook_from_repo_dir",
+      "line": 300,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/generate.py"
+    },
+    {
+      "name": "generate_files",
+      "line": 327,
+      "ours": 18,
+      "radon": 18,
+      "file_path": "cookiecutter/generate.py"
+    },
+    {
+      "name": "valid_hook",
+      "line": 35,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/hooks.py"
+    },
+    {
+      "name": "find_hook",
+      "line": 51,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/hooks.py"
+    },
+    {
+      "name": "run_script",
+      "line": 80,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/hooks.py"
+    },
+    {
+      "name": "run_script_with_context",
+      "line": 108,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/hooks.py"
+    },
+    {
+      "name": "run_hook",
+      "line": 130,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/hooks.py"
+    },
+    {
+      "name": "run_hook_from_repo_dir",
+      "line": 147,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/hooks.py"
+    },
+    {
+      "name": "run_pre_prompt_hook",
+      "line": 180,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/hooks.py"
+    },
+    {
+      "name": "configure_logger",
+      "line": 22,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/log.py"
+    },
+    {
+      "name": "cookiecutter",
+      "line": 29,
+      "ours": 16,
+      "radon": 16,
+      "file_path": "cookiecutter/main.py"
+    },
+    {
+      "name": "_patch_import_path_for_repo.__init__",
+      "line": 204,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/main.py"
+    },
+    {
+      "name": "_patch_import_path_for_repo.__enter__",
+      "line": 207,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/main.py"
+    },
+    {
+      "name": "_patch_import_path_for_repo.__exit__",
+      "line": 211,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/main.py"
+    },
+    {
+      "name": "read_user_variable",
+      "line": 25,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "YesNoPrompt.process_response",
+      "line": 51,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "read_user_yes_no",
+      "line": 61,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "read_repo_password",
+      "line": 83,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "read_user_choice",
+      "line": 91,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "process_json",
+      "line": 141,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "JsonPrompt.process_response",
+      "line": 169,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "read_user_dict",
+      "line": 174,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "render_variable",
+      "line": 199,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "_prompts_from_options",
+      "line": 239,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "prompt_choice_for_template",
+      "line": 250,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "prompt_choice_for_config",
+      "line": 262,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "prompt_for_config",
+      "line": 284,
+      "ours": 21,
+      "radon": 21,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "choose_nested_template",
+      "line": 366,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "prompt_and_delete",
+      "line": 406,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/prompt.py"
+    },
+    {
+      "name": "get_file_name",
+      "line": 19,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/replay.py"
+    },
+    {
+      "name": "dump",
+      "line": 26,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/replay.py"
+    },
+    {
+      "name": "load",
+      "line": 40,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/replay.py"
+    },
+    {
+      "name": "is_repo_url",
+      "line": 28,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/repository.py"
+    },
+    {
+      "name": "is_zip_file",
+      "line": 33,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/repository.py"
+    },
+    {
+      "name": "expand_abbreviations",
+      "line": 38,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "cookiecutter/repository.py"
+    },
+    {
+      "name": "repository_has_cookiecutter_json",
+      "line": 56,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/repository.py"
+    },
+    {
+      "name": "determine_repo_dir",
+      "line": 70,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "cookiecutter/repository.py"
+    },
+    {
+      "name": "force_delete",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "rmtree",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "make_sure_path_exists",
+      "line": 43,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "work_in",
+      "line": 57,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "make_executable",
+      "line": 71,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "simple_filter",
+      "line": 80,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "create_tmp_repo_dir",
+      "line": 92,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "create_env_with_context",
+      "line": 102,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/utils.py"
+    },
+    {
+      "name": "identify_repo",
+      "line": 33,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "cookiecutter/vcs.py"
+    },
+    {
+      "name": "is_vcs_installed",
+      "line": 54,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "cookiecutter/vcs.py"
+    },
+    {
+      "name": "clone",
+      "line": 63,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "cookiecutter/vcs.py"
+    },
+    {
+      "name": "unzip",
+      "line": 17,
+      "ours": 16,
+      "radon": 16,
+      "file_path": "cookiecutter/zipfile.py"
+    },
+    {
+      "name": "isolated_filesystem",
+      "line": 20,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "backup_dir",
+      "line": 33,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "restore_backup_dir",
+      "line": 47,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "clean_system",
+      "line": 68,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "clean_system.restore_backup",
+      "line": 125,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "user_dir",
+      "line": 150,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "user_config_data",
+      "line": 161,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "user_config_file",
+      "line": 182,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "output_dir",
+      "line": 200,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "clone_dir",
+      "line": 208,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/conftest.py"
+    },
+    {
+      "name": "context",
+      "line": 7,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/conftest.py"
+    },
+    {
+      "name": "replay_test_dir",
+      "line": 20,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/conftest.py"
+    },
+    {
+      "name": "mock_user_config",
+      "line": 26,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/conftest.py"
+    },
+    {
+      "name": "template_name",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "replay_file",
+      "line": 18,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "remove_replay_dump",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "remove_replay_dump.fin_remove_replay_file",
+      "line": 28,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "test_value_error_if_key_missing_in_context",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "mock_ensure_failure",
+      "line": 43,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "mock_ensure_success",
+      "line": 55,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "test_ioerror_if_replay_dir_creation_fails",
+      "line": 64,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "test_run_json_dump",
+      "line": 74,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/replay/test_dump.py"
+    },
+    {
+      "name": "template_name",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_load.py"
+    },
+    {
+      "name": "replay_file",
+      "line": 18,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_load.py"
+    },
+    {
+      "name": "test_value_error_if_key_missing_in_context",
+      "line": 24,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_load.py"
+    },
+    {
+      "name": "test_io_error_if_no_replay_file",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_load.py"
+    },
+    {
+      "name": "test_run_json_load",
+      "line": 37,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/replay/test_load.py"
+    },
+    {
+      "name": "test_get_replay_file_name",
+      "line": 11,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/replay/test_replay.py"
+    },
+    {
+      "name": "test_raise_on_invalid_mode",
+      "line": 26,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/replay/test_replay.py"
+    },
+    {
+      "name": "test_main_does_not_invoke_dump_but_load",
+      "line": 32,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/replay/test_replay.py"
+    },
+    {
+      "name": "test_main_does_not_invoke_load_but_dump",
+      "line": 49,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/replay/test_replay.py"
+    },
+    {
+      "name": "test_abbreviation_expansion",
+      "line": 44,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_abbreviation_expansion.py"
+    },
+    {
+      "name": "test_abbreviation_expansion_prefix_not_0_in_braces",
+      "line": 50,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_abbreviation_expansion.py"
+    },
+    {
+      "name": "test_zipfile_unzip",
+      "line": 18,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/repository/test_determine_repo_dir_clones_repo.py"
+    },
+    {
+      "name": "template_url",
+      "line": 53,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_determine_repo_dir_clones_repo.py"
+    },
+    {
+      "name": "test_repository_url_should_clone",
+      "line": 61,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/repository/test_determine_repo_dir_clones_repo.py"
+    },
+    {
+      "name": "test_repository_url_with_no_context_file",
+      "line": 93,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_determine_repo_dir_clones_repo.py"
+    },
+    {
+      "name": "template",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_determine_repo_dir_finds_existing_cookiecutter.py"
+    },
+    {
+      "name": "cloned_cookiecutter_path",
+      "line": 18,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_determine_repo_dir_finds_existing_cookiecutter.py"
+    },
+    {
+      "name": "test_should_find_existing_cookiecutter",
+      "line": 30,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/repository/test_determine_repo_dir_finds_existing_cookiecutter.py"
+    },
+    {
+      "name": "template",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_determine_repo_dir_finds_subdirectories.py"
+    },
+    {
+      "name": "cloned_cookiecutter_path",
+      "line": 18,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "tests/repository/test_determine_repo_dir_finds_subdirectories.py"
+    },
+    {
+      "name": "test_should_find_existing_cookiecutter",
+      "line": 34,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/repository/test_determine_repo_dir_finds_subdirectories.py"
+    },
+    {
+      "name": "test_local_repo_typo",
+      "line": 51,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_determine_repo_dir_finds_subdirectories.py"
+    },
+    {
+      "name": "test_finds_local_repo",
+      "line": 10,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/repository/test_determine_repository_should_use_local_repo.py"
+    },
+    {
+      "name": "test_local_repo_with_no_context_raises",
+      "line": 24,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_determine_repository_should_use_local_repo.py"
+    },
+    {
+      "name": "test_local_repo_typo",
+      "line": 51,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_determine_repository_should_use_local_repo.py"
+    },
+    {
+      "name": "zipfile",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_is_repo_url.py"
+    },
+    {
+      "name": "test_is_zip_file",
+      "line": 21,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_is_repo_url.py"
+    },
+    {
+      "name": "remote_repo_url",
+      "line": 37,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_is_repo_url.py"
+    },
+    {
+      "name": "test_is_repo_url_for_remote_urls",
+      "line": 42,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_is_repo_url.py"
+    },
+    {
+      "name": "local_repo_url",
+      "line": 57,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/repository/test_is_repo_url.py"
+    },
+    {
+      "name": "test_is_repo_url_for_local_urls",
+      "line": 62,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_is_repo_url.py"
+    },
+    {
+      "name": "test_expand_abbreviations",
+      "line": 67,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/repository/test_is_repo_url.py"
+    },
+    {
+      "name": "test_valid_repository",
+      "line": 8,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_repository_has_cookiecutter_json.py"
+    },
+    {
+      "name": "test_invalid_repository",
+      "line": 16,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/repository/test_repository_has_cookiecutter_json.py"
+    },
+    {
+      "name": "HelloExtension.__init__",
+      "line": 13,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test-extensions/hello_extension/hello_extension.py"
+    },
+    {
+      "name": "HelloExtension._hello",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test-extensions/hello_extension/hello_extension.py"
+    },
+    {
+      "name": "HelloExtension.parse",
+      "line": 21,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test-extensions/hello_extension/hello_extension.py"
+    },
+    {
+      "name": "FoobarExtension.__init__",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test-extensions/local_extension/local_extensions/main.py"
+    },
+    {
+      "name": "simplefilterextension",
+      "line": 19,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test-extensions/local_extension/local_extensions/main.py"
+    },
+    {
+      "name": "backup_configuration",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test-pyhooks/hooks/pre_prompt.py"
+    },
+    {
+      "name": "main",
+      "line": 17,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test-pyhooks/hooks/pre_prompt.py"
+    },
+    {
+      "name": "test_hooks_raises_errors",
+      "line": 19,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_abort_generate_on_hook_error.py"
+    },
+    {
+      "name": "cli_runner",
+      "line": 19,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "cli_runner.cli_main",
+      "line": 23,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "remove_fake_project_dir",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "remove_fake_project_dir.fin_remove_fake_project_dir",
+      "line": 34,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "remove_tmp_dir",
+      "line": 44,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "remove_tmp_dir.fin_remove_tmp_dir",
+      "line": 49,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "make_fake_project_dir",
+      "line": 57,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "version_cli_flag",
+      "line": 63,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_version",
+      "line": 68,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_error_on_existing_output_directory",
+      "line": 82,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli",
+      "line": 91,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_verbose",
+      "line": 101,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_replay",
+      "line": 111,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_replay_file",
+      "line": 138,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_replay_generated",
+      "line": 165,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_exit_on_noinput_and_replay",
+      "line": 181,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "overwrite_cli_flag",
+      "line": 217,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_run_cookiecutter_on_overwrite_if_exists_and_replay",
+      "line": 223,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_overwrite_if_exists_when_output_dir_does_not_exist",
+      "line": 253,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_overwrite_if_exists_when_output_dir_exists",
+      "line": 267,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "output_dir_flag",
+      "line": 280,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_output_dir",
+      "line": 285,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "help_cli_flag",
+      "line": 312,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_help",
+      "line": 317,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "user_config_path",
+      "line": 325,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_user_config",
+      "line": 330,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_default_user_config_overwrite",
+      "line": 356,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_default_user_config",
+      "line": 387,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_echo_undefined_variable_error",
+      "line": 413,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_echo_unknown_extension_error",
+      "line": 453,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_local_extension",
+      "line": 470,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_local_extension_not_available",
+      "line": 488,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_extra_context",
+      "line": 499,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_extra_context_invalid_format",
+      "line": 514,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "debug_file",
+      "line": 528,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_debug_file_non_verbose",
+      "line": 534,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_debug_file_verbose",
+      "line": 560,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_debug_list_installed_templates",
+      "line": 587,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_debug_list_installed_templates_failure",
+      "line": 608,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_directory_repo",
+      "line": 624,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_accept_hooks",
+      "line": 649,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_with_json_decoding_error",
+      "line": 686,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_with_pre_prompt_hook",
+      "line": 705,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "test_cli_with_pre_prompt_hook_fail",
+      "line": 716,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cli.py"
+    },
+    {
+      "name": "project_dir",
+      "line": 18,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_cookiecutter_invocation.py"
+    },
+    {
+      "name": "test_should_invoke_main",
+      "line": 27,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cookiecutter_invocation.py"
+    },
+    {
+      "name": "remove_additional_dirs",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "remove_additional_dirs.fin_remove_additional_dirs",
+      "line": 20,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "test_cookiecutter_no_input_return_project_dir",
+      "line": 37,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "test_cookiecutter_no_input_extra_context",
+      "line": 48,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "test_cookiecutter_templated_context",
+      "line": 59,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "test_cookiecutter_no_input_return_rendered_file",
+      "line": 66,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "test_cookiecutter_dict_values_in_context",
+      "line": 75,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "test_cookiecutter_template_cleanup",
+      "line": 125,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_cookiecutter_local_no_input.py"
+    },
+    {
+      "name": "remove_additional_dirs",
+      "line": 11,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "tests/test_cookiecutter_local_with_input.py"
+    },
+    {
+      "name": "test_cookiecutter_local_with_input",
+      "line": 21,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_cookiecutter_local_with_input.py"
+    },
+    {
+      "name": "test_cookiecutter_input_extra_context",
+      "line": 36,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cookiecutter_local_with_input.py"
+    },
+    {
+      "name": "test_cookiecutter_nested_templates",
+      "line": 17,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_cookiecutter_nested_templates.py"
+    },
+    {
+      "name": "template",
+      "line": 19,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_custom_extensions_in_hooks.py"
+    },
+    {
+      "name": "modify_syspath",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_custom_extensions_in_hooks.py"
+    },
+    {
+      "name": "test_hook_with_extension",
+      "line": 30,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_custom_extensions_in_hooks.py"
+    },
+    {
+      "name": "freeze",
+      "line": 14,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_default_extensions.py"
+    },
+    {
+      "name": "test_jinja2_time_extension",
+      "line": 22,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_default_extensions.py"
+    },
+    {
+      "name": "test_jinja2_slugify_extension",
+      "line": 45,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_default_extensions.py"
+    },
+    {
+      "name": "test_jinja2_uuid_extension",
+      "line": 54,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_default_extensions.py"
+    },
+    {
+      "name": "test_env_should_raise_for_unknown_extension",
+      "line": 9,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_environment.py"
+    },
+    {
+      "name": "test_env_should_come_with_default_extensions",
+      "line": 19,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_environment.py"
+    },
+    {
+      "name": "test_undefined_variable_to_str",
+      "line": 8,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_exceptions.py"
+    },
+    {
+      "name": "repo_dir",
+      "line": 14,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_find.py"
+    },
+    {
+      "name": "env",
+      "line": 20,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_find.py"
+    },
+    {
+      "name": "test_find_template",
+      "line": 64,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_find.py"
+    },
+    {
+      "name": "context_data",
+      "line": 18,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_generate_context",
+      "line": 61,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_generate_context_with_json_decoding_error",
+      "line": 67,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_default_context_replacement_in_generate_context",
+      "line": 82,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_generate_context_decodes_non_ascii_chars",
+      "line": 117,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "template_context",
+      "line": 135,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_does_include_unused_variables",
+      "line": 156,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_sets_non_list_value",
+      "line": 165,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_does_not_modify_choices_for_invalid_overwrite",
+      "line": 174,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_invalid_overwrite",
+      "line": 205,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_sets_multichoice_values",
+      "line": 213,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_invalid_multichoice_values",
+      "line": 222,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_error_additional_values",
+      "line": 231,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_in_dictionaries",
+      "line": 240,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_sets_default_for_choice_variable",
+      "line": 250,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_in_nested_dict",
+      "line": 259,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrite_context_as_in_nested_dict_with_additional_values",
+      "line": 301,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_in_nested_dict_additional_values",
+      "line": 317,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_overwrite_value_as_boolean_string",
+      "line": 377,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "test_apply_overwrites_error_overwrite_value_as_boolean_string",
+      "line": 385,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_context.py"
+    },
+    {
+      "name": "remove_test_dir",
+      "line": 12,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_generate_copy_without_render.py"
+    },
+    {
+      "name": "test_generate_copy_without_render_extensions",
+      "line": 20,
+      "ours": 1,
+      "radon": 10,
+      "file_path": "tests/test_generate_copy_without_render.py"
+    },
+    {
+      "name": "remove_test_dir",
+      "line": 12,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_generate_copy_without_render_override.py"
+    },
+    {
+      "name": "test_generate_copy_without_render_extensions",
+      "line": 20,
+      "ours": 1,
+      "radon": 10,
+      "file_path": "tests/test_generate_copy_without_render_override.py"
+    },
+    {
+      "name": "tear_down",
+      "line": 17,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "env",
+      "line": 37,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file",
+      "line": 44,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_jsonify_filter",
+      "line": 58,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_random_ascii_string",
+      "line": 72,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_with_true_condition",
+      "line": 83,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_with_false_condition",
+      "line": 102,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "expected_msg_regex",
+      "line": 120,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_verbose_template_syntax_error",
+      "line": 129,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_does_not_translate_lf_newlines_to_crlf",
+      "line": 141,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_does_not_translate_crlf_newlines_to_lf",
+      "line": 159,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_file_handles_mixed_line_endings",
+      "line": 177,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_file.py"
+    },
+    {
+      "name": "test_generate_files_nontemplated_exception",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files",
+      "line": 30,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_linux_newline",
+      "line": 46,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_jinja2_environment",
+      "line": 64,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_trailing_newline_forced_to_linux_by_context",
+      "line": 85,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_windows_newline",
+      "line": 106,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_windows_newline_forced_to_linux_by_context",
+      "line": 124,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_binaries",
+      "line": 145,
+      "ours": 1,
+      "radon": 10,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_absolute_path",
+      "line": 166,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_output_dir",
+      "line": 176,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_permissions",
+      "line": 192,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_overwrite_if_exists_with_skip_if_file_exists",
+      "line": 236,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_skip_if_file_exists",
+      "line": 264,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_generate_files_with_overwrite_if_exists",
+      "line": 288,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "undefined_context",
+      "line": 313,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_raise_undefined_variable_file_name",
+      "line": 320,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_raise_undefined_variable_file_name_existing_project",
+      "line": 335,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_raise_undefined_variable_file_content",
+      "line": 356,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_raise_undefined_variable_dir_name",
+      "line": 371,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_keep_project_dir_on_failure",
+      "line": 390,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_raise_undefined_variable_dir_name_existing_project",
+      "line": 402,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_raise_undefined_variable_project_dir",
+      "line": 427,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "test_raise_empty_dir_name",
+      "line": 443,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_files.py"
+    },
+    {
+      "name": "remove_additional_folders",
+      "line": 17,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_ignore_hooks_dirs",
+      "line": 33,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_run_python_hooks",
+      "line": 44,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_run_python_hooks_cwd",
+      "line": 60,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_empty_hooks",
+      "line": 75,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_oserror_hooks",
+      "line": 91,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_run_failing_hook_removes_output_directory",
+      "line": 115,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_run_failing_hook_preserves_existing_output_directory",
+      "line": 144,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_run_shell_hooks",
+      "line": 175,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_run_shell_hooks_win",
+      "line": 197,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_ignore_shell_hooks",
+      "line": 218,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_deprecate_run_hook_from_repo_dir",
+      "line": 235,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_generate_hooks.py"
+    },
+    {
+      "name": "test_merge_configs",
+      "line": 12,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "test_get_config",
+      "line": 54,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "test_get_config_does_not_exist",
+      "line": 83,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "test_invalid_config",
+      "line": 92,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "test_get_config_with_defaults",
+      "line": 104,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "test_get_config_empty_config_file",
+      "line": 126,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "test_get_config_invalid_file_with_array_as_top_level_element",
+      "line": 132,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "test_get_config_invalid_file_with_multiple_docs",
+      "line": 143,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_config.py"
+    },
+    {
+      "name": "user_config_path",
+      "line": 13,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "back_up_rc",
+      "line": 19,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "custom_config",
+      "line": 43,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_get_user_config_valid",
+      "line": 71,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_get_user_config_invalid",
+      "line": 80,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_get_user_config_nonexistent",
+      "line": 88,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "custom_config_path",
+      "line": 94,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_specify_config_path",
+      "line": 99,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_default_config_path",
+      "line": 109,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_default_config_from_env_variable",
+      "line": 114,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_force_default_config",
+      "line": 124,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_expand_user_for_directories_in_config",
+      "line": 134,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_expand_user_for_directories_in_config._expanduser",
+      "line": 137,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_expand_vars_for_directories_in_config",
+      "line": 149,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "test_specify_config_values",
+      "line": 160,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_get_user_config.py"
+    },
+    {
+      "name": "make_test_repo",
+      "line": 15,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestFindHooks.setup_method",
+      "line": 80,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestFindHooks.teardown_method",
+      "line": 84,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestFindHooks.test_find_hook",
+      "line": 88,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestFindHooks.test_no_hooks",
+      "line": 101,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestFindHooks.test_unknown_hooks_dir",
+      "line": 106,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestFindHooks.test_hook_not_found",
+      "line": 111,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.setup_method",
+      "line": 123,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.teardown_method",
+      "line": 127,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.test_run_script",
+      "line": 146,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.test_run_failing_script",
+      "line": 151,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.test_run_failing_script_enoexec",
+      "line": 162,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.test_run_script_cwd",
+      "line": 176,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.test_run_script_with_context",
+      "line": 182,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.test_run_hook",
+      "line": 210,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "TestExternalHooks.test_run_failing_hook",
+      "line": 222,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "dir_with_hooks",
+      "line": 238,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "test_ignore_hook_backup_files",
+      "line": 272,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_hooks.py"
+    },
+    {
+      "name": "create_log_records",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "info_messages",
+      "line": 26,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "debug_messages",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "info_logger",
+      "line": 50,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "debug_logger",
+      "line": 56,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "debug_file",
+      "line": 62,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "info_logger_with_file",
+      "line": 68,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "test_info_stdout_logging",
+      "line": 73,
+      "ours": 3,
+      "radon": 6,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "test_debug_stdout_logging",
+      "line": 90,
+      "ours": 3,
+      "radon": 6,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "test_debug_file_logging",
+      "line": 107,
+      "ours": 1,
+      "radon": 7,
+      "file_path": "tests/test_log.py"
+    },
+    {
+      "name": "test_original_cookiecutter_options_preserved_in__cookiecutter",
+      "line": 6,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_main.py"
+    },
+    {
+      "name": "test_replay_dump_template_name",
+      "line": 32,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_main.py"
+    },
+    {
+      "name": "test_replay_load_template_name",
+      "line": 65,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_main.py"
+    },
+    {
+      "name": "test_custom_replay_file",
+      "line": 96,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_main.py"
+    },
+    {
+      "name": "remove_output_folder",
+      "line": 17,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_output_folder.py"
+    },
+    {
+      "name": "test_output_folder",
+      "line": 25,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_output_folder.py"
+    },
+    {
+      "name": "test_exception_when_output_folder_exists",
+      "line": 48,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_output_folder.py"
+    },
+    {
+      "name": "remove_tmp_repo_dir",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_pre_prompt_hooks.py"
+    },
+    {
+      "name": "remove_tmp_repo_dir._func",
+      "line": 18,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_pre_prompt_hooks.py"
+    },
+    {
+      "name": "test_run_pre_prompt_python_hook",
+      "line": 25,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_pre_prompt_hooks.py"
+    },
+    {
+      "name": "test_run_pre_prompt_python_hook_fail",
+      "line": 34,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_pre_prompt_hooks.py"
+    },
+    {
+      "name": "test_run_pre_prompt_shell_hook",
+      "line": 45,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_pre_prompt_hooks.py"
+    },
+    {
+      "name": "test_not_ascii",
+      "line": 13,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "tests/test_preferred_encoding.py"
+    },
+    {
+      "name": "patch_readline_on_win",
+      "line": 19,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestRenderVariable.test_convert_to_str",
+      "line": 38,
+      "ours": 4,
+      "radon": 6,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestRenderVariable.test_convert_to_str_complex_variables",
+      "line": 68,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_prompt_for_config",
+      "line": 88,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_prompt_for_config_with_human_prompts",
+      "line": 115,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_prompt_for_config_with_human_choices",
+      "line": 167,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_prompt_for_config_dict",
+      "line": 175,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_should_render_dict",
+      "line": 186,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_should_render_deep_dict",
+      "line": 203,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_should_render_deep_dict_with_human_prompts",
+      "line": 248,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_internal_use_no_human_prompts",
+      "line": 277,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_prompt_for_templated_config",
+      "line": 290,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_dont_prompt_for_private_context_var",
+      "line": 315,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_should_render_private_variables_with_two_underscores",
+      "line": 327,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPrompt.test_should_not_render_private_variables",
+      "line": 364,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestReadUserChoice.test_should_invoke_read_user_choice",
+      "line": 389,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestReadUserChoice.test_should_invoke_read_user_variable",
+      "line": 413,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestReadUserChoice.test_should_render_choices",
+      "line": 433,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPromptChoiceForConfig.choices",
+      "line": 478,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPromptChoiceForConfig.context",
+      "line": 483,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPromptChoiceForConfig.test_should_return_first_option_if_no_input",
+      "line": 487,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPromptChoiceForConfig.test_should_read_user_choice",
+      "line": 506,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestPromptChoiceForConfig.test_empty_list_returns_empty_string",
+      "line": 523,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestReadUserYesNo.test_should_invoke_read_user_yes_no",
+      "line": 546,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "TestReadUserYesNo.test_boolean_parameter_no_input",
+      "line": 563,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_undefined_variable",
+      "line": 589,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_cookiecutter_nested_templates",
+      "line": 606,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_cookiecutter_nested_templates_invalid_paths",
+      "line": 627,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_cookiecutter_nested_templates_invalid_win_paths",
+      "line": 649,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_ask_and_rm_repo_dir",
+      "line": 662,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_ask_and_exit_on_user_no_answer",
+      "line": 678,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_ask_and_rm_repo_file",
+      "line": 697,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_ask_and_keep_repo_on_no_reuse",
+      "line": 714,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_ask_and_keep_repo_on_reuse",
+      "line": 730,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_ask_and_keep_repo_on_reuse.answer",
+      "line": 734,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_not_ask_if_no_input_and_rm_repo_dir",
+      "line": 750,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_prompt_should_not_ask_if_no_input_and_rm_repo_file",
+      "line": 769,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_prompt.py"
+    },
+    {
+      "name": "test_click_invocation",
+      "line": 6,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_repo_password.py"
+    },
+    {
+      "name": "test_click_invocation",
+      "line": 19,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_choice.py"
+    },
+    {
+      "name": "test_raise_if_options_is_not_a_non_empty_list",
+      "line": 32,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_read_user_choice.py"
+    },
+    {
+      "name": "test_process_json_invalid_json",
+      "line": 10,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_process_json_non_dict",
+      "line": 18,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_process_json_valid_json",
+      "line": 26,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_process_json_deep_dict",
+      "line": 39,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_should_raise_type_error",
+      "line": 75,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_should_call_prompt_with_process_json",
+      "line": 84,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_should_not_load_json_from_sentinel",
+      "line": 99,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_read_user_dict_default_value",
+      "line": 113,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "test_json_prompt_process_response",
+      "line": 125,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_dict.py"
+    },
+    {
+      "name": "mock_prompt",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_read_user_variable.py"
+    },
+    {
+      "name": "test_click_invocation",
+      "line": 17,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_variable.py"
+    },
+    {
+      "name": "test_input_loop_with_null_default_value",
+      "line": 29,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_read_user_variable.py"
+    },
+    {
+      "name": "test_click_invocation",
+      "line": 12,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_read_user_yes_no.py"
+    },
+    {
+      "name": "test_yesno_prompt_process_response",
+      "line": 25,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_read_user_yes_no.py"
+    },
+    {
+      "name": "test_should_raise_error_if_repo_does_not_exist",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_repo_not_found.py"
+    },
+    {
+      "name": "context",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_specify_output_dir.py"
+    },
+    {
+      "name": "template",
+      "line": 22,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_specify_output_dir.py"
+    },
+    {
+      "name": "mock_gen_context",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_specify_output_dir.py"
+    },
+    {
+      "name": "mock_prompt",
+      "line": 37,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_specify_output_dir.py"
+    },
+    {
+      "name": "mock_replay",
+      "line": 43,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_specify_output_dir.py"
+    },
+    {
+      "name": "test_api_invocation",
+      "line": 48,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_specify_output_dir.py"
+    },
+    {
+      "name": "test_default_output_dir",
+      "line": 65,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_specify_output_dir.py"
+    },
+    {
+      "name": "output_dir",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_templates.py"
+    },
+    {
+      "name": "test_build_templates",
+      "line": 22,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_templates.py"
+    },
+    {
+      "name": "environment",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "freeze",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "test_tz_is_required",
+      "line": 23,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "test_utc_default_datetime_format",
+      "line": 29,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "test_accept_valid_timezones",
+      "line": 37,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "test_environment_datetime_format",
+      "line": 44,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "test_add_time",
+      "line": 53,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "test_substract_time",
+      "line": 62,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "test_offset_with_format",
+      "line": 71,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_time_extension.py"
+    },
+    {
+      "name": "make_readonly",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_force_delete",
+      "line": 18,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_rmtree",
+      "line": 33,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_make_sure_path_exists",
+      "line": 44,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_make_sure_path_exists_correctly_handle_os_error",
+      "line": 63,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_work_in",
+      "line": 75,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_work_in_without_path",
+      "line": 90,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_create_tmp_repo_dir",
+      "line": 100,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "tests/test_utils.py"
+    },
+    {
+      "name": "test_clone_should_raise_if_vcs_not_installed",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_clone_should_rstrip_trailing_slash_in_repo_url",
+      "line": 22,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_clone_should_abort_if_user_does_not_want_to_reclone",
+      "line": 41,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_clone_should_silent_exit_if_ok_to_reuse",
+      "line": 64,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_clone_should_invoke_vcs_command",
+      "line": 97,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_clone_handles_repo_typo",
+      "line": 146,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_clone_handles_branch_typo",
+      "line": 174,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_clone_unknown_subprocess_error",
+      "line": 198,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/vcs/test_clone.py"
+    },
+    {
+      "name": "test_identify_known_repo",
+      "line": 49,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/vcs/test_identify_repo.py"
+    },
+    {
+      "name": "unknown_repo_type_url",
+      "line": 63,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/vcs/test_identify_repo.py"
+    },
+    {
+      "name": "test_identify_raise_on_unknown_repo",
+      "line": 68,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/vcs/test_identify_repo.py"
+    },
+    {
+      "name": "test_is_vcs_installed",
+      "line": 12,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/vcs/test_is_vcs_installed.py"
+    },
+    {
+      "name": "mock_download",
+      "line": 16,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "mock_download_with_empty_chunks",
+      "line": 25,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_local_file",
+      "line": 35,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_protected_local_file_environment_password",
+      "line": 49,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_protected_local_file_bad_environment_password",
+      "line": 66,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_protected_local_file_user_password_with_noinput",
+      "line": 81,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_protected_local_file_user_password",
+      "line": 98,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_protected_local_file_user_bad_password",
+      "line": 115,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_empty_zip_file",
+      "line": 132,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_non_repo_zip_file",
+      "line": 144,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_bad_zip_file",
+      "line": 156,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_url",
+      "line": 168,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_url_with_empty_chunks",
+      "line": 193,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_url_existing_cache",
+      "line": 218,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_url_existing_cache_no_input",
+      "line": 247,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_should_abort_if_no_redownload",
+      "line": 272,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "tests/zipfile/test_unzip.py"
+    },
+    {
+      "name": "test_unzip_is_ok_to_reuse",
+      "line": 295,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "tests/zipfile/test_unzip.py"
+    }
+  ],
+  "only_ours": [
+    "cookiecutter/utils.py:simple_filter.SimpleFilterExtension.__init__"
+  ],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 460,
+    "exact_match": 216,
+    "exact_match_percent": 47.0,
+    "within_one": 341,
+    "within_one_percent": 74.1,
+    "mean_absolute_difference": 1.03,
+    "mean_difference": -1.03,
+    "max_absolute_difference": 9,
+    "ours_higher": 0,
+    "ours_lower": 244
+  }
+}
