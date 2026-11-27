@@ -3,9 +3,12 @@ import { useAuth } from "../../context/AuthContext";
 
 // wraps pages that need a signed-in user
 export default function RequireAuth() {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   const location = useLocation();
 
+  if (loading) {
+    return <p className="p-8 text-sm text-muted">Checking your session</p>;
+  }
   if (!user) {
     return <Navigate to="/login" replace state={{ from: location.pathname }} />;
   }

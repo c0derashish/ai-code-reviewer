@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { getHistory } from "../services/historyService";
-import type { AnalysisRecord } from "../types";
+import { ApiError } from "../services/api";
+import type { HistoryItem } from "../types/history";
 
-// loads the analysis list. Both History and Analytics use it.
+// loads the saved analyses of the signed-in user
 export function useHistory() {
-  const [records, setRecords] = useState<AnalysisRecord[] | null>(null);
+  const [items, setItems] = useState<HistoryItem[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -12,10 +13,12 @@ export function useHistory() {
 
     getHistory()
       .then((list) => {
-        if (!cancelled) setRecords(list);
+        if (!cancelled) setItems(list);
       })
-      .catch(() => {
-        if (!cancelled) setError("Could not load analysis history. Try again.");
+      .catch((err) => {
+        if (!cancelled) {
+          setError(err instanceof ApiError ? err.message : "Could not load your history. Try again.");
+        }
       });
 
     // ignore the answer if the page was closed meanwhile
@@ -24,5 +27,5 @@ export function useHistory() {
     };
   }, []);
 
-  return { records, loading: records === null && error === null, error };
+  return { items, loading: items === null && error === null, error };
 }

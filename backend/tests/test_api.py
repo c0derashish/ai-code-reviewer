@@ -288,12 +288,12 @@ def test_too_large_upload_without_a_size_header_is_refused():
     assert response.status_code == 413
 
 
-def test_repositories_are_not_available_yet():
-    response = make_client().post("/repositories", json={"url": "https://github.com/a/b"})
+def test_repositories_can_be_switched_off():
+    client = make_client(repos_enabled=False)
+    response = client.post("/repositories", json={"url": "https://github.com/a/b"})
 
     assert response.status_code == 400
-    assert "not available yet" in response.json()["detail"]
-
+    assert "switched off" in response.json()["detail"]
 
 def test_a_crash_is_reported_without_details(monkeypatch):
     def broken(*args, **kwargs):

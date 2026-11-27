@@ -15,6 +15,7 @@ import { useWorkspace } from "../../context/WorkspaceContext";
 import { getLanguageLabel } from "../../utils/language";
 import type { AnalysisScope, AnalysisStatus } from "../../types";
 import ProfileMenu from "../settings/ProfileMenu";
+import SaveToggle from "./SaveToggle";
 
 const STATUS_LABEL: Record<AnalysisStatus, string> = {
   not_started: "Not analysed",
@@ -139,6 +140,7 @@ export default function Toolbar({
         </span>
       </div>
 
+      <SaveToggle />
       <AnalyseButton
         icon={<FileSearch size={16} />}
         label="Analyse file"

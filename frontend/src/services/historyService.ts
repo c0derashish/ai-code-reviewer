@@ -1,36 +1,157 @@
-import type { AnalysisRecord, Severity } from "../types";
+import type { ProjectFile, Severity } from "../types";
+import type { AnalyticsData, HistoryDetail, HistoryItem, LicenceInfo } from "../types/history";
+import type { IssueDto } from "../types/api";
+import { SEVERITIES } from "../utils/severity";
+import { ApiError, apiRequest } from "./api";
+import { toIssues } from "./analysisService";
+import { toProjectFiles } from "./repositoryService";
 
-// MOCK DATA for the History and Analytics pages. Not real analyses.
-// Phase 10: replace getHistory() and getAnalysis() with real backend calls.
+const UNEXPECTED = "The server sent an unexpected answer.";
+const GITHUB_URL = /^https:\/\/github\.com\/[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+$/;
 
-const NONE: Record<Severity, number> = { critical: 0, high: 0, medium: 0, low: 0, info: 0 };
+type Raw = Record<string, unknown>;
 
-const MOCK_RECORDS: AnalysisRecord[] = [
-  { id: "a-101", projectName: "inventory-api", date: "2026-06-14T10:20:00Z", language: "python", files: 24, score: 58, status: "done", issues: { critical: 1, high: 4, medium: 9, low: 7, info: 3 } },
-  { id: "a-102", projectName: "weather-cli", date: "2026-07-02T15:05:00Z", language: "go", files: 9, score: 81, status: "done", issues: { critical: 0, high: 1, medium: 3, low: 4, info: 2 } },
-  { id: "a-103", projectName: "inventory-api", date: "2026-07-21T09:40:00Z", language: "python", files: 27, score: 64, status: "done", issues: { critical: 0, high: 3, medium: 8, low: 6, info: 3 } },
-  { id: "a-104", projectName: "shop-frontend", date: "2026-08-05T18:12:00Z", language: "typescript", files: 56, score: 71, status: "done", issues: { critical: 0, high: 2, medium: 12, low: 15, info: 6 } },
-  { id: "a-105", projectName: "chat-server", date: "2026-08-19T11:30:00Z", language: "java", files: 38, score: null, status: "failed", issues: NONE },
-  { id: "a-106", projectName: "chat-server", date: "2026-08-19T12:02:00Z", language: "java", files: 38, score: 62, status: "done", issues: { critical: 1, high: 5, medium: 14, low: 11, info: 4 } },
-  { id: "a-107", projectName: "shop-frontend", date: "2026-09-09T14:25:00Z", language: "typescript", files: 58, score: 76, status: "done", issues: { critical: 0, high: 1, medium: 9, low: 12, info: 5 } },
-  { id: "a-108", projectName: "inventory-api", date: "2026-09-23T08:50:00Z", language: "python", files: 29, score: 72, status: "done", issues: { critical: 0, high: 2, medium: 6, low: 5, info: 2 } },
-  { id: "a-109", projectName: "weather-cli", date: "2026-10-04T16:10:00Z", language: "go", files: 10, score: 86, status: "done", issues: { critical: 0, high: 0, medium: 2, low: 3, info: 1 } },
-  { id: "a-110", projectName: "notes-app", date: "2026-10-17T13:35:00Z", language: "javascript", files: 15, score: 55, status: "done", issues: { critical: 2, high: 4, medium: 7, low: 6, info: 2 } },
-  { id: "a-111", projectName: "shop-frontend", date: "2026-10-30T09:15:00Z", language: "typescript", files: 61, score: 83, status: "done", issues: { critical: 0, high: 0, medium: 7, low: 9, info: 4 } },
-  { id: "a-112", projectName: "inventory-api", date: "2026-11-05T17:45:00Z", language: "python", files: 31, score: 79, status: "done", issues: { critical: 0, high: 1, medium: 5, low: 4, info: 2 } },
-];
-
-function wait(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+function isObject(value: unknown): value is Raw {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-// newest first
-export async function getHistory(): Promise<AnalysisRecord[]> {
-  await wait(400); // MOCK delay so the loading state is visible
-  return [...MOCK_RECORDS].sort((a, b) => b.date.localeCompare(a.date));
+function text(value: unknown, max: number): string | null {
+  return typeof value === "string" ? value.slice(0, max) : null;
 }
 
-export async function getAnalysis(id: string): Promise<AnalysisRecord | null> {
-  await wait(300); // MOCK delay
-  return MOCK_RECORDS.find((record) => record.id === id) ?? null;
+function whole(value: unknown): number {
+  return typeof value === "number" && Number.isFinite(value) && value >= 0 ? Math.floor(value) : 0;
+}
+
+function decimal(value: unknown): number | null {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+
+function severityCounts(value: unknown): Record<Severity, number> {
+  const source = isObject(value) ? value : {};
+  const counts = {} as Record<Severity, number>;
+  for (const severity of SEVERITIES) counts[severity] = whole(source[severity]);
+  return counts;
+}
+
+function toLicence(value: unknown): LicenceInfo | null {
+  if (!isObject(value)) return null;
+  return {
+    status: text(value.status, 20) ?? "error",
+    spdxId: text(value.spdx_id, 50),
+    name: text(value.name, 100),
+  };
+}
+
+function toHistoryItem(value: unknown): HistoryItem | null {
+  if (!isObject(value)) return null;
+
+  const id = text(value.id, 40);
+  const projectName = text(value.project_name, 200);
+  const createdAt = text(value.created_at, 40);
+  if (!id || !projectName || !createdAt) return null;
+
+  // the link is shown as a real link, so only a plain github.com address is accepted
+  const repoUrl =
+    typeof value.repo_url === "string" && GITHUB_URL.test(value.repo_url) ? value.repo_url : null;
+
+  return {
+    id,
+    projectId: text(value.project_id, 40) ?? "",
+    projectName,
+    source: value.source === "github" ? "github" : "upload",
+    repoUrl,
+    createdAt,
+    scope: text(value.scope, 20) ?? "project",
+    primaryLanguage: text(value.primary_language, 30),
+    files: whole(value.files),
+    filesAnalyzed: whole(value.files_analyzed),
+    loc: whole(value.loc),
+    issueCount: whole(value.issue_count),
+    ruleIssueCount: whole(value.rule_issue_count),
+    severityCounts: severityCounts(value.severity_counts),
+    storage: value.storage === "link_only" ? "link_only" : "full",
+    storageReason: text(value.storage_reason, 300),
+    licence: toLicence(value.licence),
+  };
+}
+
+export async function getHistory(): Promise<HistoryItem[]> {
+  const data = await apiRequest<unknown>("/history?limit=100");
+  if (!Array.isArray(data)) throw new ApiError("bad_response", UNEXPECTED);
+
+  const items: HistoryItem[] = [];
+  for (const raw of data) {
+    const item = toHistoryItem(raw);
+    if (item) items.push(item);
+  }
+  return items;
+}
+
+export async function getHistoryDetail(id: string): Promise<HistoryDetail> {
+  const data = await apiRequest<unknown>(`/history/${encodeURIComponent(id)}`);
+  const item = toHistoryItem(data);
+  if (!item || !isObject(data)) throw new ApiError("bad_response", UNEXPECTED);
+
+  const dtos = Array.isArray(data.issues) ? (data.issues as IssueDto[]) : [];
+  const paths = new Set(dtos.map((dto) => String(dto?.file_path)));
+  return {
+    ...item,
+    issues: toIssues(dtos, paths).issues,
+    issuesStored: data.issues_stored !== false,
+  };
+}
+
+// The saved files of an analysis, to open them in the workspace.
+export async function getSavedFiles(id: string): Promise<ProjectFile[]> {
+  const data = await apiRequest<unknown>(`/history/${encodeURIComponent(id)}/files`, {
+    timeoutMs: 60_000,
+  });
+  const files = isObject(data) ? toProjectFiles(data.files) : [];
+  if (files.length === 0) throw new ApiError("bad_response", "No files were saved for this analysis.");
+  return files;
+}
+
+export async function deleteAnalysis(id: string): Promise<void> {
+  await apiRequest<void>(`/history/${encodeURIComponent(id)}`, { method: "DELETE" });
+}
+
+export async function getAnalytics(): Promise<AnalyticsData> {
+  const data = await apiRequest<unknown>("/analytics");
+  if (!isObject(data) || !isObject(data.totals)) throw new ApiError("bad_response", UNEXPECTED);
+
+  const totals = data.totals;
+  const list = (value: unknown): Raw[] => (Array.isArray(value) ? value.filter(isObject) : []);
+
+  return {
+    totals: {
+      projects: whole(totals.projects),
+      analyses: whole(totals.analyses),
+      filesAnalyzed: whole(totals.files_analyzed),
+      loc: whole(totals.loc),
+      issueCount: whole(totals.issue_count),
+      ruleIssueCount: whole(totals.rule_issue_count),
+      issuesPer100Loc: decimal(totals.issues_per_100_loc),
+    },
+    severity: severityCounts(data.severity),
+    languages: list(data.languages).map((item) => ({
+      language: text(item.language, 30) ?? "plaintext",
+      lines: whole(item.lines),
+    })),
+    trend: list(data.trend).map((item) => ({
+      month: text(item.month, 7) ?? "",
+      analyses: whole(item.analyses),
+      issuesPer100Loc: decimal(item.issues_per_100_loc),
+    })),
+    projects: list(data.projects).map((item) => ({
+      projectId: text(item.project_id, 40) ?? "",
+      projectName: text(item.project_name, 200) ?? "",
+      analyses: whole(item.analyses),
+      latestAt: text(item.latest_at, 40) ?? "",
+      loc: whole(item.loc),
+      latestIssueCount: whole(item.latest_issue_count),
+      latestIssuesPer100Loc: decimal(item.latest_issues_per_100_loc),
+    })),
+    truncated: data.truncated === true,
+  };
 }

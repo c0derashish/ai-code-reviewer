@@ -1,0 +1,3432 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 118,
+  "pairs": [
+    {
+      "name": "main",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "01_hello/hello06_main_function.py"
+    },
+    {
+      "name": "get_args",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "01_hello/hello07_get_args.py"
+    },
+    {
+      "name": "main",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "01_hello/hello07_get_args.py"
+    },
+    {
+      "name": "get_args",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "01_hello/hello08_formatted.py"
+    },
+    {
+      "name": "main",
+      "line": 20,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "01_hello/hello08_formatted.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 11,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "01_hello/test.py"
+    },
+    {
+      "name": "test_runnable",
+      "line": 18,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "01_hello/test.py"
+    },
+    {
+      "name": "test_executable",
+      "line": 26,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "01_hello/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 34,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "01_hello/test.py"
+    },
+    {
+      "name": "test_input",
+      "line": 44,
+      "ours": 3,
+      "radon": 5,
+      "file_path": "01_hello/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "02_crowsnest/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "02_crowsnest/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 19,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "02_crowsnest/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 26,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "02_crowsnest/test.py"
+    },
+    {
+      "name": "test_consonant",
+      "line": 36,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "02_crowsnest/test.py"
+    },
+    {
+      "name": "test_consonant_upper",
+      "line": 45,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "02_crowsnest/test.py"
+    },
+    {
+      "name": "test_vowel",
+      "line": 54,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "02_crowsnest/test.py"
+    },
+    {
+      "name": "test_vowel_upper",
+      "line": 63,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "02_crowsnest/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "03_picnic/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 29,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "03_picnic/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 11,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "03_picnic/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 18,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "03_picnic/test.py"
+    },
+    {
+      "name": "test_one",
+      "line": 27,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "03_picnic/test.py"
+    },
+    {
+      "name": "test_two",
+      "line": 35,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "03_picnic/test.py"
+    },
+    {
+      "name": "test_more_than_two",
+      "line": 43,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "03_picnic/test.py"
+    },
+    {
+      "name": "test_two_sorted",
+      "line": 54,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "03_picnic/test.py"
+    },
+    {
+      "name": "test_more_than_two_sorted",
+      "line": 62,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "03_picnic/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "04_jump_the_five/solution1.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "04_jump_the_five/solution1.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "04_jump_the_five/solution2.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "04_jump_the_five/solution2.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "04_jump_the_five/solution3.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "04_jump_the_five/solution3.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "04_jump_the_five/solution4.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "04_jump_the_five/solution4.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "04_jump_the_five/solution5.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "04_jump_the_five/solution5.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 11,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "04_jump_the_five/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 18,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "04_jump_the_five/test.py"
+    },
+    {
+      "name": "test_01",
+      "line": 28,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "04_jump_the_five/test.py"
+    },
+    {
+      "name": "test_02",
+      "line": 37,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "04_jump_the_five/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "05_howler/solution1.py"
+    },
+    {
+      "name": "main",
+      "line": 38,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "05_howler/solution1.py"
+    },
+    {
+      "name": "get_args",
+      "line": 11,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "05_howler/solution2.py"
+    },
+    {
+      "name": "main",
+      "line": 41,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "05_howler/solution2.py"
+    },
+    {
+      "name": "random_string",
+      "line": 14,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "05_howler/test.py"
+    },
+    {
+      "name": "out_flag",
+      "line": 22,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "05_howler/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 29,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "05_howler/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 36,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "05_howler/test.py"
+    },
+    {
+      "name": "test_text_stdout",
+      "line": 46,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "05_howler/test.py"
+    },
+    {
+      "name": "test_text_outfile",
+      "line": 54,
+      "ours": 3,
+      "radon": 6,
+      "file_path": "05_howler/test.py"
+    },
+    {
+      "name": "test_file",
+      "line": 73,
+      "ours": 4,
+      "radon": 6,
+      "file_path": "05_howler/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "06_wc/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 27,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "06_wc/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 19,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 26,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 44,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_empty",
+      "line": 54,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_one",
+      "line": 63,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_two",
+      "line": 72,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_fox",
+      "line": 81,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_more",
+      "line": 90,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "test_stdin",
+      "line": 102,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "06_wc/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "07_gashlycrumb/gashlycrumb_interactive.py"
+    },
+    {
+      "name": "main",
+      "line": 26,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "07_gashlycrumb/gashlycrumb_interactive.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "07_gashlycrumb/solution1.py"
+    },
+    {
+      "name": "main",
+      "line": 32,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "07_gashlycrumb/solution1.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "07_gashlycrumb/solution2_dict_comp.py"
+    },
+    {
+      "name": "main",
+      "line": 32,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "07_gashlycrumb/solution2_dict_comp.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "07_gashlycrumb/solution3_dict_get.py"
+    },
+    {
+      "name": "main",
+      "line": 32,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "07_gashlycrumb/solution3_dict_get.py"
+    },
+    {
+      "name": "file_flag",
+      "line": 14,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 21,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 28,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 38,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_a",
+      "line": 50,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_b_c",
+      "line": 60,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_y",
+      "line": 71,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_o_alternate",
+      "line": 81,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "test_bad_letter",
+      "line": 93,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 103,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "07_gashlycrumb/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution1_iterate_chars.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "08_apples_and_bananas/solution1_iterate_chars.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution2_str_replace.py"
+    },
+    {
+      "name": "main",
+      "line": 36,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution2_str_replace.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution3_str_translate.py"
+    },
+    {
+      "name": "main",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "08_apples_and_bananas/solution3_str_translate.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution4_list_comprehension.py"
+    },
+    {
+      "name": "main",
+      "line": 36,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "08_apples_and_bananas/solution4_list_comprehension.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution5.1_no_closure.py"
+    },
+    {
+      "name": "main",
+      "line": 36,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution5.1_no_closure.py"
+    },
+    {
+      "name": "new_char",
+      "line": 44,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "08_apples_and_bananas/solution5.1_no_closure.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution5_list_comp_function.py"
+    },
+    {
+      "name": "main",
+      "line": 36,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution5_list_comp_function.py"
+    },
+    {
+      "name": "main.new_char",
+      "line": 42,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "08_apples_and_bananas/solution5_list_comp_function.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution6_map_lambda.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "08_apples_and_bananas/solution6_map_lambda.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution7_map_function.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "08_apples_and_bananas/solution7_map_function.py"
+    },
+    {
+      "name": "main.new_char",
+      "line": 41,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "08_apples_and_bananas/solution7_map_function.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/solution8_regex.py"
+    },
+    {
+      "name": "main",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "08_apples_and_bananas/solution8_regex.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 13,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 20,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "test_bad_vowel",
+      "line": 30,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "test_command_line",
+      "line": 39,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "test_command_line_with_vowel",
+      "line": 47,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "test_command_line_with_vowel_preserve_case",
+      "line": 55,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "test_file",
+      "line": 63,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "test_file_with_vowel",
+      "line": 71,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "08_apples_and_bananas/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "09_abuse/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 49,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "09_abuse/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 14,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 21,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_bad_adjective_str",
+      "line": 31,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_bad_adjective_num",
+      "line": 41,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_bad_number_str",
+      "line": 52,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_bad_number_int",
+      "line": 62,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_bad_seed",
+      "line": 72,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_01",
+      "line": 82,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_02",
+      "line": 90,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_03",
+      "line": 103,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "test_04",
+      "line": 118,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 130,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "09_abuse/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 11,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "10_telephone/solution1.py"
+    },
+    {
+      "name": "main",
+      "line": 46,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "10_telephone/solution1.py"
+    },
+    {
+      "name": "get_args",
+      "line": 11,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "10_telephone/solution2_list.py"
+    },
+    {
+      "name": "main",
+      "line": 46,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "10_telephone/solution2_list.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 16,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 23,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_bad_seed_str",
+      "line": 32,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_bad_mutation_str",
+      "line": 42,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_bad_mutation",
+      "line": 52,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_for_echo",
+      "line": 62,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_now_cmd_s1",
+      "line": 72,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_now_cmd_s2_m4",
+      "line": 85,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_fox_file_s1",
+      "line": 98,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "test_fox_file_s2_m6",
+      "line": 109,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 120,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "10_telephone/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "11_bottles_of_beer/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 31,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "11_bottles_of_beer/solution.py"
+    },
+    {
+      "name": "verse",
+      "line": 39,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "11_bottles_of_beer/solution.py"
+    },
+    {
+      "name": "test_verse",
+      "line": 55,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "11_bottles_of_beer/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 15,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 22,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "test_bad_int",
+      "line": 32,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "test_float",
+      "line": 42,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "test_str",
+      "line": 52,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "test_one",
+      "line": 62,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "test_two",
+      "line": 76,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "test_random",
+      "line": 94,
+      "ours": 3,
+      "radon": 5,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 110,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "11_bottles_of_beer/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution1_for_loop.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution1_for_loop.py"
+    },
+    {
+      "name": "choose",
+      "line": 50,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution1_for_loop.py"
+    },
+    {
+      "name": "test_choose",
+      "line": 57,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "12_ransom/solution1_for_loop.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution2_for_append_list.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution2_for_append_list.py"
+    },
+    {
+      "name": "choose",
+      "line": 50,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution2_for_append_list.py"
+    },
+    {
+      "name": "test_choose",
+      "line": 57,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "12_ransom/solution2_for_append_list.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution3_for_append_string.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution3_for_append_string.py"
+    },
+    {
+      "name": "choose",
+      "line": 50,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution3_for_append_string.py"
+    },
+    {
+      "name": "test_choose",
+      "line": 57,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "12_ransom/solution3_for_append_string.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution4_list_comprehension.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution4_list_comprehension.py"
+    },
+    {
+      "name": "choose",
+      "line": 47,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution4_list_comprehension.py"
+    },
+    {
+      "name": "test_choose",
+      "line": 54,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "12_ransom/solution4_list_comprehension.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution5_shorter_list_comp.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution5_shorter_list_comp.py"
+    },
+    {
+      "name": "choose",
+      "line": 46,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution5_shorter_list_comp.py"
+    },
+    {
+      "name": "test_choose",
+      "line": 53,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "12_ransom/solution5_shorter_list_comp.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution6_map.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "12_ransom/solution6_map.py"
+    },
+    {
+      "name": "choose",
+      "line": 47,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution6_map.py"
+    },
+    {
+      "name": "test_choose",
+      "line": 54,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "12_ransom/solution6_map.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution7_shorter_map.py"
+    },
+    {
+      "name": "main",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "12_ransom/solution7_shorter_map.py"
+    },
+    {
+      "name": "choose",
+      "line": 46,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/solution7_shorter_map.py"
+    },
+    {
+      "name": "test_choose",
+      "line": 53,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "12_ransom/solution7_shorter_map.py"
+    },
+    {
+      "name": "seed_flag",
+      "line": 15,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "12_ransom/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 20,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "12_ransom/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 27,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "12_ransom/test.py"
+    },
+    {
+      "name": "test_text1",
+      "line": 37,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "12_ransom/test.py"
+    },
+    {
+      "name": "test_text2",
+      "line": 51,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "12_ransom/test.py"
+    },
+    {
+      "name": "test_file1",
+      "line": 69,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "12_ransom/test.py"
+    },
+    {
+      "name": "test_file2",
+      "line": 82,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "12_ransom/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "13_twelve_days/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 39,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "13_twelve_days/solution.py"
+    },
+    {
+      "name": "verse",
+      "line": 48,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "13_twelve_days/solution.py"
+    },
+    {
+      "name": "test_verse",
+      "line": 85,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "13_twelve_days/solution.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "13_twelve_days/solution_emoji.py"
+    },
+    {
+      "name": "main",
+      "line": 40,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "13_twelve_days/solution_emoji.py"
+    },
+    {
+      "name": "verse",
+      "line": 49,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "13_twelve_days/solution_emoji.py"
+    },
+    {
+      "name": "test_verse",
+      "line": 86,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "13_twelve_days/solution_emoji.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 25,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 32,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "test_bad_num",
+      "line": 42,
+      "ours": 3,
+      "radon": 5,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "test_one",
+      "line": 52,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "test_two",
+      "line": 60,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "test_all_stdout",
+      "line": 68,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "test_all",
+      "line": 78,
+      "ours": 4,
+      "radon": 11,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 113,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "13_twelve_days/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "14_rhymer/solution1_regex.py"
+    },
+    {
+      "name": "main",
+      "line": 23,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "14_rhymer/solution1_regex.py"
+    },
+    {
+      "name": "stemmer",
+      "line": 40,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "14_rhymer/solution1_regex.py"
+    },
+    {
+      "name": "test_stemmer",
+      "line": 65,
+      "ours": 1,
+      "radon": 7,
+      "file_path": "14_rhymer/solution1_regex.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "14_rhymer/solution2_no_regex.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "14_rhymer/solution2_no_regex.py"
+    },
+    {
+      "name": "stemmer",
+      "line": 38,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "14_rhymer/solution2_no_regex.py"
+    },
+    {
+      "name": "test_stemmer",
+      "line": 52,
+      "ours": 1,
+      "radon": 7,
+      "file_path": "14_rhymer/solution2_no_regex.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "14_rhymer/solution3_dict_words.py"
+    },
+    {
+      "name": "main",
+      "line": 30,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "14_rhymer/solution3_dict_words.py"
+    },
+    {
+      "name": "main.is_dict_word",
+      "line": 41,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "14_rhymer/solution3_dict_words.py"
+    },
+    {
+      "name": "stemmer",
+      "line": 55,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "14_rhymer/solution3_dict_words.py"
+    },
+    {
+      "name": "test_stemmer",
+      "line": 70,
+      "ours": 1,
+      "radon": 6,
+      "file_path": "14_rhymer/solution3_dict_words.py"
+    },
+    {
+      "name": "read_wordlist",
+      "line": 81,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "14_rhymer/solution3_dict_words.py"
+    },
+    {
+      "name": "test_read_wordlist",
+      "line": 89,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "14_rhymer/solution3_dict_words.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 12,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "14_rhymer/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 19,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "14_rhymer/test.py"
+    },
+    {
+      "name": "test_take",
+      "line": 28,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "14_rhymer/test.py"
+    },
+    {
+      "name": "test_chair",
+      "line": 38,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "14_rhymer/test.py"
+    },
+    {
+      "name": "test_chair_uppercase",
+      "line": 48,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "14_rhymer/test.py"
+    },
+    {
+      "name": "test_apple",
+      "line": 58,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "14_rhymer/test.py"
+    },
+    {
+      "name": "test_no_vowels",
+      "line": 68,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "14_rhymer/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "15_kentucky_friar/solution1_regex.py"
+    },
+    {
+      "name": "main",
+      "line": 28,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "15_kentucky_friar/solution1_regex.py"
+    },
+    {
+      "name": "fry",
+      "line": 38,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "15_kentucky_friar/solution1_regex.py"
+    },
+    {
+      "name": "test_fry",
+      "line": 55,
+      "ours": 1,
+      "radon": 7,
+      "file_path": "15_kentucky_friar/solution1_regex.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "15_kentucky_friar/solution2_re_compile.py"
+    },
+    {
+      "name": "main",
+      "line": 28,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "15_kentucky_friar/solution2_re_compile.py"
+    },
+    {
+      "name": "fry",
+      "line": 39,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "15_kentucky_friar/solution2_re_compile.py"
+    },
+    {
+      "name": "test_fry",
+      "line": 56,
+      "ours": 1,
+      "radon": 7,
+      "file_path": "15_kentucky_friar/solution2_re_compile.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "15_kentucky_friar/solution3_no_regex.py"
+    },
+    {
+      "name": "main",
+      "line": 28,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "15_kentucky_friar/solution3_no_regex.py"
+    },
+    {
+      "name": "fry",
+      "line": 38,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "15_kentucky_friar/solution3_no_regex.py"
+    },
+    {
+      "name": "test_fry",
+      "line": 52,
+      "ours": 1,
+      "radon": 7,
+      "file_path": "15_kentucky_friar/solution3_no_regex.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 12,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 19,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_two_syllable_ing_words",
+      "line": 29,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_one_syllable_ing_words",
+      "line": 39,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_you_yall",
+      "line": 49,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "run_file",
+      "line": 59,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_blake",
+      "line": 73,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_banner",
+      "line": 80,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_raven",
+      "line": 87,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_dickinson",
+      "line": 94,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "test_shakespeare",
+      "line": 101,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "15_kentucky_friar/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 11,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "16_scrambler/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 36,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "16_scrambler/solution.py"
+    },
+    {
+      "name": "scramble",
+      "line": 48,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "16_scrambler/solution.py"
+    },
+    {
+      "name": "test_scramble",
+      "line": 60,
+      "ours": 1,
+      "radon": 8,
+      "file_path": "16_scrambler/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 15,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "16_scrambler/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 22,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "16_scrambler/test.py"
+    },
+    {
+      "name": "test_text1",
+      "line": 32,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "16_scrambler/test.py"
+    },
+    {
+      "name": "test_text2",
+      "line": 40,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "16_scrambler/test.py"
+    },
+    {
+      "name": "test_file_bustle",
+      "line": 50,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "16_scrambler/test.py"
+    },
+    {
+      "name": "test_file_fox",
+      "line": 70,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "16_scrambler/test.py"
+    },
+    {
+      "name": "test_file_spiders",
+      "line": 78,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "16_scrambler/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "17_mad_libs/solution1_regex.py"
+    },
+    {
+      "name": "main",
+      "line": 33,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "17_mad_libs/solution1_regex.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "17_mad_libs/solution2_no_regex.py"
+    },
+    {
+      "name": "main",
+      "line": 32,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "17_mad_libs/solution2_no_regex.py"
+    },
+    {
+      "name": "find_brackets",
+      "line": 61,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "17_mad_libs/solution2_no_regex.py"
+    },
+    {
+      "name": "test_find_brackets",
+      "line": 70,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "17_mad_libs/solution2_no_regex.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 18,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 25,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 35,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "test_no_blanks",
+      "line": 45,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "test_fox",
+      "line": 54,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "test_help",
+      "line": 64,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "test_verona",
+      "line": 81,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 109,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "17_mad_libs/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "18_gematria/asciitbl.py"
+    },
+    {
+      "name": "main",
+      "line": 52,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "18_gematria/asciitbl.py"
+    },
+    {
+      "name": "cell",
+      "line": 68,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "18_gematria/asciitbl.py"
+    },
+    {
+      "name": "chunker",
+      "line": 77,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "18_gematria/asciitbl.py"
+    },
+    {
+      "name": "get_args",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "18_gematria/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 28,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "18_gematria/solution.py"
+    },
+    {
+      "name": "word2num",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "18_gematria/solution.py"
+    },
+    {
+      "name": "test_word2num",
+      "line": 45,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "18_gematria/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 15,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "18_gematria/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 22,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "18_gematria/test.py"
+    },
+    {
+      "name": "test_text",
+      "line": 32,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "18_gematria/test.py"
+    },
+    {
+      "name": "test_fox",
+      "line": 40,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "18_gematria/test.py"
+    },
+    {
+      "name": "test_spiders",
+      "line": 48,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "18_gematria/test.py"
+    },
+    {
+      "name": "test_sonnet",
+      "line": 56,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "18_gematria/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 12,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "19_wod/solution1.py"
+    },
+    {
+      "name": "main",
+      "line": 54,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "19_wod/solution1.py"
+    },
+    {
+      "name": "read_csv",
+      "line": 72,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "19_wod/solution1.py"
+    },
+    {
+      "name": "test_read_csv",
+      "line": 84,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "19_wod/solution1.py"
+    },
+    {
+      "name": "get_args",
+      "line": 14,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "19_wod/solution2.py"
+    },
+    {
+      "name": "main",
+      "line": 56,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "19_wod/solution2.py"
+    },
+    {
+      "name": "read_csv",
+      "line": 81,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "19_wod/solution2.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 16,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 23,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_bad_num",
+      "line": 33,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 43,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_seed1",
+      "line": 53,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_seed1_easy",
+      "line": 72,
+      "ours": 3,
+      "radon": 5,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_seed2_num8",
+      "line": 92,
+      "ours": 3,
+      "radon": 5,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_seed4_num3_input2",
+      "line": 117,
+      "ours": 3,
+      "radon": 5,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 136,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "19_wod/test.py"
+    },
+    {
+      "name": "test_read_csv",
+      "line": 6,
+      "ours": 1,
+      "radon": 8,
+      "file_path": "19_wod/unit.py"
+    },
+    {
+      "name": "get_args",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "20_password/harvest.py"
+    },
+    {
+      "name": "main",
+      "line": 46,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "20_password/harvest.py"
+    },
+    {
+      "name": "main.limiter",
+      "line": 72,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "20_password/harvest.py"
+    },
+    {
+      "name": "main.write",
+      "line": 76,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "20_password/harvest.py"
+    },
+    {
+      "name": "get_args",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "20_password/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 67,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "20_password/solution.py"
+    },
+    {
+      "name": "main.word_len",
+      "line": 72,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "20_password/solution.py"
+    },
+    {
+      "name": "clean",
+      "line": 92,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "20_password/solution.py"
+    },
+    {
+      "name": "l33t",
+      "line": 99,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "20_password/solution.py"
+    },
+    {
+      "name": "ransom",
+      "line": 110,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "20_password/solution.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 15,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 23,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 33,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_bad_num",
+      "line": 43,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_bad_num_words",
+      "line": 54,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_bad_min_word_len",
+      "line": 65,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_bad_max_word_len",
+      "line": 76,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_bad_seed",
+      "line": 87,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_defaults",
+      "line": 98,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_num",
+      "line": 109,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_num_words",
+      "line": 118,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_min_word_len",
+      "line": 127,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_max_word_len",
+      "line": 139,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_l33t",
+      "line": 151,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 163,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "20_password/test.py"
+    },
+    {
+      "name": "test_clean",
+      "line": 6,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "20_password/unit.py"
+    },
+    {
+      "name": "test_ransom",
+      "line": 15,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/unit.py"
+    },
+    {
+      "name": "test_l33t",
+      "line": 26,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "20_password/unit.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "21_tictactoe/solution1.py"
+    },
+    {
+      "name": "main",
+      "line": 54,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "21_tictactoe/solution1.py"
+    },
+    {
+      "name": "format_board",
+      "line": 69,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "21_tictactoe/solution1.py"
+    },
+    {
+      "name": "find_winner",
+      "line": 84,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "21_tictactoe/solution1.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "21_tictactoe/solution2.py"
+    },
+    {
+      "name": "main",
+      "line": 54,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "21_tictactoe/solution2.py"
+    },
+    {
+      "name": "format_board",
+      "line": 69,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "21_tictactoe/solution2.py"
+    },
+    {
+      "name": "find_winner",
+      "line": 87,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "21_tictactoe/solution2.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 14,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 21,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_no_input",
+      "line": 31,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_bad_board",
+      "line": 51,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_bad_player",
+      "line": 63,
+      "ours": 3,
+      "radon": 5,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_bad_cell_int",
+      "line": 74,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_bad_cell_str",
+      "line": 84,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_both_player_and_cell",
+      "line": 94,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_good_board_01",
+      "line": 104,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_good_board_02",
+      "line": 124,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_mutate_board_01",
+      "line": 144,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_mutate_board_02",
+      "line": 164,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_mutate_cell_taken",
+      "line": 184,
+      "ours": 1,
+      "radon": 5,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_winning",
+      "line": 197,
+      "ours": 8,
+      "radon": 9,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_losing",
+      "line": 219,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "21_tictactoe/test.py"
+    },
+    {
+      "name": "test_board_no_board",
+      "line": 6,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "21_tictactoe/unit.py"
+    },
+    {
+      "name": "test_board_with_board",
+      "line": 23,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "21_tictactoe/unit.py"
+    },
+    {
+      "name": "test_winning",
+      "line": 40,
+      "ours": 8,
+      "radon": 9,
+      "file_path": "21_tictactoe/unit.py"
+    },
+    {
+      "name": "test_losing",
+      "line": 61,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "21_tictactoe/unit.py"
+    },
+    {
+      "name": "main",
+      "line": 17,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "22_itictactoe/solution1.py"
+    },
+    {
+      "name": "get_move",
+      "line": 42,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "22_itictactoe/solution1.py"
+    },
+    {
+      "name": "format_board",
+      "line": 68,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "22_itictactoe/solution1.py"
+    },
+    {
+      "name": "find_winner",
+      "line": 83,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "22_itictactoe/solution1.py"
+    },
+    {
+      "name": "main",
+      "line": 17,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "22_itictactoe/solution2_typed_dict.py"
+    },
+    {
+      "name": "get_move",
+      "line": 47,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "22_itictactoe/solution2_typed_dict.py"
+    },
+    {
+      "name": "format_board",
+      "line": 80,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "22_itictactoe/solution2_typed_dict.py"
+    },
+    {
+      "name": "find_winner",
+      "line": 95,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "22_itictactoe/solution2_typed_dict.py"
+    },
+    {
+      "name": "test_board_no_state",
+      "line": 6,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "22_itictactoe/unit.py"
+    },
+    {
+      "name": "test_board_with_state",
+      "line": 23,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "22_itictactoe/unit.py"
+    },
+    {
+      "name": "test_winning",
+      "line": 40,
+      "ours": 8,
+      "radon": 9,
+      "file_path": "22_itictactoe/unit.py"
+    },
+    {
+      "name": "test_losing",
+      "line": 61,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "22_itictactoe/unit.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/cat_n.py"
+    },
+    {
+      "name": "main",
+      "line": 24,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "appendix_argparse/cat_n.py"
+    },
+    {
+      "name": "get_args",
+      "line": 9,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "appendix_argparse/cat_n_manual.py"
+    },
+    {
+      "name": "main",
+      "line": 29,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "appendix_argparse/cat_n_manual.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/choices.py"
+    },
+    {
+      "name": "main",
+      "line": 30,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/choices.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "appendix_argparse/manual.py"
+    },
+    {
+      "name": "main",
+      "line": 30,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/manual.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/nargs+.py"
+    },
+    {
+      "name": "main",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/nargs+.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/nargs2.py"
+    },
+    {
+      "name": "main",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/nargs2.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/one_arg.py"
+    },
+    {
+      "name": "main",
+      "line": 21,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/one_arg.py"
+    },
+    {
+      "name": "get_args",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/two_args.py"
+    },
+    {
+      "name": "main",
+      "line": 29,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "appendix_argparse/two_args.py"
+    },
+    {
+      "name": "get_args",
+      "line": 28,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "bin/new.py"
+    },
+    {
+      "name": "main",
+      "line": 75,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "bin/new.py"
+    },
+    {
+      "name": "body",
+      "line": 95,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "bin/new.py"
+    },
+    {
+      "name": "get_defaults",
+      "line": 176,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "bin/new.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 14,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_no_arg_and_usage",
+      "line": 21,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "run_single",
+      "line": 30,
+      "ours": 4,
+      "radon": 6,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_a_upper",
+      "line": 46,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_a_lower",
+      "line": 53,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_c_upper",
+      "line": 60,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_c_lower",
+      "line": 67,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_g_upper",
+      "line": 74,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_g_lower",
+      "line": 81,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_t_upper",
+      "line": 88,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_t_lower",
+      "line": 95,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_rosalind_example",
+      "line": 101,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_dna/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 14,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/02_spanish/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 21,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/02_spanish/test.py"
+    },
+    {
+      "name": "test_masculine_lower",
+      "line": 31,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_spanish/test.py"
+    },
+    {
+      "name": "test_masculine_upper",
+      "line": 41,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_spanish/test.py"
+    },
+    {
+      "name": "test_feminine_lower",
+      "line": 51,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_spanish/test.py"
+    },
+    {
+      "name": "test_feminine_upper",
+      "line": 61,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_spanish/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 14,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 21,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_upper",
+      "line": 31,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_lower",
+      "line": 41,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_title",
+      "line": 51,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_digit",
+      "line": 61,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_space",
+      "line": 71,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_unclassified",
+      "line": 81,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/02_strings/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 14,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 21,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_nothing",
+      "line": 31,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_one_element",
+      "line": 40,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_two_elements",
+      "line": 49,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_two_elements_reversed",
+      "line": 58,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_more",
+      "line": 68,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_more_reverse",
+      "line": 83,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/03_lister/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 14,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 21,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "run_day",
+      "line": 31,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_monday",
+      "line": 40,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_tuesday",
+      "line": 47,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_wednesday",
+      "line": 54,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_thursday",
+      "line": 61,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_friday",
+      "line": 68,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_saturday",
+      "line": 75,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_sunday",
+      "line": 82,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_lower",
+      "line": 89,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_monday_tuesday",
+      "line": 102,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_mix",
+      "line": 111,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/04_days/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 17,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 24,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 34,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "test_bad_num",
+      "line": 44,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "test_default",
+      "line": 54,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "test_num_1",
+      "line": 76,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "test_n_2",
+      "line": 87,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "test_num_3",
+      "line": 98,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 112,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/06_head/test.py"
+    },
+    {
+      "name": "random_filename",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 23,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 30,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_no_args",
+      "line": 40,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_missing_input",
+      "line": 49,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_missing_codons",
+      "line": 58,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_bad_codon_file",
+      "line": 67,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_good_input1",
+      "line": 77,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_good_input2",
+      "line": 84,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_good_input3",
+      "line": 91,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "test_good_input4",
+      "line": 98,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "run",
+      "line": 105,
+      "ours": 3,
+      "radon": 7,
+      "file_path": "extra/07_proteins/test.py"
+    },
+    {
+      "name": "random_filename",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 24,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 31,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "test_no_args",
+      "line": 41,
+      "ours": 1,
+      "radon": 3,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 50,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "test_good_input1",
+      "line": 61,
+      "ours": 3,
+      "radon": 8,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "test_good_input2",
+      "line": 82,
+      "ours": 3,
+      "radon": 8,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "test_good_multiple_inputs",
+      "line": 103,
+      "ours": 3,
+      "radon": 10,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "output2",
+      "line": 127,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/08_rna/test.py"
+    },
+    {
+      "name": "random_string",
+      "line": 18,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/09_moog/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 25,
+      "ours": 1,
+      "radon": 2,
+      "file_path": "extra/09_moog/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 32,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/09_moog/test.py"
+    },
+    {
+      "name": "test_bad_seqtype",
+      "line": 42,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/09_moog/test.py"
+    },
+    {
+      "name": "test_bad_pctgc",
+      "line": 55,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/09_moog/test.py"
+    },
+    {
+      "name": "test_defaults",
+      "line": 66,
+      "ours": 3,
+      "radon": 11,
+      "file_path": "extra/09_moog/test.py"
+    },
+    {
+      "name": "test_options",
+      "line": 105,
+      "ours": 3,
+      "radon": 11,
+      "file_path": "extra/09_moog/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 11,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "extra/10_whitmans/solution.py"
+    },
+    {
+      "name": "main",
+      "line": 56,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "extra/10_whitmans/solution.py"
+    },
+    {
+      "name": "random_string",
+      "line": 23,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "extra/10_whitmans/test.py"
+    },
+    {
+      "name": "test_exists",
+      "line": 30,
+      "ours": 2,
+      "radon": 3,
+      "file_path": "extra/10_whitmans/test.py"
+    },
+    {
+      "name": "test_usage",
+      "line": 38,
+      "ours": 2,
+      "radon": 4,
+      "file_path": "extra/10_whitmans/test.py"
+    },
+    {
+      "name": "test_bad_file",
+      "line": 48,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/10_whitmans/test.py"
+    },
+    {
+      "name": "test_bad_pct",
+      "line": 59,
+      "ours": 1,
+      "radon": 4,
+      "file_path": "extra/10_whitmans/test.py"
+    },
+    {
+      "name": "test_defaults",
+      "line": 70,
+      "ours": 3,
+      "radon": 9,
+      "file_path": "extra/10_whitmans/test.py"
+    },
+    {
+      "name": "test_options",
+      "line": 101,
+      "ours": 4,
+      "radon": 12,
+      "file_path": "extra/10_whitmans/test.py"
+    },
+    {
+      "name": "get_args",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "template/template.py"
+    },
+    {
+      "name": "main",
+      "line": 53,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "template/template.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 487,
+    "exact_match": 226,
+    "exact_match_percent": 46.4,
+    "within_one": 307,
+    "within_one_percent": 63.0,
+    "mean_absolute_difference": 1.13,
+    "mean_difference": -1.13,
+    "max_absolute_difference": 8,
+    "ours_higher": 0,
+    "ours_lower": 261
+  }
+}

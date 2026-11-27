@@ -7,7 +7,6 @@ import AuthLayout from "../components/auth/AuthLayout";
 import Button from "../components/common/Button";
 import Notice from "../components/common/Notice";
 import { useAuth } from "../context/AuthContext";
-import { AUTH_IS_DEMO } from "../services/authService";
 import { checkEmail, checkName, checkPassword } from "../utils/validators";
 
 type Errors = { name?: string; email?: string; password?: string; confirm?: string };
@@ -62,11 +61,6 @@ export default function RegisterPage() {
       }
     >
       <form onSubmit={handleSubmit} noValidate className="space-y-4">
-        <Notice kind="info">
-          {AUTH_IS_DEMO
-            ? "Demo mode: no real account is created. You are signed in on this device only. The password is never stored or sent."
-            : "Accounts need the backend, which is not connected yet."}
-        </Notice>
 
         <AuthField
           id="register-name"

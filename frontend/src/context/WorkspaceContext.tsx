@@ -17,16 +17,27 @@ export type WorkspaceLayout = "single" | "tabs";
 
 const LAYOUTS = ["single", "tabs"] as const;
 const STORAGE_KEY = "vedix-layout";
+const SAVE_KEY = "vedix-save";
+const SAVE_VALUES = ["on", "off"] as const;
+
+// repoId: the fetched GitHub repository this project came from (the server needs it for the licence rule)
+// issues: issues of a saved analysis, shown right away
+export type OpenOptions = { repoId?: string | null; issues?: Issue[] };
 
 type WorkspaceContextValue = {
   // layout (saved in browser)
   layout: WorkspaceLayout;
   setLayout: (layout: WorkspaceLayout) => void;
 
+  // save analyses to the history of a signed-in user (saved in browser)
+  saveToHistory: boolean;
+  setSaveToHistory: (value: boolean) => void;
+
   // open project (kept in memory only, lost on refresh)
   project: Project | null;
+  repoId: string | null;
   activeFile: ProjectFile | null;
-  openProject: (project: Project) => void;
+  openProject: (project: Project, options?: OpenOptions) => void;
   selectFile: (path: string) => void;
   updateFile: (path: string, content: string) => void;
 
@@ -53,7 +64,11 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
   const [layout, setLayoutState] = useState<WorkspaceLayout>(() =>
     readSetting(STORAGE_KEY, LAYOUTS, "single")
   );
+  const [saveToHistory, setSaveState] = useState<boolean>(
+    () => readSetting(SAVE_KEY, SAVE_VALUES, "on") === "on"
+  );
   const [project, setProject] = useState<Project | null>(null);
+  const [repoId, setRepoId] = useState<string | null>(null);
   const [activePath, setActivePath] = useState<string | null>(null);
   const [logs, setLogs] = useState<string[]>([]);
   const [analysisStatus, setAnalysisStatus] = useState<AnalysisStatus>("not_started");
@@ -79,6 +94,11 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     saveSetting(STORAGE_KEY, next);
   }
 
+  function setSaveToHistory(value: boolean) {
+    setSaveState(value);
+    saveSetting(SAVE_KEY, value ? "on" : "off");
+  }
+
   function clearIssues() {
     setIssues([]);
     setIssuesAreSample(false);
@@ -87,14 +107,25 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     setJumpTarget(null);
   }
 
-  function openProject(next: Project) {
+  function openProject(next: Project, options: OpenOptions = {}) {
     runId.current += 1; // stop any run for the old project
     setProject(next);
+    setRepoId(options.repoId ?? null);
     setActivePath(next.files[0]?.path ?? null);
-    setAnalysisStatus("not_started");
     clearIssues();
+
+    const loaded = options.issues ?? [];
     const count = next.files.length;
-    setLogs([`Loaded "${next.name}": ${count} file${count === 1 ? "" : "s"}.`]);
+    const lines = [`Loaded "${next.name}": ${count} file${count === 1 ? "" : "s"}.`];
+
+    if (loaded.length > 0) {
+      setIssues(loaded);
+      setAnalysisStatus("done");
+      lines.push(`Opened a saved analysis with ${loaded.length} issue${loaded.length === 1 ? "" : "s"}.`);
+    } else {
+      setAnalysisStatus("not_started");
+    }
+    setLogs(lines);
   }
 
   function selectFile(path: string) {
@@ -141,7 +172,10 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     addLog(`Sending ${target} for analysis.`);
 
     try {
-      const started = await startAnalysis(project, scope, activeFile.path);
+      const started = await startAnalysis(project, scope, activeFile.path, {
+        save: saveToHistory,
+        repoId,
+      });
       if (!isCurrent()) return;
       addLog(`Analysis queued (id ${started.id}).`);
 
@@ -164,10 +198,16 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       setJumpTarget(null);
       setAnalysisStatus("done");
 
-      const score =
-        typeof result.score === "number" ? `, quality score ${Math.round(result.score)}` : "";
-      addLog(`Analysis finished: ${found.length} issue${found.length === 1 ? "" : "s"}${score}.`);
+      addLog(`Analysis finished: ${found.length} issue${found.length === 1 ? "" : "s"}.`);
       if (dropped > 0) addLog(`${dropped} issue(s) ignored: unknown file or invalid line.`);
+
+      // the server tells us if it saved the analysis to the history
+      const summary = result.summary;
+      if (summary?.saved === true) {
+        addLog("Saved to your history.");
+      } else if (summary?.saved === false) {
+        addLog(`Not saved: ${String(summary.save_error ?? "unknown reason").slice(0, 200)}`);
+      }
     } catch (err) {
       if (!isCurrent()) return;
       setAnalysisStatus("failed");
@@ -202,7 +242,10 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       value={{
         layout,
         setLayout,
+        saveToHistory,
+        setSaveToHistory,
         project,
+        repoId,
         activeFile,
         openProject,
         selectFile,

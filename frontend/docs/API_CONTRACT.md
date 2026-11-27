@@ -69,15 +69,22 @@ Frontend asks every 1.5 seconds, for up to 3 minutes.
 - `file_path` must be one of the sent paths. `line` is 1-based. Other rows are dropped.
 - `status` `failed`: set `error` to a short reason.
 
-## Repositories (submit wired, rest NOT wired)
+## Repositories (implemented by the backend, wired in the frontend)
 
 ### POST /repositories
 Body `{ "url": "https://github.com/owner/repo" }`. `202`: `{ "id": "r1", "status": "queued" }`.
+Public repositories only, default branch only. Errors: 400 "switched off", 422 bad address
+(text `detail`), 429 busy.
 
-Next, not wired in the frontend yet:
-- `GET /repositories/{id}`: status, and `error` if it failed.
-- `GET /repositories/{id}/files`: `{ "files": [{ "path", "language", "content" }] }`,
-  to open the repository in the workspace.
+### GET /repositories/{id}
+`{ "id", "status": "queued|running|done|failed", "project_name", "file_count", "skipped_count", "error" }`.
+404 when unknown or expired (kept for 30 minutes).
+
+### GET /repositories/{id}/files
+When done: `{ "project_name": "repo", "files": [{ "path", "language", "content" }] }`.
+`path` is relative to the repository root, `language` is a Monaco language id. 409 while the
+fetch is not done or after it failed (`detail` has the reason).
+The frontend opens these files in the workspace. Analysis then goes through POST /analyses.
 
 ## Account and history (NOT wired, mock in the frontend)
 

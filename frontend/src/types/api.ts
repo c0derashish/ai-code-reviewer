@@ -24,6 +24,7 @@ export type AnalysisResultResponse = {
   score?: number | null;
   issues?: IssueDto[];
   error?: string | null;
+  summary?: AnalysisSummary | null;
 };
 
 export type SubmitRepositoryRequest = {
@@ -33,4 +34,32 @@ export type SubmitRepositoryRequest = {
 export type SubmitRepositoryResponse = {
   id: string;
   status: JobStatus;
+};
+
+export type RepositoryStatusResponse = {
+  id: string;
+  status: JobStatus;
+  project_name?: string | null;
+  file_count?: number | null;
+  skipped_count?: number | null;
+  error?: string | null;
+};
+
+export type RepositoryFileDto = {
+  path: string;
+  language: string;
+  content: string;
+};
+
+export type RepositoryFilesResponse = {
+  project_name: string;
+  files: RepositoryFileDto[];
+};
+
+// The extra numbers the server sends with a finished analysis. Only the saving fields are used.
+export type AnalysisSummary = {
+  saved?: boolean;
+  saved_analysis_id?: string;
+  save_error?: string;
+  [key: string]: unknown;
 };

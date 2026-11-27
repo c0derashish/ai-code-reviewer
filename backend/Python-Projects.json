@@ -1,0 +1,1185 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 39,
+  "pairs": [
+    {
+      "name": "encodings",
+      "line": 20,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "AI_Attendence_Program/Main.py"
+    },
+    {
+      "name": "attendance",
+      "line": 33,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "AI_Attendence_Program/Main.py"
+    },
+    {
+      "name": "setValues",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "AirCanvas/main.py"
+    },
+    {
+      "name": "Card.__init__",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Banking App/banking.py"
+    },
+    {
+      "name": "Card.create_account",
+      "line": 26,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Banking App/banking.py"
+    },
+    {
+      "name": "Card.log_in",
+      "line": 37,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Banking App/banking.py"
+    },
+    {
+      "name": "Card.success",
+      "line": 66,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "Banking App/banking.py"
+    },
+    {
+      "name": "Card.luhn_2",
+      "line": 121,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Banking App/banking.py"
+    },
+    {
+      "name": "Card.luhn",
+      "line": 139,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Banking App/banking.py"
+    },
+    {
+      "name": "Card.menu",
+      "line": 167,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Banking App/banking.py"
+    },
+    {
+      "name": "Car.__init__",
+      "line": 14,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.move_left",
+      "line": 21,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.move_right",
+      "line": 25,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.move_forward",
+      "line": 29,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.move_backward",
+      "line": 32,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.stop_x",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.stop_y",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.update_position",
+      "line": 41,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Car.draw",
+      "line": 45,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Road.__init__",
+      "line": 49,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Road.move",
+      "line": 55,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Road.draw",
+      "line": 60,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "HurdleManager.__init__",
+      "line": 65,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "HurdleManager.create_hurdle",
+      "line": 69,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "HurdleManager.move_hurdles",
+      "line": 75,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Game.__init__",
+      "line": 82,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Game.handle_events",
+      "line": 89,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Game.update_score",
+      "line": 110,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Game.display_score",
+      "line": 113,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Game.run",
+      "line": 118,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "Game.play_background_music",
+      "line": 144,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Car Racing Game/main.py"
+    },
+    {
+      "name": "update",
+      "line": 12,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "Conway's Game of Life/game_of_life.py"
+    },
+    {
+      "name": "main",
+      "line": 37,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Conway's Game of Life/game_of_life.py"
+    },
+    {
+      "name": "roll_dice",
+      "line": 6,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Dice-Simulator/dice.py"
+    },
+    {
+      "name": "check_meaning",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Dictionary-App/dictionary.py"
+    },
+    {
+      "name": "get_antonym",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Dictionary-App/dictionary.py"
+    },
+    {
+      "name": "get_synonym",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Dictionary-App/dictionary.py"
+    },
+    {
+      "name": "translate",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Dictionary-App/dictionary.py"
+    },
+    {
+      "name": "menu",
+      "line": 20,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Dictionary-App/dictionary.py"
+    },
+    {
+      "name": "checkName",
+      "line": 10,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Hangman Game/hangman.py"
+    },
+    {
+      "name": "hangman",
+      "line": 18,
+      "ours": 17,
+      "radon": 17,
+      "file_path": "Hangman Game/hangman.py"
+    },
+    {
+      "name": "Server.__init__",
+      "line": 25,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Server.handle_client",
+      "line": 38,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Server.broadcast",
+      "line": 55,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Server.runServer",
+      "line": 60,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Server.closeConnection",
+      "line": 91,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.__init__",
+      "line": 100,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.connect_to_server",
+      "line": 117,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.sendMsg",
+      "line": 149,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.recieveMsg",
+      "line": 172,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.add_lines",
+      "line": 195,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.send_msg_button",
+      "line": 209,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.run_gui",
+      "line": 216,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.runClient",
+      "line": 245,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Client.closeConnection",
+      "line": 264,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "Start.main_start",
+      "line": 270,
+      "ours": 17,
+      "radon": 18,
+      "file_path": "Local-Chat/main.py"
+    },
+    {
+      "name": "locate_ip",
+      "line": 48,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Networking-Tools/tools.py"
+    },
+    {
+      "name": "get_ip",
+      "line": 93,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Networking-Tools/tools.py"
+    },
+    {
+      "name": "ping",
+      "line": 113,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Networking-Tools/tools.py"
+    },
+    {
+      "name": "port_scanner",
+      "line": 140,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "Networking-Tools/tools.py"
+    },
+    {
+      "name": "Display_Menu",
+      "line": 7,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Networking-Tools/tools_main.py"
+    },
+    {
+      "name": "option_1",
+      "line": 36,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Networking-Tools/tools_main.py"
+    },
+    {
+      "name": "option_2",
+      "line": 45,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Networking-Tools/tools_main.py"
+    },
+    {
+      "name": "option_3",
+      "line": 54,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Networking-Tools/tools_main.py"
+    },
+    {
+      "name": "option_4",
+      "line": 63,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Networking-Tools/tools_main.py"
+    },
+    {
+      "name": "option_5",
+      "line": 72,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Networking-Tools/tools_main.py"
+    },
+    {
+      "name": "Home",
+      "line": 80,
+      "ours": 10,
+      "radon": 11,
+      "file_path": "Networking-Tools/tools_main.py"
+    },
+    {
+      "name": "start",
+      "line": 3,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Number Guessing Game/main.py"
+    },
+    {
+      "name": "choose_difficulty",
+      "line": 14,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Number Guessing Game/main.py"
+    },
+    {
+      "name": "check_win",
+      "line": 34,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Number Guessing Game/main.py"
+    },
+    {
+      "name": "play_game",
+      "line": 45,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Number Guessing Game/main.py"
+    },
+    {
+      "name": "gen_qr",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "QR Code/main.py"
+    },
+    {
+      "name": "save",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "QR Code/main.py"
+    },
+    {
+      "name": "game",
+      "line": 9,
+      "ours": 16,
+      "radon": 16,
+      "file_path": "Rock Paper Scissors Game/main.py"
+    },
+    {
+      "name": "decisive",
+      "line": 39,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "Rock Paper Scissors Game/main.py"
+    },
+    {
+      "name": "Scoreboard",
+      "line": 50,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Rock Paper Scissors Game/main.py"
+    },
+    {
+      "name": "reset",
+      "line": 21,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "move_snake",
+      "line": 30,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "food_collision",
+      "line": 66,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "get_random_food_position",
+      "line": 76,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "get_distance",
+      "line": 82,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "go_up",
+      "line": 89,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "go_down",
+      "line": 93,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "go_left",
+      "line": 97,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "go_right",
+      "line": 101,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "SNAKE/snake_game.py"
+    },
+    {
+      "name": "_roll_validate",
+      "line": 8,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "_name_validate",
+      "line": 24,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "_marks_validate",
+      "line": 41,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "loc",
+      "line": 58,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "temp",
+      "line": 66,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f1",
+      "line": 79,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f2",
+      "line": 83,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f3",
+      "line": 89,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f4",
+      "line": 110,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f5",
+      "line": 114,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f6",
+      "line": 118,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f7",
+      "line": 122,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f8",
+      "line": 126,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f9",
+      "line": 130,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f10",
+      "line": 159,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f11",
+      "line": 169,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f12",
+      "line": 203,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "f13",
+      "line": 233,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Student Management System/Student Management System.py"
+    },
+    {
+      "name": "generate",
+      "line": 12,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Board.__init__",
+      "line": 35,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Board.draw_board",
+      "line": 43,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Board.deselect",
+      "line": 65,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Board.redraw",
+      "line": 72,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Board.visualSolve",
+      "line": 112,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Board.hint",
+      "line": 140,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Tile.__init__",
+      "line": 159,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Tile.draw",
+      "line": 173,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Tile.display",
+      "line": 177,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "Tile.clicked",
+      "line": 188,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "main",
+      "line": 195,
+      "ours": 38,
+      "radon": 38,
+      "file_path": "Sudoku-Solver/SudokuGUI.py"
+    },
+    {
+      "name": "print_board",
+      "line": 5,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "Sudoku-Solver/sudokutools.py"
+    },
+    {
+      "name": "find_empty",
+      "line": 23,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "Sudoku-Solver/sudokutools.py"
+    },
+    {
+      "name": "valid",
+      "line": 32,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "Sudoku-Solver/sudokutools.py"
+    },
+    {
+      "name": "solve",
+      "line": 53,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "Sudoku-Solver/sudokutools.py"
+    },
+    {
+      "name": "speaknow",
+      "line": 8,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Text-to-Speech/Text-to-speech.py"
+    },
+    {
+      "name": "insertLetter",
+      "line": 3,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "spaceIsfree",
+      "line": 7,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "printBoard",
+      "line": 10,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "isBoardFull",
+      "line": 23,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "isWinner",
+      "line": 29,
+      "ours": 24,
+      "radon": 24,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "userMove",
+      "line": 33,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "compMove",
+      "line": 54,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "selectRandom",
+      "line": 90,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "main",
+      "line": 98,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "Tic-Tac-Toe/TicTacToe.py"
+    },
+    {
+      "name": "Alarm",
+      "line": 6,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "Tkinter Clock/main.py.py"
+    },
+    {
+      "name": "get_alarm_time",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Tkinter Clock/main.py.py"
+    },
+    {
+      "name": "Node.__init__",
+      "line": 2,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Node.set_next_node",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Node.get_next_node",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Node.get_value",
+      "line": 12,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.__init__",
+      "line": 16,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.push",
+      "line": 22,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.pop",
+      "line": 31,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.peek",
+      "line": 39,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.has_space",
+      "line": 44,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.is_empty",
+      "line": 47,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.get_size",
+      "line": 50,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.get_name",
+      "line": 53,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "Stack.print_items",
+      "line": 56,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "get_input",
+      "line": 84,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "Towers of Hanoi/Towers of Hanoi.py"
+    },
+    {
+      "name": "CarManager.__init__",
+      "line": 15,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/car_manager.py"
+    },
+    {
+      "name": "CarManager.create_car",
+      "line": 21,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Turtle Crossing Capstone Game/car_manager.py"
+    },
+    {
+      "name": "CarManager.move_car",
+      "line": 44,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "Turtle Crossing Capstone Game/car_manager.py"
+    },
+    {
+      "name": "CarManager.level_up_speed",
+      "line": 50,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/car_manager.py"
+    },
+    {
+      "name": "Player.__init__",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/player.py"
+    },
+    {
+      "name": "Player.move_turtle",
+      "line": 18,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/player.py"
+    },
+    {
+      "name": "Player.reset_turtle",
+      "line": 23,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/player.py"
+    },
+    {
+      "name": "Scoreboard.__init__",
+      "line": 9,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/scoreboard.py"
+    },
+    {
+      "name": "Scoreboard.update_scoreboard",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/scoreboard.py"
+    },
+    {
+      "name": "Scoreboard.increase_level",
+      "line": 21,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/scoreboard.py"
+    },
+    {
+      "name": "Scoreboard.game_over",
+      "line": 27,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Turtle Crossing Capstone Game/scoreboard.py"
+    },
+    {
+      "name": "Facebook.__init__",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Web_Automation/Facebook_Bot.py"
+    },
+    {
+      "name": "Facebook.login",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Web_Automation/Facebook_Bot.py"
+    },
+    {
+      "name": "Linkedin.__init",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Web_Automation/Linkedin_Bot.py"
+    },
+    {
+      "name": "Linkedin.login",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Web_Automation/Linkedin_Bot.py"
+    },
+    {
+      "name": "Twitter.__init__",
+      "line": 6,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Web_Automation/Twitter_Bot.py"
+    },
+    {
+      "name": "Twitter.login",
+      "line": 11,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Web_Automation/Twitter_Bot.py"
+    },
+    {
+      "name": "main",
+      "line": 2,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "Youtube Searching Script/youtubeSearch.py"
+    },
+    {
+      "name": "delay_print",
+      "line": 7,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "pokemone_battle.py/main.py"
+    },
+    {
+      "name": "Pokemon.__init__",
+      "line": 17,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "pokemone_battle.py/main.py"
+    },
+    {
+      "name": "Pokemon.fight",
+      "line": 28,
+      "ours": 14,
+      "radon": 14,
+      "file_path": "pokemone_battle.py/main.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 166,
+    "exact_match": 164,
+    "exact_match_percent": 98.8,
+    "within_one": 166,
+    "within_one_percent": 100.0,
+    "mean_absolute_difference": 0.01,
+    "mean_difference": -0.01,
+    "max_absolute_difference": 1,
+    "ours_higher": 0,
+    "ours_lower": 2
+  }
+}

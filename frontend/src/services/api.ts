@@ -28,7 +28,7 @@ export class ApiError extends Error {
 }
 
 type RequestOptions = {
-  method?: "GET" | "POST";
+  method?: "GET" | "POST" | "DELETE";
   json?: unknown; // JSON body
   form?: FormData; // file upload. Browser sets the multipart header itself
   timeoutMs?: number;
@@ -95,7 +95,8 @@ export async function apiRequest<T>(path: string, options: RequestOptions = {}):
 
   if (!response.ok) {
     if (response.status === 401) {
-      throw new ApiError("unauthorized", messageForStatus(401), 401);
+      const detail = await readDetail(response);
+      throw new ApiError("unauthorized", detail ?? messageForStatus(401), 401);
     }
     // show the server's own message for 4xx only. Never for 5xx
     const detail = response.status < 500 ? await readDetail(response) : null;

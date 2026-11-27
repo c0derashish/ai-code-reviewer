@@ -1,0 +1,856 @@
+{
+  "status": "ok",
+  "radon_version": "6.0.1",
+  "metrics_version": "python-static-0.1",
+  "files_compared": 15,
+  "pairs": [
+    {
+      "name": "health",
+      "line": 90,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "upload_video",
+      "line": 100,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "analyze",
+      "line": 150,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "get_result",
+      "line": 169,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "analyze_sync",
+      "line": 179,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "delete_job",
+      "line": 195,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "list_jobs",
+      "line": 210,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "_run_analysis_async",
+      "line": 225,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "_run_analysis",
+      "line": 232,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "_run_analysis_sync",
+      "line": 237,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "_job_to_response",
+      "line": 259,
+      "ours": 16,
+      "radon": 16,
+      "file_path": "backend/api/main.py"
+    },
+    {
+      "name": "InferencePipeline.__init__",
+      "line": 74,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "InferencePipeline.run",
+      "line": 87,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "InferencePipeline._run_pipeline",
+      "line": 112,
+      "ours": 22,
+      "radon": 22,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "InferencePipeline._build_suspicious_frames",
+      "line": 269,
+      "ours": 10,
+      "radon": 10,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "InferencePipeline._apply_frame_score_formula",
+      "line": 310,
+      "ours": 12,
+      "radon": 12,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "InferencePipeline._resolve_final_verdict",
+      "line": 387,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "InferencePipeline._has_audio_signal",
+      "line": 404,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "get_pipeline",
+      "line": 413,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/inference_pipeline.py"
+    },
+    {
+      "name": "draw_overlay",
+      "line": 43,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "draw_overlay._bar",
+      "line": 73,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "RealtimeDetector.__init__",
+      "line": 104,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "RealtimeDetector._load_local_models",
+      "line": 130,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "RealtimeDetector._analyse_worker",
+      "line": 137,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "RealtimeDetector._local_analyse",
+      "line": 163,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "RealtimeDetector._api_analyse",
+      "line": 194,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "RealtimeDetector.run",
+      "line": 218,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "backend/realtime.py"
+    },
+    {
+      "name": "extract_frames",
+      "line": 24,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "backend/utils/extraction.py"
+    },
+    {
+      "name": "get_video_metadata",
+      "line": 63,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/utils/extraction.py"
+    },
+    {
+      "name": "extract_audio",
+      "line": 81,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "backend/utils/extraction.py"
+    },
+    {
+      "name": "compute_mfcc",
+      "line": 122,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/utils/extraction.py"
+    },
+    {
+      "name": "compute_mel_spectrogram",
+      "line": 151,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/utils/extraction.py"
+    },
+    {
+      "name": "get_whisper_model",
+      "line": 180,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/utils/extraction.py"
+    },
+    {
+      "name": "extract_transcript",
+      "line": 190,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/utils/extraction.py"
+    },
+    {
+      "name": "analyze_video_task",
+      "line": 38,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "backend/worker.py"
+    },
+    {
+      "name": "batch_analyze_task",
+      "line": 62,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "backend/worker.py"
+    },
+    {
+      "name": "DatasetPreprocessor.__init__",
+      "line": 48,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "DatasetPreprocessor.process_video",
+      "line": 66,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "DatasetPreprocessor.process_ff_plus_plus",
+      "line": 112,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "DatasetPreprocessor.process_celeb_df",
+      "line": 138,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "DatasetPreprocessor._batch_process",
+      "line": 161,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "AudioPreprocessor.__init__",
+      "line": 181,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "AudioPreprocessor.process_asvspoof",
+      "line": 186,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "AudioPreprocessor.process_fakeavceleb",
+      "line": 230,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "AudioPreprocessor._extract_audio_from_videos",
+      "line": 250,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "create_train_val_test_split",
+      "line": 269,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "print_dataset_stats",
+      "line": 309,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "main",
+      "line": 329,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "data/preprocess.py"
+    },
+    {
+      "name": "SpectralCNN.__init__",
+      "line": 38,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "SpectralCNN.forward",
+      "line": 56,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AttentionPool.__init__",
+      "line": 66,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AttentionPool.forward",
+      "line": 70,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AudioDeepfakeDetector.__init__",
+      "line": 89,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AudioDeepfakeDetector.forward",
+      "line": 135,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AudioInference.__init__",
+      "line": 178,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AudioInference._prepare_inputs",
+      "line": 189,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AudioInference.predict",
+      "line": 201,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AudioInference._build_explanation",
+      "line": 226,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "AudioInference._find_suspicious_segments",
+      "line": 246,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "models/audio/audio_model.py"
+    },
+    {
+      "name": "generate_gradcam",
+      "line": 35,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "models/explainability.py"
+    },
+    {
+      "name": "_get_target_layer",
+      "line": 66,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "models/explainability.py"
+    },
+    {
+      "name": "_unnormalize",
+      "line": 77,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/explainability.py"
+    },
+    {
+      "name": "plot_audio_analysis",
+      "line": 90,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "models/explainability.py"
+    },
+    {
+      "name": "plot_modality_breakdown",
+      "line": 162,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "models/explainability.py"
+    },
+    {
+      "name": "WeightedFusion.__init__",
+      "line": 54,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "WeightedFusion.fuse",
+      "line": 66,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "LateFusionMLP.__init__",
+      "line": 90,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "LateFusionMLP.forward",
+      "line": 102,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "AttentionFusion.__init__",
+      "line": 116,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "AttentionFusion.forward",
+      "line": 129,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "FusionOrchestrator.__init__",
+      "line": 144,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "FusionOrchestrator.combine",
+      "line": 160,
+      "ours": 19,
+      "radon": 19,
+      "file_path": "models/fusion/fusion.py"
+    },
+    {
+      "name": "TextDeepfakeDetector.__init__",
+      "line": 26,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "TextDeepfakeDetector.forward",
+      "line": 40,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "LipSyncAnalyser.analyse",
+      "line": 52,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "LipSyncAnalyser._slice_audio",
+      "line": 103,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "LipSyncAnalyser._build_explanation",
+      "line": 114,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "TextInference.__init__",
+      "line": 139,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "TextInference.predict",
+      "line": 175,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "TextInference._classify_text",
+      "line": 206,
+      "ours": 7,
+      "radon": 7,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "TextInference._heuristic_checks",
+      "line": 239,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "models/text/text_model.py"
+    },
+    {
+      "name": "FaceExtractor.__init__",
+      "line": 35,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "FaceExtractor.extract",
+      "line": 48,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoDeepfakeDetector.__init__",
+      "line": 77,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoDeepfakeDetector.forward",
+      "line": 130,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoInference.__init__",
+      "line": 180,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoInference.preprocess_face",
+      "line": 193,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoInference.predict",
+      "line": 203,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoInference._build_explanation",
+      "line": 273,
+      "ours": 11,
+      "radon": 11,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoInference._analyse_frame_ratio",
+      "line": 327,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "VideoInference._combine_video_score",
+      "line": 361,
+      "ours": 3,
+      "radon": 3,
+      "file_path": "models/video/video_model.py"
+    },
+    {
+      "name": "evaluate_pipeline",
+      "line": 46,
+      "ours": 9,
+      "radon": 9,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "evaluate_video_model",
+      "line": 116,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "evaluate_audio_model",
+      "line": 179,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "_plot_confusion_matrix",
+      "line": 242,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "_plot_roc_curve",
+      "line": 269,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "_plot_pr_curve",
+      "line": 292,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "_plot_score_distribution",
+      "line": 312,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "_plot_threshold_analysis",
+      "line": 334,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "parse_args",
+      "line": 369,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "training/evaluate.py"
+    },
+    {
+      "name": "AudioDataset.__init__",
+      "line": 48,
+      "ours": 5,
+      "radon": 5,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioDataset.__len__",
+      "line": 64,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioDataset.__getitem__",
+      "line": 67,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioDataset._augment",
+      "line": 83,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioTrainer.__init__",
+      "line": 107,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioTrainer.train_epoch",
+      "line": 155,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioTrainer.val_epoch",
+      "line": 187,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioTrainer._metrics",
+      "line": 199,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "AudioTrainer.run",
+      "line": 209,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "parse_args",
+      "line": 237,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "training/train_audio.py"
+    },
+    {
+      "name": "FaceDataset.__init__",
+      "line": 68,
+      "ours": 8,
+      "radon": 8,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "FaceDataset.__len__",
+      "line": 96,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "FaceDataset.__getitem__",
+      "line": 99,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "Trainer.__init__",
+      "line": 110,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "Trainer.train_epoch",
+      "line": 166,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "Trainer.val_epoch",
+      "line": 197,
+      "ours": 2,
+      "radon": 2,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "Trainer._metrics",
+      "line": 212,
+      "ours": 4,
+      "radon": 4,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "Trainer.run",
+      "line": 227,
+      "ours": 6,
+      "radon": 6,
+      "file_path": "training/train_video.py"
+    },
+    {
+      "name": "parse_args",
+      "line": 273,
+      "ours": 1,
+      "radon": 1,
+      "file_path": "training/train_video.py"
+    }
+  ],
+  "only_ours": [],
+  "only_radon": [],
+  "radon_errors": [],
+  "summary": {
+    "count": 119,
+    "exact_match": 119,
+    "exact_match_percent": 100.0,
+    "within_one": 119,
+    "within_one_percent": 100.0,
+    "mean_absolute_difference": 0.0,
+    "mean_difference": 0.0,
+    "max_absolute_difference": 0,
+    "ours_higher": 0,
+    "ours_lower": 0
+  }
+}

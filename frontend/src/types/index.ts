@@ -62,7 +62,6 @@ export type User = {
   id: string;
   name: string;
   email: string;
-  demo: boolean; // true = local demo session, not a real account
 };
 
 
